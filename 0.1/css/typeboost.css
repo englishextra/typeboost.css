@@ -254,6 +254,8 @@
 .col h3,
 .col h4,
 .col h5,
+.col strong,
+.col .bolder,
 .col dl dt,
 .col table th,
 .col button,
@@ -384,7 +386,7 @@
 	margin-left: auto;
 }
 .col dl dd:before {
-	content: "\2014\00a0\00a0";
+	content: "\2014\00a0";
 }
 .col address,
 .col p.address,
@@ -805,12 +807,12 @@
  * colours
  */
 .col a {
-	color: #2483AA;
+	color: #106EB4;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #C71939;
+	color: #299CD9;
 }
 .col h1 {
 	color: inherit;
@@ -921,7 +923,7 @@
 	border: 0;
 }
 .col .highlight {
-	color: #C71939;
+	color: #299CD9;
 }
 .col .hr {
 	background: #ECECEC;

@@ -105,19 +105,149 @@ font-smoothing: antialiased;
 .col .phonetic {
 	font-family: Voces, Calibri, Judson, ConstructiumRegular !important;
 }
-.col p {
-	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	-webkit-hyphenate-before: 2;
-	-webkit-hyphenate-after: 3;
-	hyphenate-lines: 3;
+.navbutton_holder {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 25px;
+	left: 16px;
+	font-size: 0;
 }
+.navbutton {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: transparent url(img/navbutton-50x50.svg) left top no-repeat;
+	background-size: 50px 50px;
+	cursor: pointer;
+}
+.no-svg .navbutton {
+	background: transparent url(img/navbutton-50x50.png) left top no-repeat;
+	background-size: 50px 50px;
+}
+.dropdownmenu_holder {
+	display: none;
+	position: absolute;
+	top: 77px;
+	left: 59px;
+	/*font-family: PT Sans, Calibri, sans-serif;*/
+	font-size: 0;
+	color: #FFF;
+	background: #575757;
+	/*opacity: 0.92;*/
+	-webkit-box-shadow: 3px 3px 3px 0 #90908F;
+	box-shadow: 3px 3px 3px 0 #90908F;
+}
+.box {
+	background-color: #575757;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.box:after {
+	content: "";
+	display: block;
+	border-width: 10px 10px 0;
+	border-style: solid;
+	border-color: #575757 transparent transparent;
+	margin-left: -10px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	margin: 0;
+}
+.box.arrow-top-left:after {
+	border-top-color: transparent;
+	border-bottom-color: #575757;
+	top: -10px;
+	bottom: auto;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	border-left-color: #575757;
+}
+.box.arrow-top-left:after {
+	left: 0;
+	right: auto;
+}
+.box.arrow-top-left {
+	border-top-left-radius: 0;
+}
+.box.red {
+	background-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-bottom-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-left-color: #575757;
+}
+.dropdownmenu {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.875rem;
+	padding: 0.500rem 1rem;
+}
+.dropdownmenu li {
+	line-height: 1.500;
+}
+.dropdownmenu li a:before {
+	content:"\2022\00a0\00a0";
+}
+/*.dropdownmenu li a:hover,
+.dropdownmenu li a:active,
+.dropdownmenu li a:focus {
+	color: #299CD9;
+}*/
+
 .container {
 	max-width: 720px;
-	padding: 16px;
+	padding: 1.500rem 16px;
 	margin: 0 auto;
+}
+/*!
+ * ui.totop.min.css
+ * pastebin.com/9F7UKvTz
+ */
+#toTop {
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	text-indent: 100%;
+	background: transparent url(img/totop-50x50.svg) top left no-repeat;
+	background-size: 50px 50px;
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.no-svg #toTop {
+	background: transparent url(img/totop-50x50.png) top left no-repeat;
+	background-size: 50px 50px;
+}
+#toTopHover {
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	background: transparent url(img/totop-50x50.svg) top left no-repeat;
+	background-size: 50px 50px;
+}
+.no-svg #toTopHover {
+	background: transparent url(img/totop-50x50.png) top left no-repeat;
+	background-size: 50px 50px;
+}
+#toTop:hover {
+	opacity: 0.5 !important;
 }
 /*!
 i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/
@@ -627,8 +757,34 @@ ol.linenums {
 		<![endif]-->
 	</head>
 	<body>
-		<div id="page">
-			<div class="container">
+	<body>
+		<div class="topbanner"></div>
+		<div class="navbutton_holder"><span class="navbutton" id="navbutton" title="Содержание"></span></div>
+		<div class="dropdownmenu_holder box red arrow-top-left" id="dropdownmenu_holder">
+			<ul class="dropdownmenu" id="dropdownmenu">
+				<li><a href="#a3">Произношение гласных</a></li>
+				<li><a href="#a4">Произношение согласных</a></li>
+				<li><a href="#a5">Произношение букв в&#160;начале слова</a></li>
+				<li><a href="#a6">Произношение букв в&#160;середине слова</a></li>
+				<li><a href="#a7">Произношение буквосочетаний в&#160;конце слова</a></li>
+				<li><a href="#a8">Произношение букв в&#160;комбинации</a></li>
+				<li><a href="#a9">Транскрипция</a></li>
+				<li><a href="#a10">Алфавит</a></li>
+				<li><a href="#a11">Типы чтения гласных</a></li>
+				<li><a href="#a12">Глухие и&#160;звонкие согласные</a></li>
+				<li><a href="#a13">Непарные согласные звуки</a></li>
+				<li><a href="#a14">Долгие и&#160;краткие гласные</a></li>
+				<li><a href="#a15">Непарные гласные звуки</a></li>
+				<li><a href="#a16">Дифтонги</a></li>
+				<li><a href="#a17">Гласные звуки</a></li>
+				<li><a href="#a18">Дифтонги (двойные гласные звуки)</a></li>
+				<li><a href="#a19">Согласные звуки</a></li>
+				<li><a href="#a20">Основные правила правописания</a></li>
+				<li><a href="#a21">Чтение отдельных букв и&#160;буквосочетаний</a></li>
+			</ul>
+		</div>
+		<div id="page" role="document">
+			<div class="container" role="main">
 				<div class="col">
 					<h1>Правила чтения</h1><p>В английском языке звуков больше, чем букв. Звуки имеют различное выражение на&#160;письме. Один и&#160;тот&#160;же звук может выражаться разными буквами или буквосочетаниями. Для&#160;распознания звуков используются транскрипционные знаки. По&#160;транскрипции в&#160;словаре можно понять, как произносится&#160;слово</p>
 					<h2 id="a3">Произношение гласных</h2><table class="respond"><caption></caption><thead><tr><th>Правило</th></tr></thead><tbody><tr><td>Если слово состоит из&#160;одного слога, то <span class="bolder">e</span> на&#160;конце слова не&#160;произносится: <span class="italic">die, mate, bottle</span></td></tr><tr><td>Если слово состоит из&#160;одного слога и&#160;оканчивается на <span class="bolder">e</span>, которая в&#160;этом случае будет являться единственной гласной, то <span class="bolder">e</span> произносится как в&#160;алфавите [&#160;<span class="phonetic">i:</span>&#160;]: <span class="italic">me, he, she</span></td></tr><tr><td>Если слово состоит из&#160;двух и&#160;более слогов и&#160;оканчивается на <span class="bolder">ee</span>, то это сочетание всегда стоит под ударением и&#160;произносится как [&#160;<span class="phonetic">i:</span>&#160;]: <span class="italic">fee, employee, addressee</span></td></tr></tbody></table><p>Правило открытого и&#160;закрытого слога влияет на&#160;произношение гласных.</p><p>Ударный слог называется открытым, если он&#160;оканчивается на&#160;гласную, после которой не&#160;следует согласная (<span class="italic">me, tea, play</span>), или если он&#160;оканчивается на&#160;согласную, после которой следует очередная гласная (<span class="italic">place, mute, nice</span>).</p><p>Гласные в&#160;открытом слоге произносятся следующим образом:</p><table class="respond"><caption></caption><thead><tr><th>Правило</th><th>Пример</th></tr></thead><tbody><tr><td><span class="bolder">a</span> [&#160;<span class="phonetic">e&#618;</span>&#160;]</td><td><span class="italic">mate</span></td></tr><tr><td><span class="bolder">e</span> [&#160;<span class="phonetic">i:</span>&#160;]</td><td><span class="italic">eve</span></td></tr><tr><td><span class="bolder">u</span> [&#160;<span class="phonetic">ju:</span>&#160;]</td><td><span class="italic">mute</span></td></tr><tr><td><span class="bolder">u</span> [&#160;<span class="phonetic">u:</span>&#160;]</td><td><span class="italic">flute, rule</span></td></tr><tr><td><span class="bolder">i</span> [&#160;<span class="phonetic">a&#618;</span>&#160;]</td><td><span class="italic">bite</span></td></tr><tr><td><span class="bolder">y</span> [&#160;<span class="phonetic">a&#618;</span>&#160;]</td><td><span class="italic">byte</span></td></tr><tr><td><span class="bolder">o</span> [&#160;<span class="phonetic">&#601;&#650;</span>&#160;]</td><td><span class="italic">note</span></td></tr></tbody></table><p>Ударный слог называется закрытым, если он&#160;оканчивается на&#160;согласную, за&#160;которой не&#160;следует гласная (<span class="italic">pot, tip</span>), или после которой следует другая согласная (<span class="italic">doctor, lord</span>).</p><p>Гласные в&#160;закрытом слоге произносятся следующим образом:</p><table class="respond"><caption></caption><thead><tr><th>Правило</th><th>Пример</th></tr></thead><tbody><tr><td><span class="bolder">a</span> [&#160;<span class="phonetic">&#230;</span>&#160;]</td><td><span class="italic">map</span></td></tr><tr><td><span class="bolder">e</span> [&#160;<span class="phonetic">e</span>&#160;]</td><td><span class="italic">set</span></td></tr><tr><td><span class="bolder">u</span> [&#160;<span class="phonetic">&#652;</span>&#160;]</td><td><span class="italic">nut</span></td></tr><tr><td><span class="bolder">i</span> [&#160;<span class="phonetic">&#618;</span>&#160;]</td><td><span class="italic">hit</span></td></tr><tr><td><span class="bolder">y</span> [&#160;<span class="phonetic">&#618;</span>&#160;]</td><td><span class="italic">myth</span></td></tr><tr><td><span class="bolder">o</span> [&#160;<span class="phonetic">&#594;</span>&#160;]</td><td><span class="italic">box</span></td></tr></tbody></table><p>Из правил открытого и&#160;закрытого слога есть много исключений.</p><table class="respond"><caption></caption><thead><tr><th>Правило</th></tr></thead><tbody><tr><td>Гласная <span class="bolder">a</span> перед согласной <span class="bolder">s</span>, после которой следует другая согласная, читается как [&#160;<span class="phonetic">&#593;:</span>&#160;]: <span class="italic">pass, master, past, task, fast</span></td></tr><tr><td>Гласная <span class="bolder">a</span> перед <span class="bolder">th</span> произносится как [&#160;<span class="phonetic">&#593;:</span>&#160;]: <span class="italic">path, rather, father</span></td></tr><tr><td>Гласная <span class="bolder">a</span> после <span class="bolder">w</span> в&#160;закрытом слоге произносится как [&#160;<span class="phonetic">&#596;</span>&#160;]: <span class="italic">want, was, wander (бродить)</span></td></tr><tr><td>Гласная <span class="bolder">a</span> перед <span class="bolder">l</span> + согласная произносится как [&#160;<span class="phonetic">&#596;:</span>&#160;]: <span class="italic">walk, also, false (ошибочный)</span></td></tr><tr><td>Однако <span class="bolder">alf</span> читается как [&#160;<span class="phonetic">&#593;:</span>&#160;]: <span class="italic">calf, half</span></td></tr><tr><td>В закрытом слоге гласные <span class="bolder">a, i, y</span> перед сочетанием согласной + <span class="bolder">le</span> читается как в&#160;открытом слоге&#160;&#8212; [&#160;<span class="phonetic">e&#618;</span>&#160;]: <span class="italic">table, maple, cycle, idle, title</span></td></tr><tr><td>Гласная o перед согласными <span class="bolder">m, n, th, v</span> произносится как [&#160;<span class="phonetic">&#652;</span>&#160;]: <span class="italic">dove, love, month, London, some</span></td></tr><tr><td><span class="bolder">-ost</span> произносится как [&#160;<span class="phonetic">&#601;&#650;</span>&#160;]: <span class="italic">most, host, post</span></td></tr><tr><td>Есть также единичные случаи как, например, слова: <span class="italic">put, pull, push</span>, где в&#160;закрытом слоге гласная <span class="bolder">u</span> произносится как [&#160;<span class="phonetic">u</span>&#160;], или слово <span class="italic">give</span>, где в&#160;открытом слоге гласная <span class="bolder">i</span> произносится как в&#160;закрытом&#160;&#8212; [&#160;<span class="phonetic">&#618;</span>&#160;]</td></tr><tr><td>Ударная гласная <span class="bolder">y</span> в&#160;открытом слоге произносится как [&#160;<span class="phonetic">a&#618;</span>&#160;]: <span class="italic">sky, fly, type</span></td></tr><tr><td>Безударная гласная <span class="bolder">y</span> в&#160;конце многосложного слова произносится как [&#160;<span class="phonetic">&#618;</span>&#160;]: <span class="italic">happy, truly, noisy</span></td></tr><tr><td>В закрытом слоге под ударением гласная <span class="bolder">y</span> произносится как [&#160;<span class="phonetic">&#618;</span>&#160;]: <span class="italic">myth, rhythm, system</span></td></tr><tr><td>Гласная <span class="bolder">e</span> в&#160;безударном слоге (кроме окончания <span class="bolder">er</span>&#160;&#8212; [&#160;<span class="phonetic">&#601;</span>&#160;]) произносится как [&#160;<span class="phonetic">&#618;</span>&#160;]: <span class="italic">begin</span></td></tr></tbody></table>
@@ -658,6 +814,12 @@ ol.linenums {
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
 		<script>
 			(function(a){a&&prettyPrint()}(window.prettyPrint));
+			"undefined"!==typeof window.Modernizr || (function () {window.Modernizr=function(a,b,c){function C(a){j.cssText=a}function D(a,b){return C(n.join(a+";")+(b||""))}function E(a,b){return typeof a===b}function F(a,b){return!!~(""+a).indexOf(b)}function G(a,b){for(var d in a){var e=a[d];if(!F(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function H(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:E(f,"function")?f.bind(d||b):f}return!1}function I(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+p.join(d+" ")+d).split(" ");return E(b,"string")||E(b,"undefined")?G(e,b):(e=(a+" "+q.join(d+" ")+d).split(" "),H(e,b,c))}var d="2.7.1",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l=":)",m={}.toString,n=" -webkit- -moz- -o- -ms- ".split(" "),o="Webkit Moz O ms",p=o.split(" "),q=o.toLowerCase().split(" "),r={svg:"http://www.w3.org/2000/svg"},s={},t={},u={},v=[],w=v.slice,x,y=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},z=function(){function d(d,e){e=e||b.createElement(a[d]||"div"),d="on"+d;var f=d in e;return f||(e.setAttribute||(e=b.createElement("div")),e.setAttribute&&e.removeAttribute&&(e.setAttribute(d,""),f=E(e[d],"function"),E(e[d],"undefined")||(e[d]=c),e.removeAttribute(d))),e=null,f}var a={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return d}(),A={}.hasOwnProperty,B;!E(A,"undefined")&&!E(A.call,"undefined")?B=function(a,b){return A.call(a,b)}:B=function(a,b){return b in a&&E(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=w.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(w.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(w.call(arguments)))};return e}),s.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:y(["@media (",n.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c},s.hashchange=function(){return z("hashchange",a)&&(b.documentMode===c||b.documentMode>7)},s.cssanimations=function(){return I("animationName")},s.cssgradients=function(){var a="background-image:",b="gradient(linear,left top,right bottom,from(#9f9),to(white));",c="linear-gradient(left top,#9f9, white);";return C((a+"-webkit- ".split(" ").join(b+a)+n.join(c+a)).slice(0,-a.length)),F(j.backgroundImage,"gradient")},s.csstransforms=function(){return!!I("transform")},s.csstransforms3d=function(){var a=!!I("perspective");return a&&"webkitPerspective"in g.style&&y("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(b,c){a=b.offsetLeft===9&&b.offsetHeight===3}),a},s.csstransitions=function(){return I("transition")},s.generatedcontent=function(){var a;return y(["#",h,"{font:0/0 a}#",h,':after{content:"',l,'";visibility:hidden;font:3px/1 a}'].join(""),function(b){a=b.offsetHeight>=3}),a},s.video=function(){var a=b.createElement("video"),c=!1;try{if(c=!!a.canPlayType)c=new Boolean(c),c.ogg=a.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),c.h264=a.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),c.webm=a.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,"")}catch(d){}return c},s.audio=function(){var a=b.createElement("audio"),c=!1;try{if(c=!!a.canPlayType)c=new Boolean(c),c.ogg=a.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),c.mp3=a.canPlayType("audio/mpeg;").replace(/^no$/,""),c.wav=a.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),c.m4a=(a.canPlayType("audio/x-m4a;")||a.canPlayType("audio/aac;")).replace(/^no$/,"")}catch(d){}return c},s.svg=function(){return!!b.createElementNS&&!!b.createElementNS(r.svg,"svg").createSVGRect};for(var J in s)B(s,J)&&(x=J.toLowerCase(),e[x]=s[J](),v.push((e[x]?"":"no-")+x));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)B(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},C(""),i=k=null,e._version=d,e._prefixes=n,e._domPrefixes=q,e._cssomPrefixes=p,e.hasEvent=z,e.testProp=function(a){return G([a])},e.testAllProps=I,e.testStyles=y,e.prefixed=function(a,b,c){return b?I(a,b,c):I(a,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+v.join(" "):""),e}(this,this.document)}());
+			function addEvent(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else{c.$$guid||(c.$$guid=addEvent.guid++);a.events||(a.events={});var d=a.events[b];d||(d=a.events[b]={},a["on"+b]&&(d[0]=a["on"+b]));d[c.$$guid]=c;a["on"+b]=handleEvent}}addEvent.guid=1;function removeEvent(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.events&&a.events[b]&&delete a.events[b][c.$$guid]} function handleEvent(a){var b=!0;a=a||fixEvent(((this.ownerDocument||this.document||this).parentWindow||window).event);var c=this.events[a.type],d;for(d in c)this.$$handleEvent=c[d],!1===this.$$handleEvent(a)&&(b=!1);return b}function fixEvent(a){a.preventDefault=fixEvent.preventDefault;a.stopPropagation=fixEvent.stopPropagation;return a}fixEvent.preventDefault=function(){this.returnValue=!1};fixEvent.stopPropagation=function(){this.cancelBubble=!0};
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"},!1)})(document.getElementById("page")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"==a.style.display||""==a.style.display?"inline-block":"none"},!1)})(document.getElementById("navbutton")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(c,e){c&&e&&function(a){a=a.getElementsByTagName("li");for(var b=0;b<a.length;b++)d=a[b],addEvent(d,"click",function(){c.setAttribute("style","display:none;")},!1)}(e)})(document.getElementById("dropdownmenu_holder")||"",document.getElementById("dropdownmenu")||"");
+			(function(e,f,a,h){b=document.createElement("a");b.setAttribute("style","display:none;");b.setAttribute("href","#");b.setAttribute("id","toTop");b.setAttribute("onclick","function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};scrollTop2(15);return false;");c=document.createElement("span");c.setAttribute("id","toTopHover");b.appendChild(c);d=document.createTextNode("\u041d\u0430\u0432\u0435\u0440\u0445"); b.appendChild(d);e.appendChild(b);f.onscroll=function(){var e=f.pageYOffset||a.documentElement.scrollTop||a.body.scrollTop,k=f.innerHeight||a.documentElement.clientHeight||a.body.clientHeight,g=a.getElementById(h)||"";g&&(e>k?g.style.display="inline":g.style.display="none")}})(document.getElementsByTagName("body")[0]||document.documentElement,window,document,"toTop");
 		</script>
 	</body>
 </html>
