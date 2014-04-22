@@ -1,0 +1,6 @@
+/*!
+ * rename font-family into Open Sans like it is named in other css
+ * fix font-weight and font-style
+ * put svg fonts above woff for Chrome browser
+ */
+@font-face {font-family: 'Voces';src: url(Voces-Regular.eot);src: url(Voces-Regular.eot?iefix) format('embedded-opentype'),url(Voces-Regular.svg#Voces) format('svg'),url(Voces-Regular.woff) format('woff'),url(Voces-Regular.ttf) format('truetype');font-weight: 400;font-style: normal;}

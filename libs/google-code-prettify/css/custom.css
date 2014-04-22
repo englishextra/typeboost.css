@@ -1,0 +1,92 @@
+pre.prettyprint {
+	background: #404445 !important;
+	border: 0px solid transparent !important;
+}
+/*!
+* tomorrow-night-eighties.fixed.min.css
+*/
+.pln {
+	color: #CCC;
+}
+@media screen {
+	.str {
+		color: #99CC99;
+	}
+	.kwd {
+		color: #CC99CC;
+	}
+	.com {
+		color: #999999;
+	}
+	.typ {
+		color: #6699CC;
+	}
+	.lit {
+		color: #F99157;
+	}
+	.pun {
+		color: #CCC;
+	}
+	.opn {
+		color: #CCC;
+	}
+	.clo {
+		color: #CCC;
+	}
+	.tag {
+		color: #F2777A;
+	}
+	.atn {
+		color: #F99157;
+	}
+	.atv {
+		color: #66CCCC;
+	}
+	.dec {
+		color: #F99157;
+	}
+	.var {
+		color: #F2777A;
+	}
+	.fun {
+		color: #6699CC;
+	}
+}
+@media print, projection {
+	.str {
+		color: #006600;
+	}
+	.kwd {
+		color: #006;
+		font-weight: bold;
+	}
+	.com {
+		color: #600;
+		font-style: italic;
+	}
+	.typ {
+		color: #404;
+		font-weight: bold;
+	}
+	.lit {
+		color: #004444;
+	}
+	.pun, .opn, .clo {
+		color: #444400;
+	}
+	.tag {
+		color: #006;
+		font-weight: bold;
+	}
+	.atn {
+		color: #440044;
+	}
+	.atv {
+		color: #006600;
+	}
+}
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+			

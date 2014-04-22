@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable= no" />
+		<title>Typeboost.css Typography CSS Demo Page</title>
+		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" /> -->
+		<!--<link rel="stylesheet" href="fonts/calibri-fontfacekit/400-400italic-700-700italic.css" />
+		<link rel="stylesheet" href="fonts/adobe-text-pro-fontfacekit/400-400italic-700-700italic.css" />-->
+		<link rel="stylesheet" href="fonts/pt-sans-fontfacekit/400-400italic-700-700italic.css" />
+		<link rel="stylesheet" href="fonts/pt-serif-fontfacekit/400-400italic-700-700italic.css" />
+		<link rel="stylesheet" href="fonts/ubuntu-mono-fontfacekit/400-400italic-700-700italic.css" />
+		<link rel="stylesheet" href="fonts/voces-fontfacekit/400.css" />
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+		<link rel="stylesheet" href="0.1/css/typeboost.min.css" />
+		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css" /> -->
+		<style>
+/*!
+ * custom
+ */
+html {
+	font-size: 130%;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	width: 100%;
+	position: relative;
+	font-size: 100%;
+	font-family: PT Serif, Adobe Text Pro, serif;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #3F3F3F;
+	background: #FFF;
+	backgound-size: 100% 100%;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover, a:active, a:focus {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: bottom;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* * {
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+} */
+/*!
+ * custom
+ */
+.col h2,
+.col h3,
+.col h4,
+.col h5,
+.col h6 {
+	font-family: PT Sans, Calibri, sans-serif;
+}
+.col h1 {
+	font-family: PT Serif, Adobe Text Pro, serif;
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 0 !important;
+}
+.col pre {
+	font-family: Ubuntu Mono, Consolas, DejaVu Sans Mono, monospace;
+	border: none;
+}
+.col pre code {
+	font-family: Ubuntu Mono, Consolas, DejaVu Sans Mono, monospace;
+}
+.col form {
+	font-family: PT Sans, Calibri, sans-serif;
+}
+.col .phonetic {
+	font-family: Voces, Calibri, Judson, ConstructiumRegular !important;
+}
+.col p {
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-before: 2;
+	-webkit-hyphenate-after: 3;
+	hyphenate-lines: 3;
+}
+.container {
+	max-width: 720px;
+	padding: 16px;
+	margin: 0 auto;
+}
+/*!
+i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/
+At least requires the meta viewport tag with content 'width=device-width'
+*/
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+/*! PORTRAIT:
+Windows Surface Pro*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+/*! PORTRAIT:
+Acer Iconia Tab A100
+Acer Iconia Tab A200
+Acer Iconia Tab A502
+Arnova 8C G3
+ASUS Padfone
+ASUS Transformer Pad TF300T
+ASUS Transformer TF101
+Motorola Xoom
+Motorola Xoom 2
+Samsung Galaxy Note 10.1
+Samsung Galaxy Tab 8.9
+Samsung Galaxy Tab 10.1
+Samsung Galaxy Tab 10.1*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+/*! PORTRAIT:
+Apple iPad
+Apple iPad 2
+Apple iPad 3 (and 4)
+Apple iPad Mini
+Archos 80G9
+BAUHN AMID-972XS
+HP Touchpad
+LG Optimus Pad
+Microsoft Surface (RT)
+Panasonic Toughpad A1
+Kindle Paperwhite*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) and (orientation: portrait) {
+/*! PORTRAIT:
+Acer Iconia Tab A500
+Arnova 7FG3
+Nexus 7*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+/*! PORTRAIT:
+Acer Iconia Tab A101
+Archos 70b (it2)
+Arnova 10b G3
+BlackBerry PlayBook
+Kindle 3
+Kobo eReader Touch
+Samsung Galaxy Tab 2 7.0
+Samsung Galaxy Tab 7*/
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 540px) and (orientation: portrait) {
+/*! PORTRAIT:
+HTC Evo 3D
+Kindle Fire HD 7
+Kindle Fire HD 8.9
+Ainol Novo 7 Elf 2*/
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+/*! PORTRAIT:
+Arnova 7 G2
+BlackBerry Bold 9780
+HTC Desire Z
+Nokia N900
+Samsung Galaxy Grand*/
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+/*! PORTRAIT:
+Samsung Galaxy Note
+Nexus 4
+HTC One S
+HTC One XL
+HTC Sensation XL
+HTC Velocity 4G
+Motorola Droid3
+Motorola Droid Razr
+Motorola Razr HD 4G
+Motorola Razr M 4G
+Nokia 500
+Samsung Galaxy Note 2
+Samsung Galaxy S3
+BlackBerry Bold 9900
+BlackBerry 9520
+BlackBerry Z10*/
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+/*! PORTRAIT:
+Apple iPhone 3G
+Apple iPhone 3GS
+Apple iPhone 4
+Apple iPhone 4S
+Apple iPhone 5
+Apple iPod Touch
+BlackBerry Bold 9360
+BlackBerry Bold 9790
+BlackBerry Curve 9320
+BlackBerry Curve 9380
+BlackBerry Torch 9800
+BlackBerry Torch 9810
+HP Veer
+HTC 7 Mozart
+HTC 7 Trophy
+HTC Desire
+HTC Desire C
+HTC Desire HD
+HTC Legend
+HTC One V
+HTC Titan 4G
+HTC Wildfire S
+HTC Windows Phone 8X
+Huawei U8650
+LG Optimus 2X
+LG Optimus L3
+Motorola Defy
+Motorola Milestone
+Nexus S
+Nokia Lumia 610
+Nokia Lumia 710
+Nokia Lumia 800
+Nokia Lumia 820
+Nokia Lumia 900
+Nokia Lumia 920
+Samsung Galaxy Ace
+Samsung Galaxy Ace 2
+Samsung Galaxy S2
+Sony Xperia E Dual
+BlackBerry Curve 9300*/
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 240px) and (orientation: portrait) {
+/*! PORTRAIT:
+LG Viewty KU990
+Nokia 700
+Nokia 2700
+Nokia N95
+Samsung Galaxy S3 Mini
+Nokia 300*/
+	html {
+		font-size: 90%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 1920px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Windows Surface Pro*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Microsoft Surface (RT)*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Acer Iconia Tab A100
+Acer Iconia Tab A200
+Acer Iconia Tab A502
+ASUS Transformer Pad TF300T
+ASUS Transformer TF101
+Motorola Xoom
+Motorola Xoom 2
+Samsung Galaxy Note 10.1
+Samsung Galaxy Tab 8.9
+Samsung Galaxy Tab 10.1
+Samsung Galaxy Tab 10.1
+LG Optimus Pad
+Acer Iconia Tab A500*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 1130px) and (orientation: landscape) {
+/*! LANDSCAPE:
+ASUS Padfone
+Arnova 8C G3
+Arnova 7FG3*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Apple iPad
+Apple iPad 2
+Apple iPad 3 (and 4)
+Apple iPad Mini
+Archos 80G9
+BAUHN AMID-972XS
+HP Touchpad
+Panasonic Toughpad A1
+Acer Iconia Tab A101
+Archos 70b (it2)
+Arnova 10b G3
+BlackBerry PlayBook
+Samsung Galaxy Tab 2 7.0
+Samsung Galaxy Tab 7
+Ainol Novo 7 Elf 2*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 980px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Nexus 7
+HTC Evo 3D*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 760px;
+	}
+}
+@media only screen and (max-width: 802px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Kindle Fire HD 7
+Kindle Fire HD 8.9
+Arnova 7 G2
+HTC Desire Z
+Nokia N900
+Samsung Galaxy Grand*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 691px) and (orientation: landscape) {
+/*! LANDSCAPE:
+BlackBerry 9520*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Samsung Galaxy Note
+HTC One S
+HTC One XL
+HTC Sensation XL
+HTC Velocity 4G
+Motorola Droid Razr
+Nokia 500
+Samsung Galaxy Note 2
+Samsung Galaxy S3*/
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Motorola Droid3
+Nexus 4
+Motorola Razr HD 4G
+Motorola Razr M 4G
+Motorola Defy
+Motorola Milestone
+Apple iPhone 5
+HP Veer*/
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 540px) and (orientation: landscape) {
+/*! LANDSCAPE:
+HTC Desire
+HTC Desire HD
+HTC One V
+LG Optimus 2X
+Nexus S
+Samsung Galaxy Ace 2
+Samsung Galaxy S2
+BlackBerry Z10*/
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Apple iPhone 3G
+Apple iPhone 3GS
+Apple iPhone 4
+Apple iPhone 4S
+Apple iPod Touch
+BlackBerry Torch 9800
+BlackBerry Torch 9810
+HTC 7 Mozart
+HTC 7 Trophy
+HTC Desire C
+HTC Legend
+HTC Titan 4G
+HTC Wildfire S
+HTC Windows Phone 8X
+Huawei U8650
+Nokia Lumia 610
+Nokia Lumia 710
+Nokia Lumia 800
+Nokia Lumia 820
+Nokia Lumia 900
+Nokia Lumia 920
+Samsung Galaxy Ace
+Sony Xperia E Dual*/
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+/*! LANDSCAPE:
+Samsung Galaxy S3 Mini*/
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+/*!
+* tomorrow-night-eighties.fixed.min.css
+*/
+pre.prettyprint {
+	background: #404445 !important;
+	border: 0px solid transparent !important;
+}
+.pln {
+	color: #CCC;
+}
+@media screen {
+	.str {
+		color: #99CC99;
+	}
+	.kwd {
+		color: #CC99CC;
+	}
+	.com {
+		color: #999999;
+	}
+	.typ {
+		color: #6699CC;
+	}
+	.lit {
+		color: #F99157;
+	}
+	.pun {
+		color: #CCC;
+	}
+	.opn {
+		color: #CCC;
+	}
+	.clo {
+		color: #CCC;
+	}
+	.tag {
+		color: #F2777A;
+	}
+	.atn {
+		color: #F99157;
+	}
+	.atv {
+		color: #66CCCC;
+	}
+	.dec {
+		color: #F99157;
+	}
+	.var {
+		color: #F2777A;
+	}
+	.fun {
+		color: #6699CC;
+	}
+}
+@media print, projection {
+	.str {
+		color: #006600;
+	}
+	.kwd {
+		color: #006;
+		font-weight: bold;
+	}
+	.com {
+		color: #600;
+		font-style: italic;
+	}
+	.typ {
+		color: #404;
+		font-weight: bold;
+	}
+	.lit {
+		color: #004444;
+	}
+	.pun, .opn, .clo {
+		color: #444400;
+	}
+	.tag {
+		color: #006;
+		font-weight: bold;
+	}
+	.atn {
+		color: #440044;
+	}
+	.atv {
+		color: #006600;
+	}
+}
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+		</style>
+		<script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="page">
+			<div class="container">
+				<div class="col">
+					<h1>Heading&#160;1</h1>
+					<div class="hr"></div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&#160;&#160;&#160;&#160;&lt;head&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;16pixels Typography CSS Demo Page&lt;/title&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,latin-ext,cyrillic&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;0.1/css/16pixels.min.css&quot; /&gt;<br />&#160;&#160;&#160;&#160;&lt;/head&gt;<br />&#160;&#160;&#160;&#160;&lt;body&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br />&#160;&#160;&#160;&#160;&lt;/body&gt;<br />&lt;/html&gt;</code></pre>
+					<p>
+						<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<blockquote>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</blockquote>
+					<h2>Heading&#160;2</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<table class="respond">
+						<caption>
+							Table Caption
+						</caption>
+						<thead>
+							<tr>
+								<th>Table Header</th>
+								<th>Table Header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+							<tr>
+								<td>Table Cell Text</td>
+								<td>Table Cell Text</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Table Footer</th>
+								<th>Table Footer</th>
+							</tr>
+						</tfoot>
+					</table>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<blockquote>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</blockquote>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h2 id="a11">Типы чтения гласных</h2><table class="respond"><caption></caption><thead><tr><th>&#160;</th><th>I тип / Откр. слог</th><th>II тип / Закр. слог</th><th>+ r + согл.</th><th>+ r + гласн.</th></tr></thead><tbody><tr><td>A</td><td><span class="bolder">tape</span> [&#160;<span class="phonetic">e&#618;</span>&#160;]</td><td><span class="bolder">tap</span> [&#160;<span class="phonetic">&#230;</span>&#160;]</td><td><span class="bolder">car</span> [&#160;<span class="phonetic">&#593;:</span>&#160;]</td><td><span class="bolder">care</span> [&#160;<span class="phonetic">e&#601;</span>&#160;]</td></tr><tr><td>O</td><td><span class="bolder">note</span> [&#160;<span class="phonetic">&#601;&#650;</span>&#160;]</td><td><span class="bolder">not</span> [&#160;<span class="phonetic">&#594;</span>&#160;]</td><td><span class="bolder">for</span> [&#160;<span class="phonetic">&#596;:</span>&#160;]</td><td><span class="bolder">more</span> [&#160;<span class="phonetic">&#596;:</span>&#160;]</td></tr><tr><td>U</td><td><span class="bolder">mute</span> [&#160;<span class="phonetic">ju:</span>&#160;]</td><td><span class="bolder">nut</span> [&#160;<span class="phonetic">&#652;</span>&#160;]</td><td><span class="bolder">fur</span> [&#160;<span class="phonetic">&#604;:</span>&#160;]</td><td><span class="bolder">cure</span> [&#160;<span class="phonetic">ju&#601;</span>&#160;]</td></tr><tr><td>E</td><td><span class="bolder">eve</span> [&#160;<span class="phonetic">i:</span>&#160;]</td><td><span class="bolder">bed</span> [&#160;<span class="phonetic">e</span>&#160;]</td><td><span class="bolder">her</span> [&#160;<span class="phonetic">&#604;:</span>&#160;]</td><td><span class="bolder">here</span> [&#160;<span class="phonetic">&#618;&#601;</span>&#160;]</td></tr><tr><td>I</td><td><span class="bolder">fine</span> [&#160;<span class="phonetic">a&#618;</span>&#160;]</td><td><span class="bolder">hit</span> [&#160;<span class="phonetic">&#618;</span>&#160;]</td><td><span class="bolder">fir</span> [&#160;<span class="phonetic">&#604;:</span>&#160;]</td><td><span class="bolder">fire</span> [&#160;<span class="phonetic">a&#618;&#601;</span>&#160;]</td></tr><tr><td>Y</td><td><span class="bolder">byte</span> [&#160;<span class="phonetic">a&#618;</span>&#160;]</td><td><span class="bolder">myth</span> [&#160;<span class="phonetic">&#618;</span>&#160;]</td><td><span class="bolder">myrrh</span> [&#160;<span class="phonetic">&#604;:</span>&#160;]</td><td><span class="bolder">tyre</span> [&#160;<span class="phonetic">a&#618;&#601;</span>&#160;]</td></tr></tbody></table>
+					<h3>Heading&#160;3</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<dl>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+						<dt>
+							Definition List Title
+						</dt>
+						<dd>
+							Definition List Text
+						</dd>
+					</dl>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h4>Heading&#160;4</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<ul>
+						<li>
+							Unordered List Text
+						</li>
+						<li>
+							Unordered List Text
+						</li>
+						<li>
+							Unordered List Text
+						</li>
+					</ul>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h5>Heading&#160;5</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<ol>
+						<li>
+							Ordered List Text
+						</li>
+						<li>
+							Ordered List Text
+						</li>
+						<li>
+							Ordered List Text
+						</li>
+					</ol>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<h6>Heading&#160;6</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<p>
+						<img src="http://placehold.it/380x190" alt="380x190" />
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<div>
+						<form action="#" method="post">
+							<input type="hidden" name="id" value="" />
+							<fieldset>
+								<label for="selectCity">First Name</label>
+								<select name="selectCity" id="selectCity">
+									<option value="London">London</option>
+									<option value="Canberra">Canberra</option>
+									<option value="New York">New York</option>
+								</select>
+							</fieldset>
+							<fieldset>
+								<label for="firstName">First Name</label>
+								<input type="text" id="firstName" name="firstName" value="John"/>
+							</fieldset>
+							<fieldset>
+								<label for="lastName">Last Name</label>
+								<input type="text" id="lastName" name="lastName" value="Doe"/>
+							</fieldset>
+							<fieldset>
+								<label for="email">Email Address</label>
+								<input type="text" id="email" name="email" value="john@doe.name"/>
+							</fieldset>
+							<fieldset>
+								<label for="field-1">What&#x27;s on your mind?</label>
+								<textarea id="field-1" name="field-1" rows="10" cols="50">London</textarea>
+							</fieldset>
+							<fieldset>
+								<input type="submit" value="Submit"/>
+							</fieldset>
+						</form>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+					</p>
+					<p><span class="smaller">&#169;&#160;<a href="https://github.com/englishextra/16pixels">github.com/englishextra</a>, 2014</span></p>
+				</div>
+			</div>
+			<a href="https://github.com/englishextra/typeboost.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+		<script>
+			(function(a){a&&prettyPrint()}(window.prettyPrint));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+/**
+ * rename font-family into PT Serif like it is named in other css
+ * fix font-weight and font-style
+ * put svg fonts above woff for Chrome browser
+ */
+@font-face {font-family: 'PT Serif';src: url(PTF56F-webfont.eot);src: url(PTF56F-webfont.eot?#iefix) format('embedded-opentype'),url(PTF56F-webfont.svg#open_sansitalic) format('svg'),url(PTF56F-webfont.woff) format('woff'),url(PTF56F-webfont.ttf) format('truetype');font-weight: 400;font-style: italic;}
