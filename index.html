@@ -38,7 +38,7 @@ body {
 	-webkit-touch-callout: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-text-size-adjust: none;
-	user-select: none;
+	/*user-select: none;*/
 	-o-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
@@ -109,6 +109,46 @@ font-smoothing: antialiased;
 	max-width: 720px;
 	padding: 1.500rem 16px;
 	margin: 0 auto;
+}
+/*!
+ * ui.totop.min.css
+ * pastebin.com/9F7UKvTz
+ */
+#toTop {
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	text-indent: 100%;
+	background: transparent url(img/totop-50x50.svg) top left no-repeat;
+	background-size: 50px 50px;
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.no-svg #toTop {
+	background: transparent url(img/totop-50x50.png) top left no-repeat;
+	background-size: 50px 50px;
+}
+#toTopHover {
+	width: 50px;
+	height: 50px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	background: transparent url(img/totop-50x50.svg) top left no-repeat;
+	background-size: 50px 50px;
+}
+.no-svg #toTopHover {
+	background: transparent url(img/totop-50x50.png) top left no-repeat;
+	background-size: 50px 50px;
+}
+#toTop:hover {
+	opacity: 0.5 !important;
 }
 /*!
 i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/
@@ -623,9 +663,10 @@ ol.linenums {
 				<div class="col">
 					<h1>Heading&#160;1</h1>
 					<div class="hr"></div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-					</p>
+					<p><strong>Typeboost.css</strong> is a set of CSS rules to ensure readable, scalable and responsive typography. REMs are used for font sizes, paddings, and margins. Wrap your HTML content with class <strong>.col</strong> and you are done.</p>
+					<p><a href="demo.html" target="_blank">Demo with Latin, Cyrillic, and IPA characters</a></p>
+					<p>You will also like <a href="http://englishextra.github.io/libs/16pixels/">16pixels.css</a></p>
+					<h2>The Setup</h2>
 					<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&#160;&#160;&#160;&#160;&lt;head&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;&lt;/title&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,latin-ext,cyrillic&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;typeboost.min.css&quot; /&gt;<br />&#160;&#160;&#160;&#160;&lt;/head&gt;<br />&#160;&#160;&#160;&#160;&lt;body&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br />&#160;&#160;&#160;&#160;&lt;/body&gt;<br />&lt;/html&gt;</code></pre>
 					<p>
 						<a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
@@ -749,7 +790,7 @@ ol.linenums {
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
 					<p>
-						<img src="http://placehold.it/380x190" alt="380x190" />
+						<img src="img/380x190.gif" alt="380x190" />
 					</p>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
@@ -792,11 +833,12 @@ ol.linenums {
 					<p><span class="smaller">&#169;&#160;<a href="https://github.com/englishextra/16pixels">github.com/englishextra</a>, 2014</span></p>
 				</div>
 			</div>
-			<a href="https://github.com/englishextra/typeboost.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+			<a href="https://github.com/englishextra/typeboost.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="img/github_badge_top_right.png"></a>
 		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
 		<script>
 			(function(a){a&&prettyPrint()}(window.prettyPrint));
+			(function(e,f,a,h){b=document.createElement("a");b.setAttribute("style","display:none;");b.setAttribute("href","#");b.setAttribute("id","toTop");b.setAttribute("onclick","function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};scrollTop2(15);return false;");c=document.createElement("span");c.setAttribute("id","toTopHover");b.appendChild(c);d=document.createTextNode("\u041d\u0430\u0432\u0435\u0440\u0445"); b.appendChild(d);e.appendChild(b);f.onscroll=function(){var e=f.pageYOffset||a.documentElement.scrollTop||a.body.scrollTop,k=f.innerHeight||a.documentElement.clientHeight||a.body.clientHeight,g=a.getElementById(h)||"";g&&(e>k?g.style.display="inline":g.style.display="none")}})(document.getElementsByTagName("body")[0]||document.documentElement,window,document,"toTop");
 		</script>
 	</body>
 </html>

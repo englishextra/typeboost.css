@@ -227,12 +227,6 @@
 	font-size: 1rem;
 	line-height: 1.500;
 }
-.col.span_2 dl dt,
-.col.span_3 dl dt,
-.col.span_4 dl dt {
-	font-size: 0.875rem;
-	line-height: 1.500;
-}
 .col h6,
 .col address,
 .col p,
@@ -807,12 +801,12 @@
  * colours
  */
 .col a {
-	color: #106EB4;
+	color: #2980B9;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #299CD9;
+	color: #E74C3C;
 }
 .col h1 {
 	color: inherit;
@@ -923,7 +917,7 @@
 	border: 0;
 }
 .col .highlight {
-	color: #299CD9;
+	color: #E74C3C;
 }
 .col .hr {
 	background: #ECECEC;
