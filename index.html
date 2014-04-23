@@ -592,12 +592,11 @@ font-smoothing: antialiased;
 			</div>
 			<a href="https://github.com/englishextra/typeboost.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/github_badge_top_right.png" alt="Fork me on GitHub" data-canonical-src="img/github_badge_top_right.png"></a>
 		</div>
-		<script src="libs/modernizr/custom/82780/js/modernizr.min.js"></script>
+		<script src="libs/early.js/1.0/js/early.min.js"></script>
 		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script> -->
 		<script src="libs/google-code-prettify/js/prettify.min.js"></script>
 		<script>
 			(function(a){a&&prettyPrint()}(window.prettyPrint));
-			function addEvent(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else{c.$$guid||(c.$$guid=addEvent.guid++);a.events||(a.events={});var d=a.events[b];d||(d=a.events[b]={},a["on"+b]&&(d[0]=a["on"+b]));d[c.$$guid]=c;a["on"+b]=handleEvent}}addEvent.guid=1;function removeEvent(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.events&&a.events[b]&&delete a.events[b][c.$$guid]} function handleEvent(a){var b=!0;a=a||fixEvent(((this.ownerDocument||this.document||this).parentWindow||window).event);var c=this.events[a.type],d;for(d in c)this.$$handleEvent=c[d],!1===this.$$handleEvent(a)&&(b=!1);return b}function fixEvent(a){a.preventDefault=fixEvent.preventDefault;a.stopPropagation=fixEvent.stopPropagation;return a}fixEvent.preventDefault=function(){this.returnValue=!1};fixEvent.stopPropagation=function(){this.cancelBubble=!0};
 			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"},!1)})(document.getElementById("page")||"",document.getElementById("dropdownmenu_holder")||"");
 			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"==a.style.display||""==a.style.display?"inline-block":"none"},!1)})(document.getElementById("navbutton")||"",document.getElementById("dropdownmenu_holder")||"");
 			(function(c,e){c&&e&&function(a){a=a.getElementsByTagName("li");for(var b=0;b<a.length;b++)d=a[b],addEvent(d,"click",function(){c.setAttribute("style","display:none;")},!1)}(e)})(document.getElementById("dropdownmenu_holder")||"",document.getElementById("dropdownmenu")||"");
