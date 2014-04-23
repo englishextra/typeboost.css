@@ -335,7 +335,7 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 0.500rem;
+	padding: 0.500rem 1rem;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
