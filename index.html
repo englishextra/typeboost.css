@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale =1.0, user-scalable= no" />
-		<title>Typeboost.css Typography CSS Demo Page</title>
+		<title>Typeboost.css Demo Page</title>
 		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" /> -->
 		<!--<link rel="stylesheet" href="fonts/calibri-fontfacekit/400-400italic-700-700italic.css" />
 		<link rel="stylesheet" href="fonts/adobe-text-pro-fontfacekit/400-400italic-700-700italic.css" />-->
@@ -11,7 +11,10 @@
 		<link rel="stylesheet" href="fonts/pt-serif-fontfacekit/400-400italic-700-700italic.css" />
 		<link rel="stylesheet" href="fonts/ubuntu-mono-fontfacekit/400-400italic-700-700italic.css" />
 		<link rel="stylesheet" href="fonts/voces-fontfacekit/400.css" />
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" /> -->
+		<link rel="stylesheet" href="libs/meyer-reset/2.0/css/reset.min.css" />
+		<link rel="stylesheet" href="libs/google-code-prettify/css/custom.css" />
+		<link rel="stylesheet" href="libs/UItoTop-jQuery-Plugin/1.2/css/custom.css" />
 		<link rel="stylesheet" href="0.1/css/typeboost.min.css" />
 		<!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css" /> -->
 		<style>
@@ -105,58 +108,110 @@ font-smoothing: antialiased;
 .col .phonetic {
 	font-family: Voces, Calibri, Judson, ConstructiumRegular !important;
 }
+.navbutton_holder {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 25px;
+	left: 16px;
+	font-size: 0;
+}
+.navbutton {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: transparent url(img/navbutton-50x50.svg) left top no-repeat;
+	background-size: 50px 50px;
+	cursor: pointer;
+}
+.no-svg .navbutton {
+	background: transparent url(img/navbutton-50x50.png) left top no-repeat;
+	background-size: 50px 50px;
+}
+.dropdownmenu_holder {
+	display: none;
+	position: absolute;
+	top: 77px;
+	left: 59px;
+	font-family: PT Sans, Calibri, sans-serif;
+	font-size: 0;
+	color: #FFF;
+	background: #575757;
+	/*opacity: 0.92;*/
+	-webkit-box-shadow: 3px 3px 3px 0 #484848;
+	box-shadow: 3px 3px 3px 0 #484848;
+}
+.box {
+	background-color: #575757;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.box:after {
+	content: "";
+	display: block;
+	border-width: 10px 10px 0;
+	border-style: solid;
+	border-color: #575757 transparent transparent;
+	margin-left: -10px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	margin: 0;
+}
+.box.arrow-top-left:after {
+	border-top-color: transparent;
+	border-bottom-color: #575757;
+	top: -10px;
+	bottom: auto;
+}
+.box.arrow-top-left:after {
+	border-width: 5px;
+	border-left-color: #575757;
+}
+.box.arrow-top-left:after {
+	left: 0;
+	right: auto;
+}
+.box.arrow-top-left {
+	border-top-left-radius: 0;
+}
+.box.red {
+	background-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-bottom-color: #575757;
+}
+.box.red.arrow-top-left:after {
+	border-left-color: #575757;
+}
+.dropdownmenu {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.875rem;
+	padding: 0.500rem 1rem;
+}
+.dropdownmenu li {
+	line-height: 1.500;
+}
+.dropdownmenu li a:before {
+	content:"\2022\00a0\00a0";
+}
+.dropdownmenu li a:hover,
+.dropdownmenu li a:active,
+.dropdownmenu li a:focus {
+	color: #E74C3C;
+}
 .container {
 	max-width: 720px;
 	padding: 1.500rem 16px;
 	margin: 0 auto;
 }
-/*!
- * ui.totop.min.css
- * pastebin.com/9F7UKvTz
- */
-#toTop {
-	width: 50px;
-	height: 50px;
-	display: none;
-	position: fixed;
-	bottom: 25px;
-	right: 16px;
-	overflow: hidden;
-	text-decoration: none;
-	text-indent: 100%;
-	background: transparent url(img/totop-50x50.svg) top left no-repeat;
-	background-size: 50px 50px;
-	border: none;
-	outline: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg #toTop {
-	background: transparent url(img/totop-50x50.png) top left no-repeat;
-	background-size: 50px 50px;
-}
-#toTopHover {
-	width: 50px;
-	height: 50px;
-	float: left;
-	display: block;
-	overflow: hidden;
-	background: transparent url(img/totop-50x50.svg) top left no-repeat;
-	background-size: 50px 50px;
-}
-.no-svg #toTopHover {
-	background: transparent url(img/totop-50x50.png) top left no-repeat;
-	background-size: 50px 50px;
-}
-#toTop:hover {
-	opacity: 0.5 !important;
-}
-/*!
-i-skool.co.uk/mobile-development/web-design-for-mobiles-and-tablets-viewport-sizes/
-At least requires the meta viewport tag with content 'width=device-width'
-*/
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
-/*! PORTRAIT:
-Windows Surface Pro*/
 	html {
 		font-size: 130%;
 	}
@@ -165,20 +220,6 @@ Windows Surface Pro*/
 	}
 }
 @media only screen and (max-width: 800px) and (orientation: portrait) {
-/*! PORTRAIT:
-Acer Iconia Tab A100
-Acer Iconia Tab A200
-Acer Iconia Tab A502
-Arnova 8C G3
-ASUS Padfone
-ASUS Transformer Pad TF300T
-ASUS Transformer TF101
-Motorola Xoom
-Motorola Xoom 2
-Samsung Galaxy Note 10.1
-Samsung Galaxy Tab 8.9
-Samsung Galaxy Tab 10.1
-Samsung Galaxy Tab 10.1*/
 	html {
 		font-size: 130%;
 	}
@@ -187,18 +228,6 @@ Samsung Galaxy Tab 10.1*/
 	}
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-/*! PORTRAIT:
-Apple iPad
-Apple iPad 2
-Apple iPad 3 (and 4)
-Apple iPad Mini
-Archos 80G9
-BAUHN AMID-972XS
-HP Touchpad
-LG Optimus Pad
-Microsoft Surface (RT)
-Panasonic Toughpad A1
-Kindle Paperwhite*/
 	html {
 		font-size: 130%;
 	}
@@ -207,10 +236,6 @@ Kindle Paperwhite*/
 	}
 }
 @media only screen and (max-width: 640px) and (orientation: portrait) {
-/*! PORTRAIT:
-Acer Iconia Tab A500
-Arnova 7FG3
-Nexus 7*/
 	html {
 		font-size: 130%;
 	}
@@ -219,15 +244,6 @@ Nexus 7*/
 	}
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-/*! PORTRAIT:
-Acer Iconia Tab A101
-Archos 70b (it2)
-Arnova 10b G3
-BlackBerry PlayBook
-Kindle 3
-Kobo eReader Touch
-Samsung Galaxy Tab 2 7.0
-Samsung Galaxy Tab 7*/
 	html {
 		font-size: 120%;
 	}
@@ -236,11 +252,6 @@ Samsung Galaxy Tab 7*/
 	}
 }
 @media only screen and (max-width: 540px) and (orientation: portrait) {
-/*! PORTRAIT:
-HTC Evo 3D
-Kindle Fire HD 7
-Kindle Fire HD 8.9
-Ainol Novo 7 Elf 2*/
 	html {
 		font-size: 120%;
 	}
@@ -249,12 +260,6 @@ Ainol Novo 7 Elf 2*/
 	}
 }
 @media only screen and (max-width: 480px) and (orientation: portrait) {
-/*! PORTRAIT:
-Arnova 7 G2
-BlackBerry Bold 9780
-HTC Desire Z
-Nokia N900
-Samsung Galaxy Grand*/
 	html {
 		font-size: 110%;
 	}
@@ -263,23 +268,6 @@ Samsung Galaxy Grand*/
 	}
 }
 @media only screen and (max-width: 400px) and (orientation: portrait) {
-/*! PORTRAIT:
-Samsung Galaxy Note
-Nexus 4
-HTC One S
-HTC One XL
-HTC Sensation XL
-HTC Velocity 4G
-Motorola Droid3
-Motorola Droid Razr
-Motorola Razr HD 4G
-Motorola Razr M 4G
-Nokia 500
-Samsung Galaxy Note 2
-Samsung Galaxy S3
-BlackBerry Bold 9900
-BlackBerry 9520
-BlackBerry Z10*/
 	html {
 		font-size: 110%;
 	}
@@ -288,47 +276,6 @@ BlackBerry Z10*/
 	}
 }
 @media only screen and (max-width: 360px) and (orientation: portrait) {
-/*! PORTRAIT:
-Apple iPhone 3G
-Apple iPhone 3GS
-Apple iPhone 4
-Apple iPhone 4S
-Apple iPhone 5
-Apple iPod Touch
-BlackBerry Bold 9360
-BlackBerry Bold 9790
-BlackBerry Curve 9320
-BlackBerry Curve 9380
-BlackBerry Torch 9800
-BlackBerry Torch 9810
-HP Veer
-HTC 7 Mozart
-HTC 7 Trophy
-HTC Desire
-HTC Desire C
-HTC Desire HD
-HTC Legend
-HTC One V
-HTC Titan 4G
-HTC Wildfire S
-HTC Windows Phone 8X
-Huawei U8650
-LG Optimus 2X
-LG Optimus L3
-Motorola Defy
-Motorola Milestone
-Nexus S
-Nokia Lumia 610
-Nokia Lumia 710
-Nokia Lumia 800
-Nokia Lumia 820
-Nokia Lumia 900
-Nokia Lumia 920
-Samsung Galaxy Ace
-Samsung Galaxy Ace 2
-Samsung Galaxy S2
-Sony Xperia E Dual
-BlackBerry Curve 9300*/
 	html {
 		font-size: 100%;
 	}
@@ -337,13 +284,6 @@ BlackBerry Curve 9300*/
 	}
 }
 @media only screen and (max-width: 240px) and (orientation: portrait) {
-/*! PORTRAIT:
-LG Viewty KU990
-Nokia 700
-Nokia 2700
-Nokia N95
-Samsung Galaxy S3 Mini
-Nokia 300*/
 	html {
 		font-size: 90%;
 	}
@@ -352,8 +292,6 @@ Nokia 300*/
 	}
 }
 @media only screen and (max-width: 1920px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Windows Surface Pro*/
 	html {
 		font-size: 130%;
 	}
@@ -362,8 +300,6 @@ Windows Surface Pro*/
 	}
 }
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Microsoft Surface (RT)*/
 	html {
 		font-size: 130%;
 	}
@@ -372,20 +308,6 @@ Microsoft Surface (RT)*/
 	}
 }
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Acer Iconia Tab A100
-Acer Iconia Tab A200
-Acer Iconia Tab A502
-ASUS Transformer Pad TF300T
-ASUS Transformer TF101
-Motorola Xoom
-Motorola Xoom 2
-Samsung Galaxy Note 10.1
-Samsung Galaxy Tab 8.9
-Samsung Galaxy Tab 10.1
-Samsung Galaxy Tab 10.1
-LG Optimus Pad
-Acer Iconia Tab A500*/
 	html {
 		font-size: 130%;
 	}
@@ -394,10 +316,6 @@ Acer Iconia Tab A500*/
 	}
 }
 @media only screen and (max-width: 1130px) and (orientation: landscape) {
-/*! LANDSCAPE:
-ASUS Padfone
-Arnova 8C G3
-Arnova 7FG3*/
 	html {
 		font-size: 130%;
 	}
@@ -406,22 +324,6 @@ Arnova 7FG3*/
 	}
 }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Apple iPad
-Apple iPad 2
-Apple iPad 3 (and 4)
-Apple iPad Mini
-Archos 80G9
-BAUHN AMID-972XS
-HP Touchpad
-Panasonic Toughpad A1
-Acer Iconia Tab A101
-Archos 70b (it2)
-Arnova 10b G3
-BlackBerry PlayBook
-Samsung Galaxy Tab 2 7.0
-Samsung Galaxy Tab 7
-Ainol Novo 7 Elf 2*/
 	html {
 		font-size: 130%;
 	}
@@ -430,9 +332,6 @@ Ainol Novo 7 Elf 2*/
 	}
 }
 @media only screen and (max-width: 980px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Nexus 7
-HTC Evo 3D*/
 	html {
 		font-size: 130%;
 	}
@@ -441,13 +340,6 @@ HTC Evo 3D*/
 	}
 }
 @media only screen and (max-width: 802px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Kindle Fire HD 7
-Kindle Fire HD 8.9
-Arnova 7 G2
-HTC Desire Z
-Nokia N900
-Samsung Galaxy Grand*/
 	html {
 		font-size: 130%;
 	}
@@ -456,8 +348,6 @@ Samsung Galaxy Grand*/
 	}
 }
 @media only screen and (max-width: 691px) and (orientation: landscape) {
-/*! LANDSCAPE:
-BlackBerry 9520*/
 	html {
 		font-size: 130%;
 	}
@@ -466,16 +356,6 @@ BlackBerry 9520*/
 	}
 }
 @media only screen and (max-width: 640px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Samsung Galaxy Note
-HTC One S
-HTC One XL
-HTC Sensation XL
-HTC Velocity 4G
-Motorola Droid Razr
-Nokia 500
-Samsung Galaxy Note 2
-Samsung Galaxy S3*/
 	html {
 		font-size: 130%;
 	}
@@ -484,15 +364,6 @@ Samsung Galaxy S3*/
 	}
 }
 @media only screen and (max-width: 600px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Motorola Droid3
-Nexus 4
-Motorola Razr HD 4G
-Motorola Razr M 4G
-Motorola Defy
-Motorola Milestone
-Apple iPhone 5
-HP Veer*/
 	html {
 		font-size: 120%;
 	}
@@ -501,15 +372,6 @@ HP Veer*/
 	}
 }
 @media only screen and (max-width: 540px) and (orientation: landscape) {
-/*! LANDSCAPE:
-HTC Desire
-HTC Desire HD
-HTC One V
-LG Optimus 2X
-Nexus S
-Samsung Galaxy Ace 2
-Samsung Galaxy S2
-BlackBerry Z10*/
 	html {
 		font-size: 120%;
 	}
@@ -518,30 +380,6 @@ BlackBerry Z10*/
 	}
 }
 @media only screen and (max-width: 480px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Apple iPhone 3G
-Apple iPhone 3GS
-Apple iPhone 4
-Apple iPhone 4S
-Apple iPod Touch
-BlackBerry Torch 9800
-BlackBerry Torch 9810
-HTC 7 Mozart
-HTC 7 Trophy
-HTC Desire C
-HTC Legend
-HTC Titan 4G
-HTC Wildfire S
-HTC Windows Phone 8X
-Huawei U8650
-Nokia Lumia 610
-Nokia Lumia 710
-Nokia Lumia 800
-Nokia Lumia 820
-Nokia Lumia 900
-Nokia Lumia 920
-Samsung Galaxy Ace
-Sony Xperia E Dual*/
 	html {
 		font-size: 110%;
 	}
@@ -550,8 +388,6 @@ Sony Xperia E Dual*/
 	}
 }
 @media only screen and (max-width: 320px) and (orientation: landscape) {
-/*! LANDSCAPE:
-Samsung Galaxy S3 Mini*/
 	html {
 		font-size: 100%;
 	}
@@ -559,105 +395,26 @@ Samsung Galaxy S3 Mini*/
 		max-width: 100%;
 	}
 }
-/*!
-* tomorrow-night-eighties.fixed.min.css
-*/
-pre.prettyprint {
-	background: #404445 !important;
-	border: 0px solid transparent !important;
-}
-.pln {
-	color: #CCC;
-}
-@media screen {
-	.str {
-		color: #99CC99;
-	}
-	.kwd {
-		color: #CC99CC;
-	}
-	.com {
-		color: #999999;
-	}
-	.typ {
-		color: #6699CC;
-	}
-	.lit {
-		color: #F99157;
-	}
-	.pun {
-		color: #CCC;
-	}
-	.opn {
-		color: #CCC;
-	}
-	.clo {
-		color: #CCC;
-	}
-	.tag {
-		color: #F2777A;
-	}
-	.atn {
-		color: #F99157;
-	}
-	.atv {
-		color: #66CCCC;
-	}
-	.dec {
-		color: #F99157;
-	}
-	.var {
-		color: #F2777A;
-	}
-	.fun {
-		color: #6699CC;
-	}
-}
-@media print, projection {
-	.str {
-		color: #006600;
-	}
-	.kwd {
-		color: #006;
-		font-weight: bold;
-	}
-	.com {
-		color: #600;
-		font-style: italic;
-	}
-	.typ {
-		color: #404;
-		font-weight: bold;
-	}
-	.lit {
-		color: #004444;
-	}
-	.pun, .opn, .clo {
-		color: #444400;
-	}
-	.tag {
-		color: #006;
-		font-weight: bold;
-	}
-	.atn {
-		color: #440044;
-	}
-	.atv {
-		color: #006600;
-	}
-}
-ol.linenums {
-	margin-top: 0;
-	margin-bottom: 0;
-}
 		</style>
-		<script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<!-- <script src="http://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+		<script src="libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="http://cdn.jsdelivr.net/css3-mediaqueries/0.1/css3-mediaqueries.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 	<body>
+		<div class="navbutton_holder"><span class="navbutton" id="navbutton" title="Содержание"></span></div>
+		<div class="dropdownmenu_holder box red arrow-top-left" id="dropdownmenu_holder">
+			<ul class="dropdownmenu" id="dropdownmenu">
+				<li><a href="#h1">Heading&#160;1</a></li>
+				<li><a href="#h2">Heading&#160;2</a></li>
+				<li><a href="#h3">Heading&#160;3</a></li>
+				<li><a href="#h4">Heading&#160;4</a></li>
+				<li><a href="#h5">Heading&#160;5</a></li>
+				<li><a href="#h6">Heading&#160;6</a></li>
+			</ul>
+		</div>
 		<div id="page" role="document">
 			<div class="container" role="main">
 				<div class="col">
@@ -674,7 +431,7 @@ ol.linenums {
 					<blockquote>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</blockquote>
-					<h2>Heading&#160;2</h2>
+					<h2 id="h2">Heading&#160;2</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -722,7 +479,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h3>Heading&#160;3</h3>
+					<h3 id="h3">Heading&#160;3</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -749,7 +506,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h4>Heading&#160;4</h4>
+					<h4 id="h4">Heading&#160;4</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -767,7 +524,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h5>Heading&#160;5</h5>
+					<h5 id="h5">Heading&#160;5</h5>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -785,7 +542,7 @@ ol.linenums {
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
-					<h6>Heading&#160;6</h6>
+					<h6 id="h6">Heading&#160;6</h6>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
 					</p>
@@ -835,9 +592,15 @@ ol.linenums {
 			</div>
 			<a href="https://github.com/englishextra/typeboost.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/github_badge_top_right.png" alt="Fork me on GitHub" data-canonical-src="img/github_badge_top_right.png"></a>
 		</div>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+		<script src="libs/modernizr/custom/82780/js/modernizr.min.js"></script>
+		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script> -->
+		<script src="libs/google-code-prettify/js/prettify.min.js"></script>
 		<script>
 			(function(a){a&&prettyPrint()}(window.prettyPrint));
+			function addEvent(a,b,c){if(a.addEventListener)a.addEventListener(b,c,!1);else{c.$$guid||(c.$$guid=addEvent.guid++);a.events||(a.events={});var d=a.events[b];d||(d=a.events[b]={},a["on"+b]&&(d[0]=a["on"+b]));d[c.$$guid]=c;a["on"+b]=handleEvent}}addEvent.guid=1;function removeEvent(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.events&&a.events[b]&&delete a.events[b][c.$$guid]} function handleEvent(a){var b=!0;a=a||fixEvent(((this.ownerDocument||this.document||this).parentWindow||window).event);var c=this.events[a.type],d;for(d in c)this.$$handleEvent=c[d],!1===this.$$handleEvent(a)&&(b=!1);return b}function fixEvent(a){a.preventDefault=fixEvent.preventDefault;a.stopPropagation=fixEvent.stopPropagation;return a}fixEvent.preventDefault=function(){this.returnValue=!1};fixEvent.stopPropagation=function(){this.cancelBubble=!0};
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"},!1)})(document.getElementById("page")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(b,a){b&&a&&addEvent(b,"click",function(){a.style.display="none"==a.style.display||""==a.style.display?"inline-block":"none"},!1)})(document.getElementById("navbutton")||"",document.getElementById("dropdownmenu_holder")||"");
+			(function(c,e){c&&e&&function(a){a=a.getElementsByTagName("li");for(var b=0;b<a.length;b++)d=a[b],addEvent(d,"click",function(){c.setAttribute("style","display:none;")},!1)}(e)})(document.getElementById("dropdownmenu_holder")||"",document.getElementById("dropdownmenu")||"");
 			(function(e,f,a,h){b=document.createElement("a");b.setAttribute("style","display:none;");b.setAttribute("href","#");b.setAttribute("id","toTop");b.setAttribute("onclick","function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};scrollTop2(15);return false;");c=document.createElement("span");c.setAttribute("id","toTopHover");b.appendChild(c);d=document.createTextNode("\u041d\u0430\u0432\u0435\u0440\u0445"); b.appendChild(d);e.appendChild(b);f.onscroll=function(){var e=f.pageYOffset||a.documentElement.scrollTop||a.body.scrollTop,k=f.innerHeight||a.documentElement.clientHeight||a.body.clientHeight,g=a.getElementById(h)||"";g&&(e>k?g.style.display="inline":g.style.display="none")}})(document.getElementsByTagName("body")[0]||document.documentElement,window,document,"toTop");
 		</script>
 	</body>
