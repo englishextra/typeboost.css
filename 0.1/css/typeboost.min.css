@@ -365,6 +365,7 @@
 	*vertical-align: middle;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	cursor: pointer;
 }
 .col label {
 	display: block;
