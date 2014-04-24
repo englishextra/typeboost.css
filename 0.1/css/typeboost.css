@@ -880,11 +880,19 @@
 	border: 1px solid #506F7C;
 }
 .col input[type^="text"]:focus,
-.col select:focus,
 .col textarea:focus,
 .col input[type^="text"]:active,
-.col select:active,
 .col textarea:active {
+	color: inherit;
+	background: #F4F4F4;
+	border: 1px solid #F4F4F4;
+}
+.col select:hover {
+	background: #3C5B68;
+	border: 1px solid #3C5B68;
+}
+.col select:active,
+.col select:focus {
 	color: inherit;
 	background: #F4F4F4;
 	border: 1px solid #F4F4F4;
