@@ -1,5 +1,5 @@
 /*!
- * typeboost rems v0.1
+ * typeboost.css v0.1
  * github.com/englishextra/typeboost
  */
 .col div,
@@ -123,7 +123,7 @@
 }
 .col address,
 .col p.address {
-	font-size: 0.813rem;
+	font-size: .813rem;
 	line-height: 1.500;
 	font-style: italic;
 	margin-right: 0;
@@ -134,7 +134,7 @@
 .col.span_2 p.address,
 .col.span_3 p.address,
 .col.span_4 p.address {
-	font-size: 0.750rem;
+	font-size: .750rem;
 	line-height: 1.500;
 }
 .col p.blockquote {
@@ -143,12 +143,12 @@
 }
 .col h1 {
 	font-size: 2.250rem;
-	line-height: 1.2;
+	line-height: 1.200;
 	padding: 0;
 }
 .col h2 {
 	font-size: 1.250rem;
-	line-height: 1.2;
+	line-height: 1.200;
 	padding: 0;
 }
 .col h3 {
@@ -175,7 +175,7 @@
 .col.span_3 h3,
 .col.span_4 h3 {
 	font-size: 1rem;
-	line-height: 1.2;
+	line-height: 1.200;
 }
 .col caption,
 .col label,
@@ -200,7 +200,7 @@
 .col.span_2 ol li,
 .col.span_3 ol li,
 .col.span_4 ol li {
-	font-size: 0.875rem;
+	font-size: .875rem;
 	line-height: 1.500;
 }
 .col p.larger,
@@ -213,7 +213,7 @@
 .col.span_3 h2,
 .col.span_4 h2 {
 	font-size: 1.125rem;
-	line-height: 1.2;
+	line-height: 1.200;
 }
 .col p,
 .col p.blockquote,
@@ -300,7 +300,7 @@
 }
 .col table td,
 .col table th {
-	padding: 0.313rem 1rem;
+	padding: .313rem 1rem;
 	vertical-align: top;
 }
 .col pre,
@@ -310,7 +310,7 @@
 .col.span_2 table th,
 .col.span_3 table th,
 .col.span_4 table th {
-	font-size: 0.813rem;
+	font-size: .813rem;
 	line-height: 1.500;
 }
 .col table th a:hover,
@@ -329,13 +329,13 @@
 .col input[type^="text"],
 .col select,
 .col textarea {
-	font-size: 0.875rem;
+	font-size: .875rem;
 	line-height: 1.500;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 0.500rem;
+	padding: .500rem;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
@@ -354,13 +354,13 @@
 .col input[type="reset"],
 .col input[type="submit"] {
 	width: 9em;
-	font-size: 0.875rem;
+	font-size: .875rem;
 	line-height: 1.500;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: 0.500rem 1rem;
+	padding: .500rem 1rem;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
@@ -369,7 +369,7 @@
 .col label {
 	display: block;
 	font-style: italic;
-	margin-bottom: 0.125rem;
+	margin-bottom: .125rem;
 }
 .col textarea {
 	width: 95%;
@@ -393,7 +393,7 @@
 	padding-left: 1.500rem;
 }
 .col .indent {
-	text-indent: 1.500em;
+	text-indent: 1.500rem;
 }
 .col.span_2 address,
 .col.span_2 p.address,
@@ -423,7 +423,7 @@
 .col.span_2 .indent,
 .col.span_3 .indent,
 .col.span_4 .indent {
-	text-indent: 1.313em;
+	text-indent: 1.313rem;
 }
 .col ul {
 	padding-left: 2.500rem;
@@ -500,7 +500,7 @@
 .col h6+div,
 .col h6+p,
 .col h6+table {
-	margin-top: 0.500rem;
+	margin-top: .500rem;
 }
 .col address:first-child,
 .col div+address,
@@ -758,7 +758,7 @@
 	-webkit-transition: opacity .25s ease-in-out;
 }
 .col .fade:hover {
-	opacity: 0.5;
+	opacity: .5;
 }
 .col .highlight {
 	font-weight: bolder;
@@ -766,7 +766,7 @@
 .col .hr {
 	height: 1px;
 	padding: 0;
-	margin: 1.500em 0 0;
+	margin: 1.500rem 0 0;
 }
 /**
  * typefaces
@@ -846,9 +846,9 @@
 .col select {
 	color: #FFF;
 	background-color: #506F7C;
+	border: 1px solid #506F7C;
 }
 .col input[type^="text"],
-.col select,
 .col textarea {
 	color: inherit;
 	background: #F4F4F4;
