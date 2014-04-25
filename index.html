@@ -224,6 +224,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -232,6 +233,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -240,6 +242,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -248,6 +251,7 @@ font-smoothing: antialiased;
 		font-size: 120%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -256,6 +260,7 @@ font-smoothing: antialiased;
 		font-size: 120%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -264,6 +269,7 @@ font-smoothing: antialiased;
 		font-size: 110%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -272,6 +278,7 @@ font-smoothing: antialiased;
 		font-size: 110%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -280,7 +287,11 @@ font-smoothing: antialiased;
 		font-size: 100%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
+	}
+	.col img {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 240px) and (orientation: portrait) {
@@ -288,7 +299,11 @@ font-smoothing: antialiased;
 		font-size: 90%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
+	}
+	.col img {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 1920px) and (orientation: landscape) {
@@ -344,6 +359,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -352,6 +368,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -360,6 +377,7 @@ font-smoothing: antialiased;
 		font-size: 130%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -368,6 +386,7 @@ font-smoothing: antialiased;
 		font-size: 120%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -376,6 +395,7 @@ font-smoothing: antialiased;
 		font-size: 120%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -384,6 +404,7 @@ font-smoothing: antialiased;
 		font-size: 110%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
 	}
 }
@@ -392,7 +413,16 @@ font-smoothing: antialiased;
 		font-size: 100%;
 	}
 	.container {
+		padding: 98px 16px;
 		max-width: 100%;
+	}
+	.col img {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 801px) and (max-width: 920px) {
+	.container {
+		padding: 98px 16px;
 	}
 }
 		</style>
@@ -421,7 +451,10 @@ font-smoothing: antialiased;
 					<h1 id="h1">Heading&#160;1</h1>
 					<div class="hr"></div>
 					<p><strong>Typeboost.css</strong> is a set of CSS rules to ensure readable, scalable, and responsive typography. REMs are used for font sizes, paddings, and margins. Wrap your HTML content with class <strong>.col</strong> and you are done.</p>
-					<p><a href="demo.html" target="_blank">Demo with Latin, Cyrillic, and IPA characters</a></p>
+					<ul>
+						<li><a href="demo.html" target="_blank">Demo with Latin, Cyrillic, and IPA characters</a></li>
+						<li><a href="aids_topics.html" target="_blank">Latin-Cyrillic Long Text Demo</a></li>
+					</ul>
 					<p>You will also like <a href="http://englishextra.github.io/libs/16pixels/">16pixels.css</a></p>
 					<h2>The Setup</h2>
 					<pre class="prettyprint"><code class="language-plain">&lt;!DOCTYPE html&gt;<br />&lt;html lang=&quot;en&quot;&gt;<br />&#160;&#160;&#160;&#160;&lt;head&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;meta charset=&quot;utf-8&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;title&gt;&lt;/title&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;amp;subset=latin,latin-ext,cyrillic&quot; /&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;link rel=&quot;stylesheet&quot; href=&quot;typeboost.min.css&quot; /&gt;<br />&#160;&#160;&#160;&#160;&lt;/head&gt;<br />&#160;&#160;&#160;&#160;&lt;body&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;div class=&quot;col&quot;&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/p&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/div&gt;<br />&#160;&#160;&#160;&#160;&lt;/body&gt;<br />&lt;/html&gt;</code></pre>
