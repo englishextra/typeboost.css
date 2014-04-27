@@ -156,17 +156,23 @@
 	padding: 0;
 }
 .col h4 {
+	text-decoration: underline;
 	padding: 0;
 }
 .col h5 {
-	font-variant: small-caps;
-	text-decoration: underline;
+	text-transform: uppercase;
 	padding: 0;
 }
 .col h6 {
-	font-variant: small-caps;
 	text-decoration: underline;
 	padding: 0;
+}
+.col h3,
+.col.span_2 h2,
+.col.span_3 h2,
+.col.span_4 h2 {
+	font-size: 1.125rem;
+	line-height: 1.200;
 }
 .col h4,
 .col h5,
@@ -175,6 +181,18 @@
 .col.span_3 h3,
 .col.span_4 h3 {
 	font-size: 1rem;
+	line-height: 1.200;
+}
+.col.span_2 h4,
+.col.span_3 h4,
+.col.span_4 h4,
+.col.span_2 h5,
+.col.span_3 h5,
+.col.span_4 h5,
+.col.span_2 h6,
+.col.span_3 h6,
+.col.span_4 h6 {
+	font-size: .875rem;
 	line-height: 1.200;
 }
 .col caption,
@@ -208,13 +226,6 @@
 	font-size: 1.125rem;
 	line-height: 1.500;
 }
-.col h3,
-.col.span_2 h2,
-.col.span_3 h2,
-.col.span_4 h2 {
-	font-size: 1.125rem;
-	line-height: 1.200;
-}
 .col p,
 .col p.blockquote,
 .col dl dt,
@@ -247,7 +258,6 @@
 .col h2,
 .col h3,
 .col h4,
-.col h5,
 .col strong,
 .col .bolder,
 .col dl dt,
@@ -801,12 +811,12 @@
  * colours
  */
 .col a {
-	color: #2980B9;
+	color: #0071BA;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #E74C3C;
+	color: #EF3E55;
 }
 .col h1 {
 	color: inherit;
@@ -845,9 +855,9 @@
 	color: #FFF;
 }
 .col select {
-	color: #FFF;
-	background-color: #506F7C;
-	border: 1px solid #506F7C;
+	color: inherit;
+	background-color: #F4F4F4;
+	border: 1px solid #F4F4F4;
 }
 .col input[type^="text"],
 .col textarea {
@@ -868,16 +878,16 @@
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
 	color: #FFF;
-	background: #3C5B68 none;
-	border: 1px solid #3C5B68;
+	background: #0D78BE none;
+	border: 1px solid #0D78BE;
 }
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
 	color: #FFF;
-	background: #506F7C none;
-	border: 1px solid #506F7C;
+	background: #2887C5 none;
+	border: 1px solid #2887C5;
 }
 .col input[type^="text"]:focus,
 .col textarea:focus,
@@ -888,8 +898,8 @@
 	border: 1px solid #F4F4F4;
 }
 .col select:hover {
-	background: #3C5B68;
-	border: 1px solid #3C5B68;
+	background: #F4F4F4;
+	border: 1px solid #F4F4F4;
 }
 .col select:active,
 .col select:focus {
@@ -925,7 +935,7 @@
 	border: 0;
 }
 .col .highlight {
-	color: #E74C3C;
+	color: #EF3E55;
 }
 .col .hr {
 	background: #ECECEC;
