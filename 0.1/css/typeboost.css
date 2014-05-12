@@ -363,7 +363,6 @@
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
-	width: 9em;
 	font-size: .875rem;
 	line-height: 1.500;
 	box-sizing: border-box;
@@ -811,12 +810,12 @@
  * colours
  */
 .col a {
-	color: #0071BA;
+	color: #4174A7;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #EF3E55;
+	color: #D84054;
 }
 .col h1 {
 	color: inherit;
@@ -841,7 +840,7 @@
 }
 .col pre {
 	color: #FFF;
-	background: #F4F4F4;
+	background: #ECECEC;
 }
 .col pre code {
 	color: inherit;
@@ -856,14 +855,14 @@
 }
 .col select {
 	color: inherit;
-	background-color: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background: #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col input[type^="text"],
 .col textarea {
 	color: inherit;
-	background: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background: #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col button:hover,
 .col input[type="button"]:hover,
@@ -878,34 +877,34 @@
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
 	color: #FFF;
-	background: #0D78BE none;
-	border: 1px solid #0D78BE;
+	background: #555754;
+	border: 1px solid #555754;
 }
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
 	color: #FFF;
-	background: #2887C5 none;
-	border: 1px solid #2887C5;
+	background: #414340;
+	border: 1px solid #414340;
 }
 .col input[type^="text"]:focus,
 .col textarea:focus,
 .col input[type^="text"]:active,
 .col textarea:active {
 	color: inherit;
-	background: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background: #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col select:hover {
-	background: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background: #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col select:active,
 .col select:focus {
 	color: inherit;
-	background: #F4F4F4;
-	border: 1px solid #F4F4F4;
+	background: #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col caption {
 	color: inherit;
@@ -918,14 +917,14 @@
 	color: inherit;
 }
 .col table tr {
-	background: #F4F4F4;
+	background: #ECECEC;
 }
 .col table tr:nth-of-type(odd) {
-	background: #F4F4F4;
+	background: #ECECEC;
 }
 .col table th {
 	color: inherit;
-	background: #E5E5E5;
+	background: #E2E2E2;
 }
 .col table th a {
 	color: inherit;
@@ -935,7 +934,7 @@
 	border: 0;
 }
 .col .highlight {
-	color: #EF3E55;
+	color: #D84054;
 }
 .col .hr {
 	background: #ECECEC;
