@@ -1,0 +1,10 @@
+/**
+ * rename font-family into PT Serif like it is named in other css
+ * fix font-weight and font-style
+ * put svg fonts above woff for Chrome browser
+ */
+@font-face {font-family: 'PT Serif';src: url(PTF55F-webfont.eot);src: url(PTF55F-webfont.eot?#iefix) format('embedded-opentype'),url(PTF55F-webfont.svg#open_sansregular) format('svg'),url(PTF55F-webfont.woff) format('woff'),url(PTF55F-webfont.ttf) format('truetype');font-weight: 400;font-style: normal;}
+@font-face {font-family: 'PT Serif';src: url(PTF56F-webfont.eot);src: url(PTF56F-webfont.eot?#iefix) format('embedded-opentype'),url(PTF56F-webfont.svg#open_sansitalic) format('svg'),url(PTF56F-webfont.woff) format('woff'),url(PTF56F-webfont.ttf) format('truetype');font-weight: 400;font-style: italic;}
+@font-face {font-family: 'PT Serif';src: url(PTF75F-webfont.eot);src: url(PTF75F-webfont.eot?#iefix) format('embedded-opentype'),url(PTF75F-webfont.svg#open_sansbold) format('svg'),url(PTF75F-webfont.woff) format('woff'),url(PTF75F-webfont.ttf) format('truetype');font-weight: 700;font-style: normal;}
+@font-face {font-family: 'PT Serif';src: url(PTF76F-webfont.eot);src: url(PTF76F-webfont.eot?#iefix) format('embedded-opentype'),url(PTF76F-webfont.svg#open_sanssemibold_italic) format('svg'),url(PTF76F-webfont.woff) format('woff'),url(PTF76F-webfont.ttf) format('truetype');font-weight: 700;font-style: italic;}
+@font-face {font-family: 'PT Serif Caption';src: url('PTZ55F-webfont.eot');src: url('PTZ55F-webfont.eot?#iefix') format('embedded-opentype'),url('PTZ55F-webfont.svg#pt_serif_captionregular') format('svg'),url('PTZ55F-webfont.woff') format('woff'),url('PTZ55F-webfont.ttf') format('truetype');font-weight: 400;font-style: normal;}
