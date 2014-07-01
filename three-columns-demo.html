@@ -807,7 +807,7 @@ pre.prettyprint {
 		<script>
 				yepnope.injectJs("http://cdn.rawgit.com/englishextra/early.js/9ac385b2386805963c8122bb60be474b5d483989/1.0/js/early.min.js",function(){
 					yepnope.injectJs("http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js", function () {
-						("undefined"!==typeof earlyIsMobileBrowser&&earlyIsMobileBrowser)||yepnope.injectJs("http://cdn.rawgit.com/englishextra/sidr/8a423a79ce384394b37d591536d37fdac31cb600/dist/jquery.sidr.min.js", function () {
+						("undefined"!==typeof earlyIsMobileBrowser&&earlyIsMobileBrowser)||yepnope.injectJs("http://cdn.rawgit.com/englishextra/sidr/a3af520f373ef785f3edb68b7f47fd3ba34fb433/1.1.1/js/jquery.sidr.min.js", function () {
 							"undefined"!==typeof window.jQuery&&function(a){a(document).ready(function(){a("#leftnavbtn").sidr({name:"leftnav",source:"#leftnav"});a(window).click(function(){a.sidr("close","leftnav")})})}(jQuery);
 							("undefined"!==typeof earlyHasTouch&&earlyHasTouch)&&yepnope.injectJs("http://cdn.jsdelivr.net/jquery.touchwipe/1.1.1/jquery.touchwipe.min.js", function () {
 								(function(a){a(window).touchwipe({wipeLeft:function(){a.sidr("close","leftnav")},wipeRight:function(){a.sidr("open","leftnav")},preventDefaultEvents:!1})})(jQuery);
