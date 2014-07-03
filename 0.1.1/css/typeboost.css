@@ -1,5 +1,5 @@
 /*!
- * typeboost.css v0.1
+ * typeboost.css v0.1.1
  * github.com/englishextra/typeboost.css
  */
 .col div,
@@ -125,7 +125,6 @@
 .col p.address {
 	font-size: .813rem;
 	line-height: 1.500;
-	font-style: italic;
 	margin-right: 0;
 }
 .col.span_2 address,
@@ -138,7 +137,6 @@
 	line-height: 1.500;
 }
 .col p.blockquote {
-	font-style: italic;
 	margin-right: 0;
 }
 .col h1 {
@@ -152,7 +150,6 @@
 	padding: 0;
 }
 .col h3 {
-	font-style: italic;
 	padding: 0;
 }
 .col h4 {
@@ -254,29 +251,11 @@
 .col label {
 	font-weight: normal;
 }
-.col h1,
-.col h2,
-.col h3,
-.col h4,
-.col strong,
-.col .bolder,
-.col dl dt,
-.col table th,
-.col button,
-.col input[type="button"],
-.col input[type="reset"],
-.col input[type="submit"] {
-	font-weight: bolder;
-}
 .col ul {
 	list-style: disc outside;
 }
 .col ol {
 	list-style: decimal inside;
-}
-.col dl dt,
-.col blockquote {
-	font-style: italic;
 }
 .col pre {
 	white-space: pre;
@@ -328,9 +307,6 @@
 .col table th a:focus {
 	text-decoration: underline;
 }
-.col caption {
-	font-style: italic;
-}
 .col img {
 	border: 0;
 	vertical-align: bottom;
@@ -378,7 +354,6 @@
 }
 .col label {
 	display: block;
-	font-style: italic;
 	margin-bottom: .125rem;
 }
 .col textarea {
@@ -749,17 +724,11 @@
 .col .textcenter {
 	text-align: center;
 }
-.col .bolder {
-	font-weight: bolder;
-}
 .col .larger {
 	font-size: 120%;
 }
 .col .smaller {
 	font-size: 80%;
-}
-.col .italic {
-	font-style: italic;
 }
 .col .fade {
 	opacity: 1;
@@ -770,13 +739,45 @@
 .col .fade:hover {
 	opacity: .5;
 }
-.col .highlight {
-	font-weight: bolder;
-}
 .col .hr {
 	height: 1px;
 	padding: 0;
 	margin: 1.500rem 0 0;
+}
+/*!
+ * font weights
+ */
+.col h1,
+.col h2,
+.col h3,
+.col h4,
+.col dl dt,
+.col table th,
+.col button,
+.col input[type="button"],
+.col input[type="reset"],
+.col input[type="submit"],
+.col b,
+.col strong,
+.col .bolder,
+.col .highlight {
+	font-weight: bolder;
+}
+/*!
+ * font styles
+ */
+.col h3,
+.col address,
+.col p.address,
+.col p.blockquote,
+.col dl dt,
+.col blockquote,
+.col caption,
+.col label,
+.col i,
+.col em,
+.col .italic {
+	font-style: italic;
 }
 /*!
  * typefaces
@@ -817,36 +818,32 @@
 .col a:active {
 	color: #D84054;
 }
-.col h1 {
-	color: inherit;
-}
-.col h2 {
-	color: inherit;
-}
-.col h3 {
-	color: inherit;
-}
-.col h4 {
-	color: inherit;
-}
-.col h5 {
-	color: inherit;
-}
-.col h6 {
-	color: inherit;
-}
-.col h2 a {
+.col h1,
+.col h2,
+.col h3,
+.col h4,
+.col h5,
+.col h6,
+.col h2 a,
+.col pre code,
+.col pre a,
+.col caption,
+.col table td,
+.col table th a,
+.col select,
+.col input[type^="text"],
+.col textarea,
+.col input[type^="text"]:focus,
+.col textarea:focus,
+.col input[type^="text"]:active,
+.col textarea:active,
+.col select:active,
+.col select:focus {
 	color: inherit;
 }
 .col pre {
 	color: #FFF;
 	background: #ECECEC;
-}
-.col pre code {
-	color: inherit;
-}
-.col pre a {
-	color: inherit;
 }
 .col pre a:hover,
 .col pre a:active,
@@ -854,13 +851,11 @@
 	color: #FFF;
 }
 .col select {
-	color: inherit;
 	background: #ECECEC;
 	border: 1px solid #ECECEC;
 }
 .col input[type^="text"],
 .col textarea {
-	color: inherit;
 	background: #ECECEC;
 	border: 1px solid #ECECEC;
 }
@@ -892,7 +887,6 @@
 .col textarea:focus,
 .col input[type^="text"]:active,
 .col textarea:active {
-	color: inherit;
 	background: #ECECEC;
 	border: 1px solid #ECECEC;
 }
@@ -902,19 +896,12 @@
 }
 .col select:active,
 .col select:focus {
-	color: inherit;
 	background: #ECECEC;
 	border: 1px solid #ECECEC;
-}
-.col caption {
-	color: inherit;
 }
 .col table td,
 .col table th {
 	border: 0;
-}
-.col table td {
-	color: inherit;
 }
 .col table tr {
 	background: #ECECEC;
@@ -923,11 +910,9 @@
 	background: #ECECEC;
 }
 .col table th {
-	color: inherit;
 	background: #E2E2E2;
 }
 .col table th a {
-	color: inherit;
 }
 .col img {
 	background-color: inherit;
