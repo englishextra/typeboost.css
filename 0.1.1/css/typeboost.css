@@ -81,12 +81,12 @@
 .col mark,
 .col audio,
 .col video {
-	margin: 0;
-	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
+	border: 0;
 	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
 }
 .col sub,
 .col sup {
@@ -234,22 +234,6 @@
 .col.span_4 blockquote {
 	font-size: 1rem;
 	line-height: 1.500;
-}
-.col h6,
-.col address,
-.col p,
-.col p.address,
-.col p.blockquote,
-.col dl dd,
-.col ul li,
-.col ol li,
-.col table td,
-.col caption,
-.col input[type^="text"],
-.col select,
-.col textarea,
-.col label {
-	font-weight: normal;
 }
 .col ul {
 	list-style: disc outside;
@@ -747,6 +731,22 @@
 /*!
  * font weights
  */
+.col h6,
+.col address,
+.col p,
+.col p.address,
+.col p.blockquote,
+.col dl dd,
+.col ul li,
+.col ol li,
+.col table td,
+.col caption,
+.col input[type^="text"],
+.col select,
+.col textarea,
+.col label {
+	font-weight: normal;
+}
 .col h1,
 .col h2,
 .col h3,
