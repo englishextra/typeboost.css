@@ -2,4 +2,6 @@
 
 -   add \<i\> to \<em\> and .col .italic
 
+-   i.fa {font-style: normal;}
+
 

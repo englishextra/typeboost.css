@@ -924,3 +924,9 @@
 .col .hr {
 	background: #ECECEC;
 }
+/*!
+ * fix for fontawesome
+ */
+i.fa {
+	font-style: normal;
+}
