@@ -1,5 +1,5 @@
 /*!
- * typeboost.css v0.1.2
+ * typeboost.css v0.1.1
  * github.com/englishextra/typeboost.css
  */
 .col div,
@@ -116,13 +116,10 @@
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-.col h1 a,
-.col h2 a,
-.col h3 a,
-.col h4 a,
-.col h5 a,
-.col h6 a {
+.col h2 a {
 	font-weight: inherit;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .col address,
 .col p.address {
@@ -130,49 +127,94 @@
 	line-height: 1.500;
 	margin-right: 0;
 }
+.col.span_2 address,
+.col.span_3 address,
+.col.span_4 address,
+.col.span_2 p.address,
+.col.span_3 p.address,
+.col.span_4 p.address {
+	font-size: .750rem;
+	line-height: 1.500;
+}
 .col p.blockquote {
 	margin-right: 0;
 }
 .col h1 {
-	font-size: 3.5131250351316rem;
+	font-size: 2.250rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h2 {
-	font-size: 1.672916683396rem;
+	font-size: 1.250rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h3 {
-	font-size: 1.0873958442074rem;
-	line-height: 1.200;
 	padding: 0;
 }
 .col h4 {
-	text-transform: uppercase;
-	padding: 0;
-}
-.col h5 {
-	font-variant: small-caps;
-	letter-spacing: 0.0836458341698rem;
-	padding: 0;
-}
-.col h6,
-.col dl dt {
 	text-decoration: underline;
 	padding: 0;
 }
+.col h5 {
+	text-transform: uppercase;
+	padding: 0;
+}
+.col h6 {
+	text-decoration: underline;
+	padding: 0;
+}
+.col h3,
+.col.span_2 h2,
+.col.span_3 h2,
+.col.span_4 h2 {
+	font-size: 1.125rem;
+	line-height: 1.200;
+}
 .col h4,
 .col h5,
-.col h6 {
+.col h6,
+.col.span_2 h3,
+.col.span_3 h3,
+.col.span_4 h3 {
 	font-size: 1rem;
+	line-height: 1.200;
+}
+.col.span_2 h4,
+.col.span_3 h4,
+.col.span_4 h4,
+.col.span_2 h5,
+.col.span_3 h5,
+.col.span_4 h5,
+.col.span_2 h6,
+.col.span_3 h6,
+.col.span_4 h6 {
+	font-size: .875rem;
 	line-height: 1.200;
 }
 .col caption,
 .col label,
 .col p.smaller,
 .col table td,
-.col table th {
+.col table th,
+.col.span_2 p.blockquote,
+.col.span_3 p.blockquote,
+.col.span_4 p.blockquote,
+.col.span_2 p,
+.col.span_3 p,
+.col.span_4 p,
+.col.span_2 dl dt,
+.col.span_3 dl dt,
+.col.span_4 dl dt,
+.col.span_2 dl dd,
+.col.span_3 dl dd,
+.col.span_4 dl dd,
+.col.span_2 ul li,
+.col.span_3 ul li,
+.col.span_4 ul li,
+.col.span_2 ol li,
+.col.span_3 ol li,
+.col.span_4 ol li {
 	font-size: .875rem;
 	line-height: 1.500;
 }
@@ -186,7 +228,10 @@
 .col dl dt,
 .col dl dd,
 .col ul li,
-.col ol li {
+.col ol li,
+.col.span_2 blockquote,
+.col.span_3 blockquote,
+.col.span_4 blockquote {
 	font-size: 1rem;
 	line-height: 1.500;
 }
@@ -206,9 +251,6 @@
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
 	padding: 1.063rem 1.500rem;
 }
 .col pre code {
@@ -234,7 +276,13 @@
 	padding: .313rem 1rem;
 	vertical-align: top;
 }
-.col pre {
+.col pre,
+.col.span_2 table td,
+.col.span_3 table td,
+.col.span_4 table td,
+.col.span_2 table th,
+.col.span_3 table th,
+.col.span_4 table th {
 	font-size: .813rem;
 	line-height: 1.500;
 }
@@ -249,20 +297,6 @@
 	padding: 0;
 }
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col select,
 .col textarea {
 	font-size: .875rem;
@@ -277,31 +311,11 @@
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-.col optgroup {
-	margin: 0.188rem;
-}
-.col input[type="color"] {
-	padding: 0;
-}
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"],
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col select {
 	height: 2.500rem;
 }
@@ -350,6 +364,36 @@
 .col .indent {
 	text-indent: 1.500rem;
 }
+.col.span_2 address,
+.col.span_2 p.address,
+.col.span_2 p.blockquote,
+.col.span_2 dd,
+.col.span_2 pre,
+.col.span_2 blockquote,
+.col.span_3 address,
+.col.span_3 p.address,
+.col.span_3 p.blockquote,
+.col.span_3 dd,
+.col.span_3 pre,
+.col.span_3 blockquote,
+.col.span_4 address,
+.col.span_4 p.address,
+.col.span_4 p.blockquote,
+.col.span_4 dd,
+.col.span_4 pre,
+.col.span_4 blockquote {
+	margin-left: 1.313rem;
+}
+.col.span_2 ol,
+.col.span_3 ol,
+.col.span_4 ol {
+	padding-left: 1.313rem;
+}
+.col.span_2 .indent,
+.col.span_3 .indent,
+.col.span_4 .indent {
+	text-indent: 1.313rem;
+}
 .col ul {
 	padding-left: 2.500rem;
 }
@@ -367,6 +411,11 @@
 	font-size: inherit !important;
 	line-height: inherit !important;
 }
+.col.span_2 ul,
+.col.span_3 ul,
+.col.span_4 ul {
+	padding-left: 2.188rem;
+}
 .col.textcenter address,
 .col.textcenter p.address,
 .col.textcenter dd,
@@ -380,10 +429,7 @@
 .col ol li,
 .col select,
 .col textarea,
-.col ul li,
-.col table td ol,
-.col table td ul,
-.col table td dl {
+.col ul li {
 	margin: 0;
 }
 .col address,
@@ -678,17 +724,13 @@
 	opacity: .5;
 }
 .col .hr {
-	height: 0.063rem;
+	height: 1px;
 	padding: 0;
 	margin: 1.500rem 0 0;
 }
 /*!
  * font weights
  */
-.col h1,
-.col h2,
-.col h4,
-.col h5,
 .col h6,
 .col address,
 .col p,
@@ -700,27 +742,16 @@
 .col table td,
 .col caption,
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col select,
 .col textarea,
 .col label {
 	font-weight: normal;
 }
+.col h1,
+.col h2,
 .col h3,
-.col a,
+.col h4,
+.col dl dt,
 .col table th,
 .col button,
 .col input[type="button"],
@@ -735,9 +766,11 @@
 /*!
  * font styles
  */
+.col h3,
 .col address,
 .col p.address,
 .col p.blockquote,
+.col dl dt,
 .col blockquote,
 .col caption,
 .col label,
@@ -747,17 +780,14 @@
 	font-style: italic;
 }
 /*!
- * font families
+ * typefaces
  */
-.col h1 {
-	font-family: serif;
-}
 .col pre,
 .col pre code {
 	font-family: monospace;
 }
 .col select {
-	font-family: sans-serif;
+	font-family: inherit;
 }
 .col button,
 .col input[type="button"],
@@ -766,20 +796,6 @@
 	font-family: inherit;
 }
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col textarea {
 	font-family: inherit;
 }
@@ -789,18 +805,18 @@
 	font-family: inherit;
 }
 .col .phonetic {
-	font-family: "Calibri","Voces","Judson","ConstructiumRegular",sans-serif;
+	font-family: Calibri, Judson, ConstructiumRegular;
 }
 /*!
- * colors
+ * colours
  */
 .col a {
-	color: #1F3A93;
+	color: #4174A7;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #EF4836;
+	color: #D84054;
 }
 .col h1,
 .col h2,
@@ -808,12 +824,7 @@
 .col h4,
 .col h5,
 .col h6,
-.col h1 a,
 .col h2 a,
-.col h3 a,
-.col h4 a,
-.col h5 a,
-.col h6 a,
 .col pre code,
 .col pre a,
 .col caption,
@@ -821,88 +832,32 @@
 .col table th a,
 .col select,
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col textarea,
 .col input[type^="text"]:focus,
-.col input[type^="search"]:focus,
-.col input[type^="email"]:focus,
-.col input[type^="url"]:focus,
-.col input[type^="password"]:focus,
-.col input[type^="tel"]:focus,
-.col input[type^="color"]:focus,
-.col input[type^="number"]:focus,
-.col input[type^="range"]:focus,
-.col input[type^="date"]:focus,
-.col input[type^="month"]:focus,
-.col input[type^="week"]:focus,
-.col input[type^="time"]:focus,
-.col input[type^="datetime"]:focus,
-.col input[type^="datetime-local"]:focus,
 .col textarea:focus,
 .col input[type^="text"]:active,
-.col input[type^="search"]:active,
-.col input[type^="email"]:active,
-.col input[type^="url"]:active,
-.col input[type^="password"]:active,
-.col input[type^="tel"]:active,
-.col input[type^="color"]:active,
-.col input[type^="number"]:active,
-.col input[type^="range"]:active,
-.col input[type^="date"]:active,
-.col input[type^="month"]:active,
-.col input[type^="week"]:active,
-.col input[type^="time"]:active,
-.col input[type^="datetime"]:active,
-.col input[type^="datetime-local"]:active,
 .col textarea:active,
 .col select:active,
 .col select:focus {
 	color: inherit;
 }
 .col pre {
-	color: inherit;
+	color: #FFF;
 	background: #ECECEC;
 }
 .col pre a:hover,
 .col pre a:active,
 .col pre a:focus {
-	color: inherit;
+	color: #FFF;
 }
 .col select {
 	background: #ECECEC;
-	border: 0.063rem solid #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col input[type^="text"],
-.col input[type^="search"],
-.col input[type^="email"],
-.col input[type^="url"],
-.col input[type^="password"],
-.col input[type^="tel"],
-.col input[type^="color"],
-.col input[type^="number"],
-.col input[type^="range"],
-.col input[type^="date"],
-.col input[type^="month"],
-.col input[type^="week"],
-.col input[type^="time"],
-.col input[type^="datetime"],
-.col input[type^="datetime-local"],
 .col textarea {
 	background: #ECECEC;
-	border: 0.063rem solid #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col button:hover,
 .col input[type="button"]:hover,
@@ -917,8 +872,8 @@
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
 	color: #FFF;
-	background: #5F615E;
-	border: 0.063rem solid #5F615E;
+	background: #555754;
+	border: 1px solid #555754;
 }
 .col button,
 .col input[type="button"],
@@ -926,103 +881,52 @@
 .col input[type="submit"] {
 	color: #FFF;
 	background: #414340;
-	border: 0.063rem solid #414340;
+	border: 1px solid #414340;
 }
 .col input[type^="text"]:focus,
-.col input[type^="search"]:focus,
-.col input[type^="email"]:focus,
-.col input[type^="url"]:focus,
-.col input[type^="password"]:focus,
-.col input[type^="tel"]:focus,
-.col input[type^="color"]:focus,
-.col input[type^="number"]:focus,
-.col input[type^="range"]:focus,
-.col input[type^="date"]:focus,
-.col input[type^="month"]:focus,
-.col input[type^="week"]:focus,
-.col input[type^="time"]:focus,
-.col input[type^="datetime"]:focus,
-.col input[type^="datetime-local"]:focus,
 .col textarea:focus,
 .col input[type^="text"]:active,
-.col input[type^="search"]:active,
-.col input[type^="email"]:active,
-.col input[type^="url"]:active,
-.col input[type^="password"]:active,
-.col input[type^="tel"]:active,
-.col input[type^="color"]:active,
-.col input[type^="number"]:active,
-.col input[type^="range"]:active,
-.col input[type^="date"]:active,
-.col input[type^="month"]:active,
-.col input[type^="week"]:active,
-.col input[type^="time"]:active,
-.col input[type^="datetime"]:active,
-.col input[type^="datetime-local"]:active,
 .col textarea:active {
 	background: #ECECEC;
-	border: 0.063rem solid #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col select:hover {
 	background: #ECECEC;
-	border: 0.063rem solid #ECECEC;
+	border: 1px solid #ECECEC;
 }
 .col select:active,
 .col select:focus {
 	background: #ECECEC;
-	border: 0.063rem solid #ECECEC;
+	border: 1px solid #ECECEC;
 }
-.col select:disabled,
-.col input[type^="text"]:disabled,
-.col input[type^="search"]:disabled,
-.col input[type^="email"]:disabled,
-.col input[type^="url"]:disabled,
-.col input[type^="password"]:disabled,
-.col input[type^="tel"]:disabled,
-.col input[type^="color"]:disabled,
-.col input[type^="number"]:disabled,
-.col input[type^="range"]:disabled,
-.col input[type^="date"]:disabled,
-.col input[type^="month"]:disabled,
-.col input[type^="week"]:disabled,
-.col input[type^="time"]:disabled,
-.col input[type^="datetime"]:disabled,
-.col input[type^="datetime-local"]:disabled,
-.col textarea:disabled {
-	background: #F6F6F6;
-	border-color: #F6F6F6;
-}
-.col
-.col button:disabled,
-.col input[type="button"]:disabled,
-.col input[type="reset"]:disabled,
-.col input[type="submit"]:disabled {
-	background: #CBCBCB;
-	border-color: #CBCBCB;
-}
-.col table tr,
-.col table tr:nth-of-type(odd) {
-	background-color: transparent;
-}
-
+.col table td,
 .col table th {
-	border-bottom-width: 0.063rem;
-	border-bottom-style: solid;
-	border-bottom-color: inherit;
-	background-color: transparent;
+	border: 0;
 }
-.col table td {
-	border-bottom-width: 0.063rem;
-	border-bottom-style: solid;
-	border-bottom-color: inherit;
+.col table tr {
+	background: #ECECEC;
+}
+.col table tr:nth-of-type(odd) {
+	background: #ECECEC;
+}
+.col table th {
+	background: #E2E2E2;
+}
+.col table th a {
 }
 .col img {
 	background-color: inherit;
 	border: 0;
 }
 .col .highlight {
-	color: #EF4836;
+	color: #D84054;
 }
 .col .hr {
 	background: #ECECEC;
+}
+/*!
+ * fix for fontawesome
+ */
+i.fa {
+	font-style: normal;
 }
