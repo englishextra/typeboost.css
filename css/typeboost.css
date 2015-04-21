@@ -675,6 +675,7 @@
 .col .fade:hover {
 	opacity: .5;
 }
+.col hr,
 .col .hr {
 	height: 0.063rem;
 	padding: 0;
@@ -1011,6 +1012,8 @@
 .col .highlight {
 	color: #EF4836;
 }
+.col hr,
 .col .hr {
 	background: #ABB7B7;
+	border: 0;
 }
