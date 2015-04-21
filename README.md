@@ -13,7 +13,6 @@ margins. Wrap your HTML content with class **.col** and you are done.
 		<head>
 			<meta charset="utf-8" />
 			<title></title>
-			<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|PT+Serif:400,400italic,700,700italic|Ubuntu+Mono:400,400italic,700,700italic|Voces&amp;subset=latin,latin-ext,cyrillic" />
 			<link rel="stylesheet" href="typeboost.min.css" />
 		</head>
 		<body>
@@ -28,6 +27,6 @@ margins. Wrap your HTML content with class **.col** and you are done.
 
 ## Copyright
 
-© [englishextra.github.com][], 2014
+© [englishextra.github.com][], 2015
 
   [englishextra.github.com]: http://englishextra.github.com/
