@@ -2,15 +2,15 @@
 	"name": "typeboost.css",
 	"version": "0.1.2",
 	"description": "typeboost.css as a node packaged module",
-	"style": "cdn/typeboost.css/latest/css/typeboost.min.css",
+	"style": "css/typeboost.min.css",
 	"files": ["LICENSE.md",
-	"cdn/typeboost.css/latest/css/typeboost.min.css"],
+	"css/typeboost.min.css"],
 	"homepage": "http://englishextra.github.io/libs/typeboost.css/",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/typeboost.css.git"
 	},
-	"main": "cdn/typeboost.css/latest/css/typeboost.min.css",
+	"main": "css/typeboost.min.css",
 	"author": "englishextra",
 	"license": "MIT"
 }

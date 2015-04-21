@@ -2,7 +2,7 @@
 	"name": "typeboost.css",
 	"repo": "englishextra/typeboost.css",
 	"version": "0.1.3",
-	"styles": ["cdn/typeboost.css/latest/css/typeboost.min.css"],
+	"styles": ["css/typeboost.min.css"],
 	"author": "englishextra",
 	"license": "MIT"
 }
