@@ -4,7 +4,7 @@
 	"description": "typeboost.css as a node packaged module",
 	"style": "cdn/typeboost.css/latest/css/typeboost.min.css",
 	"files": ["LICENSE.md",
-	"typeboost.min.css"],
+	"cdn/typeboost.css/latest/css/typeboost.min.css"],
 	"homepage": "http://englishextra.github.io/libs/typeboost.css/",
 	"repository": {
 		"type": "git",
