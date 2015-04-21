@@ -11,5 +11,6 @@
 	"cdn/typeboost.css/latest/css/typeboost.css",
 	"bower.json",
 	"gruntfile.js",
+	"component.json",
 	"package.json"]
 }

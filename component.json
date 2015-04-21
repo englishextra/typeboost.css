@@ -1,0 +1,8 @@
+{
+	"name": "typeboost.css",
+	"repo": "englishextra/typeboost.css",
+	"version": "0.1.3",
+	"styles": ["typeboost.min.css"],
+	"author": "englishextra",
+	"license": "MIT"
+}
