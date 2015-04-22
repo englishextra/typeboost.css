@@ -9,3 +9,4 @@
 === 0.1.4 (April 19, 2015)
 
 * Fixed HR, SMALL.
+* Changed font stacks for pre code, and .phonetic.
