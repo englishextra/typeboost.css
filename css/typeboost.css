@@ -663,6 +663,7 @@
 .col .larger {
 	font-size: 120%;
 }
+.col small,
 .col .smaller {
 	font-size: 80%;
 }
@@ -752,7 +753,7 @@
 }
 .col pre,
 .col pre code {
-	font-family: monospace;
+	font-family: "Consolas","Ubuntu Mono","DejaVu Sans Mono",monospace;
 }
 .col select {
 	font-family: sans-serif;
