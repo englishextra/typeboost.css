@@ -257,7 +257,7 @@ pre.prettyprint {
 	height: 1px;
 	background: #414340;
 }
-.topnavbar {
+.btn-nav {
 	width: 52px;
 	height: 40px;
 	position: absolute;
@@ -269,7 +269,7 @@ pre.prettyprint {
 	border-radius: 5px;
 	padding: 10px;
 }
-.topnavbar a.leftnavbtn {
+.btn-nav a.btn-nav-left {
 	display: inline-block;
 	width: 32px;
 	height: 20px;
@@ -282,7 +282,7 @@ pre.prettyprint {
 	cursor: pointer;
 	z-index: 1000;
 }
-.topnavbar a.leftnavbtn:before {
+.btn-nav a.btn-nav-left:before {
 	width: 32px;
 	height: 20px;
 	content: "";
@@ -292,7 +292,7 @@ pre.prettyprint {
 	border-top: 12px double #414340;
 	border-bottom: 4px solid #414340;
 }
-.leftnav_holder {
+.nav-left-holder {
 	display: none;
 }
 .container {
@@ -588,7 +588,7 @@ pre.prettyprint {
 			<div id="circularG_7" class="circularG"></div>
 			<div id="circularG_8" class="circularG"></div>
 		</div>
-		<div id="leftnav" class="leftnav_holder" role="navigation">
+		<div id="nav-left-holder" class="nav-left-holder" role="navigation">
 			<ul>
 				<li><a href="#">Lorem Ipsum is simply</a></li>
 				<li><a href="#">Lorem Ipsum is simply</a></li>
@@ -603,8 +603,8 @@ pre.prettyprint {
 			</ul>
 		</div>
 		<div id="page" role="document">
-			<div class="topnavbar">
-				<a class="leftnavbtn" href="#" id="leftnavbtn" title="Меню"></a>
+			<div class="btn-nav">
+				<a class="btn-nav-left" href="#" id="btn-nav-left" title="Меню"></a>
 			</div>
 			<div class="container" role="main">
 				<div class="row" role="grid">
@@ -646,9 +646,9 @@ pre.prettyprint {
 				yepnope.injectJs("http://cdn.rawgit.com/englishextra/early.js/ee1223be06c26ba2ba60f1817fda7e87fc47cfe0/cdn/early.js/latest/js/early.min.js",function(){
 					yepnope.injectJs("http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js", function () {
 						("undefined"!==typeof earlyIsMobileBrowser&&earlyIsMobileBrowser)||yepnope.injectJs("http://cdn.rawgit.com/englishextra/sidr/a3af520f373ef785f3edb68b7f47fd3ba34fb433/1.1.1/js/jquery.sidr.min.js", function () {
-							"undefined"!==typeof window.jQuery&&function(a){a(document).ready(function(){a("#leftnavbtn").sidr({name:"leftnav",source:"#leftnav"});a(window).click(function(){a.sidr("close","leftnav")})})}(jQuery);
+							"undefined"!==typeof window.jQuery&&function(a){a(document).ready(function(){a("#btn-nav-left").sidr({name:"nav-left-holder",source:"#nav-left-holder"});a(window).click(function(){a.sidr("close","nav-left-holder")})})}(jQuery);
 							("undefined"!==typeof earlyHasTouch&&earlyHasTouch)&&yepnope.injectJs("http://cdn.jsdelivr.net/jquery.touchwipe/1.1.1/jquery.touchwipe.min.js", function () {
-								(function(a){a(window).touchwipe({wipeLeft:function(){a.sidr("close","leftnav")},wipeRight:function(){a.sidr("open","leftnav")},preventDefaultEvents:!1})})(jQuery);
+								(function(a){a(window).touchwipe({wipeLeft:function(){a.sidr("close","nav-left-holder")},wipeRight:function(){a.sidr("open","nav-left-holder")},preventDefaultEvents:!1})})(jQuery);
 							},{charset:"utf-8"},5E3);
 						},{charset:"utf-8"},5E3);
 					},{charset:"utf-8"},5E3);

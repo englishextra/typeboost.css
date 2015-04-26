@@ -134,17 +134,17 @@
 	margin-right: 0;
 }
 .col h1 {
-	font-size: 3.5131250351316rem;
+	font-size: 3.500rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h2 {
-	font-size: 1.672916683396rem;
+	font-size: 1.625rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h3 {
-	font-size: 1.0873958442074rem;
+	font-size: 1.063rem;
 	line-height: 1.200;
 	padding: 0;
 }
@@ -154,7 +154,7 @@
 }
 .col h5 {
 	font-variant: small-caps;
-	letter-spacing: 0.0836458341698rem;
+	letter-spacing: 0.063rem;
 	padding: 0;
 }
 .col h6,
@@ -870,7 +870,7 @@
 }
 .col pre {
 	color: inherit;
-	background: #ECF0F1;
+	background: #D2D7D3;
 }
 .col pre a:hover,
 .col pre a:active,
