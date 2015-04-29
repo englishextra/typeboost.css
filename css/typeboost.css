@@ -48,6 +48,7 @@
 .col dd,
 .col ol,
 .col ul,
+.col details,
 .col li,
 .col fieldset,
 .col form,
@@ -64,7 +65,6 @@
 .col article,
 .col aside,
 .col canvas,
-.col details,
 .col embed,
 .col figure,
 .col figcaption,
@@ -186,11 +186,13 @@
 .col dl dt,
 .col dl dd,
 .col ul li,
-.col ol li {
+.col ol li,
+.col details li {
 	font-size: 1rem;
 	line-height: 1.500;
 }
-.col ul {
+.col ul,
+.col details {
 	list-style: disc outside;
 }
 .col ol {
@@ -234,7 +236,8 @@
 	padding: .313rem 1rem;
 	vertical-align: top;
 }
-.col pre {
+.col pre,
+.col pre code {
 	font-size: .938rem;
 	line-height: 1.500;
 }
@@ -329,7 +332,8 @@
 }
 .col ul,
 .col ol,
-.col dl {
+.col dl,
+.col details {
 	margin-left: auto;
 }
 .col dl dd:before {
@@ -348,7 +352,8 @@
 .col .indent {
 	text-indent: 1.500rem;
 }
-.col ul {
+.col ul,
+.col details {
 	padding-left: 2.500rem;
 }
 .col td ul {
@@ -379,6 +384,7 @@
 .col select,
 .col textarea,
 .col ul li,
+.col details li,
 .col table td ol,
 .col table td ul,
 .col table td dl {
@@ -403,7 +409,8 @@
 .col p,
 .col pre,
 .col table,
-.col ul {
+.col ul,
+.col details {
 	margin-top: 0;
 }
 .col h2+div,
@@ -435,18 +442,21 @@
 .col h1+pre,
 .col h1+table,
 .col h1+ul,
+.col h1+details,
 .col h2+blockquote,
 .col h2+dl,
 .col h2+h3,
 .col h2+ol,
 .col h2+pre,
 .col h2+ul,
+.col h2+details,
 .col h3+blockquote,
 .col h3+dl,
 .col h3+h4,
 .col h3+ol,
 .col h3+pre,
 .col h3+ul,
+.col h3+details,
 .col h4+blockquote,
 .col h4+dl,
 .col h4+h3,
@@ -454,6 +464,7 @@
 .col h4+ol,
 .col h4+pre,
 .col h4+ul,
+.col h4+details,
 .col h5+blockquote,
 .col h5+dl,
 .col h5+h6,
@@ -461,11 +472,13 @@
 .col h5+ol,
 .col h5+pre,
 .col h5+ul,
+.col h5+details,
 .col h6+blockquote,
 .col h6+dl,
 .col h6+ol,
 .col h6+pre,
 .col h6+ul,
+.col h6+details,
 .col p+address,
 .col p+p,
 .col p.address,
@@ -489,6 +502,7 @@
 .col blockquote+pre,
 .col blockquote+table,
 .col blockquote+ul,
+.col blockquote+details,
 .col div+blockquote,
 .col div+dl,
 .col div+h1,
@@ -502,6 +516,7 @@
 .col div+pre,
 .col div+table,
 .col div+ul,
+.col div+details,
 .col dl+blockquote,
 .col dl+dl,
 .col dl+h1,
@@ -515,6 +530,7 @@
 .col dl+pre,
 .col dl+table,
 .col dl+ul,
+.col dl+details,
 .col ol+blockquote,
 .col ol+dl,
 .col ol+h1,
@@ -528,6 +544,7 @@
 .col ol+pre,
 .col ol+table,
 .col ol+ul,
+.col ol+details,
 .col p+blockquote,
 .col p+dl,
 .col p+figcaption,
@@ -542,6 +559,7 @@
 .col p+pre,
 .col p+table,
 .col p+ul,
+.col p+details,
 .col pre+blockquote,
 .col pre+dl,
 .col pre+h1,
@@ -555,6 +573,7 @@
 .col pre+pre,
 .col pre+table,
 .col pre+ul,
+.col pre+details,
 .col table+blockquote,
 .col table+dl,
 .col table+h1,
@@ -568,6 +587,7 @@
 .col table+pre,
 .col table+table,
 .col table+ul,
+.col table+details,
 .col ul+blockquote,
 .col ul+dl,
 .col ul+h1,
@@ -581,6 +601,21 @@
 .col ul+pre,
 .col ul+table,
 .col ul+ul,
+.col ul+details,
+.col details+blockquote,
+.col details+dl,
+.col details+h1,
+.col details+h2,
+.col details+h3,
+.col details+h4,
+.col details+h5,
+.col details+h6,
+.col details+ol,
+.col details+p,
+.col details+pre,
+.col details+table,
+.col details+ul,
+.col details+details,
 .col h1:first-child,
 .col h2:first-child,
 .col h3:first-child,
@@ -590,6 +625,7 @@
 .col p:first-child,
 .col dl:first-child,
 .col ul:first-child,
+.col details:first-child,
 .col ol:first-child,
 .col blockquote:first-child,
 .col pre:first-child,
@@ -608,6 +644,7 @@
 .col p:last-child,
 .col dl:last-child,
 .col ul:last-child,
+.col details:last-child,
 .col ol:last-child,
 .col blockquote:last-child,
 .col pre:last-child,
@@ -624,7 +661,8 @@
 .col figure,
 .col ol,
 .col pre,
-.col ul {
+.col ul,
+.col details {
 	margin-bottom: 1.500rem;
 }
 .col blockquote+p,
@@ -640,7 +678,8 @@
 .col p+p,
 .col pre+p,
 .col table+p,
-.col ul+p {
+.col ul+p,
+.col details+p {
 	margin-bottom: 1rem;
 }
 .col .indent {
@@ -697,6 +736,7 @@
 .col p.blockquote,
 .col dl dd,
 .col ul li,
+.col details li,
 .col ol li,
 .col table td,
 .col caption,
