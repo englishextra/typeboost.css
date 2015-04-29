@@ -1,5 +1,5 @@
 /*!
- * typeboost.css v0.1.3
+ * typeboost.css v0.1.4
  * github.com/englishextra/typeboost.css
  */
 .col div,
@@ -165,7 +165,7 @@
 .col h4,
 .col h5,
 .col h6 {
-	font-size: 1rem;
+	font-size: 1.000rem;
 	line-height: 1.200;
 }
 .col caption,
@@ -186,13 +186,11 @@
 .col dl dt,
 .col dl dd,
 .col ul li,
-.col ol li,
-.col details li {
-	font-size: 1rem;
+.col ol li {
+	font-size: 1.000rem;
 	line-height: 1.500;
 }
-.col ul,
-.col details {
+.col ul {
 	list-style: disc outside;
 }
 .col ol {
@@ -233,7 +231,7 @@
 }
 .col table td,
 .col table th {
-	padding: .313rem 1rem;
+	padding: .313rem 1.000rem;
 	vertical-align: top;
 }
 .col pre,
@@ -316,7 +314,7 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: .500rem 1rem;
+	padding: .500rem 1.000rem;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
@@ -332,8 +330,7 @@
 }
 .col ul,
 .col ol,
-.col dl,
-.col details {
+.col dl {
 	margin-left: auto;
 }
 .col dl dd:before {
@@ -352,8 +349,7 @@
 .col .indent {
 	text-indent: 1.500rem;
 }
-.col ul,
-.col details {
+.col ul {
 	padding-left: 2.500rem;
 }
 .col td ul {
@@ -384,7 +380,6 @@
 .col select,
 .col textarea,
 .col ul li,
-.col details li,
 .col table td ol,
 .col table td ul,
 .col table td dl {
@@ -487,7 +482,7 @@
 .col table+address,
 .col table+p.address,
 .col table+p.blockquote {
-	margin-top: 1rem;
+	margin-top: 1.000rem;
 }
 .col blockquote+blockquote,
 .col blockquote+dl,
@@ -680,7 +675,7 @@
 .col table+p,
 .col ul+p,
 .col details+p {
-	margin-bottom: 1rem;
+	margin-bottom: 1.000rem;
 }
 .col .indent {
 	display: inline-block;
@@ -736,7 +731,6 @@
 .col p.blockquote,
 .col dl dd,
 .col ul li,
-.col details li,
 .col ol li,
 .col table td,
 .col caption,

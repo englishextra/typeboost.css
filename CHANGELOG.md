@@ -6,7 +6,8 @@
 * Add rules for previously uncovered input element types.
 * Change appearance of form elements.
 
-=== 0.1.4 (April 19, 2015)
+=== 0.1.4 (April 29, 2015)
 
-* Fixed HR, SMALL.
 * Changed font stacks for pre code, and .phonetic.
+* Fixed PRE, HR, DETAILS, SMALL.
+* Fixed headings font sizes based on 16px/12pt base font size.
