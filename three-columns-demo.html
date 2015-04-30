@@ -79,58 +79,39 @@
 	margin: 0;
 }
 /*!
- * github.com/sksmatt/UIui-totop-jQuery-Plugin/
+ * github.com/sksmatt/UItoTop-jQuery-Plugin/
  */
 #ui-totop {
-	width: 2.000em;
-	height: 2.000em;
+	width: 3.0000em;
+	height: 3.0000em;
 	display: none;
 	position: fixed;
 	bottom: 0.857em;
 	right: 1.429em;
 	overflow: hidden;
+	font-size: 1.000em;
 	text-decoration: none;
 	text-indent: 100%;
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline.svg) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAA3NCSVQICAjb4U/gAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAAD3RSTlMAESIzVWZ3iJmqu8zd7v9cds+WAAAACXBIWXMAABbqAAAW6gHljkMQAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAW1JREFUOI29lL1KxEAUhScrq4IWafxDF8RWEUsfwFpipSAs2lhrYbsoYiv4AOYFhKAWFhZBrZeA5TYpxGV1k5xnMDv33slESTq9zUz4ciZn7k+U+u9o7N12ny6Xf4PZCKNID3+CeUicl0EzBnqnW7s3QObZwAmQXejdZoyha5E14IS3c8CrZSvCg3lYRVoYXMKndcAVXsw+wLFFJjA0xkqSkUjstXBHmxVapvBm3qFPNrq8yhkOBuKd/XZAVxpnce6d/bZwoNdpnMl1WTSJZ72uY4MliEk0hndN2hlLHrHPorhP1r5IksxgJySRT+aCAUnum/AWSdShLIR9krg5cUjUTjSJPkiSZ8lTJNpOLZK4mjihRei0a6WJWrBOCzg5RJTlgFyXCLvmm9qEb8rZsYhkRzJaEMmoVKEgUgVTOUOkcqbaQky1TYc0juiNokOqu0r5VZ1Y073VHV89JcrxqyarehprJrhm6mv+FH8c346N6dZzD7faAAAAAElFTkSuQmCC") top left no-repeat;
-	background-size: 2.000em 2.000em;
-	-webkit-transform: translate3d(0,0,0);
 	border: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.no-svg #ui-totop {
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline.png) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAA3NCSVQICAjb4U/gAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAAD3RSTlMAESIzVWZ3iJmqu8zd7v9cds+WAAAACXBIWXMAABbqAAAW6gHljkMQAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAW1JREFUOI29lL1KxEAUhScrq4IWafxDF8RWEUsfwFpipSAs2lhrYbsoYiv4AOYFhKAWFhZBrZeA5TYpxGV1k5xnMDv33slESTq9zUz4ciZn7k+U+u9o7N12ny6Xf4PZCKNID3+CeUicl0EzBnqnW7s3QObZwAmQXejdZoyha5E14IS3c8CrZSvCg3lYRVoYXMKndcAVXsw+wLFFJjA0xkqSkUjstXBHmxVapvBm3qFPNrq8yhkOBuKd/XZAVxpnce6d/bZwoNdpnMl1WTSJZ72uY4MliEk0hndN2hlLHrHPorhP1r5IksxgJySRT+aCAUnum/AWSdShLIR9krg5cUjUTjSJPkiSZ8lTJNpOLZK4mjihRei0a6WJWrBOCzg5RJTlgFyXCLvmm9qEb8rZsYhkRzJaEMmoVKEgUgVTOUOkcqbaQky1TYc0juiNokOqu0r5VZ1Y073VHV89JcrxqyarehprJrhm6mv+FH8c346N6dZzD7faAAAAAElFTkSuQmCC") top left no-repeat;
-	background-size: 2.000em 2.000em;
-}
 #ui-totop-hover {
-	width: 2.000em;
-	height: 2.000em;
+	width: 3.0000em;
+	height: 3.0000em;
 	float: left;
 	display: block;
 	overflow: hidden;
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline.svg) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAA3NCSVQICAjb4U/gAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAAD3RSTlMAESIzVWZ3iJmqu8zd7v9cds+WAAAACXBIWXMAABbqAAAW6gHljkMQAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAW1JREFUOI29lL1KxEAUhScrq4IWafxDF8RWEUsfwFpipSAs2lhrYbsoYiv4AOYFhKAWFhZBrZeA5TYpxGV1k5xnMDv33slESTq9zUz4ciZn7k+U+u9o7N12ny6Xf4PZCKNID3+CeUicl0EzBnqnW7s3QObZwAmQXejdZoyha5E14IS3c8CrZSvCg3lYRVoYXMKndcAVXsw+wLFFJjA0xkqSkUjstXBHmxVapvBm3qFPNrq8yhkOBuKd/XZAVxpnce6d/bZwoNdpnMl1WTSJZ72uY4MliEk0hndN2hlLHrHPorhP1r5IksxgJySRT+aCAUnum/AWSdShLIR9krg5cUjUTjSJPkiSZ8lTJNpOLZK4mjihRei0a6WJWrBOCzg5RJTlgFyXCLvmm9qEb8rZsYhkRzJaEMmoVKEgUgVTOUOkcqbaQky1TYc0juiNokOqu0r5VZ1Y073VHV89JcrxqyarehprJrhm6mv+FH8c346N6dZzD7faAAAAAElFTkSuQmCC") top left no-repeat;
-	background-size: 2.000em 2.000em;
-	-webkit-transform: translate3d(0,0,0);
 }
-.no-svg #ui-totop-hover {
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline.png) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAA3NCSVQICAjb4U/gAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAAD3RSTlMAESIzVWZ3iJmqu8zd7v9cds+WAAAACXBIWXMAABbqAAAW6gHljkMQAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAW1JREFUOI29lL1KxEAUhScrq4IWafxDF8RWEUsfwFpipSAs2lhrYbsoYiv4AOYFhKAWFhZBrZeA5TYpxGV1k5xnMDv33slESTq9zUz4ciZn7k+U+u9o7N12ny6Xf4PZCKNID3+CeUicl0EzBnqnW7s3QObZwAmQXejdZoyha5E14IS3c8CrZSvCg3lYRVoYXMKndcAVXsw+wLFFJjA0xkqSkUjstXBHmxVapvBm3qFPNrq8yhkOBuKd/XZAVxpnce6d/bZwoNdpnMl1WTSJZ72uY4MliEk0hndN2hlLHrHPorhP1r5IksxgJySRT+aCAUnum/AWSdShLIR9krg5cUjUTjSJPkiSZ8lTJNpOLZK4mjihRei0a6WJWrBOCzg5RJTlgFyXCLvmm9qEb8rZsYhkRzJaEMmoVKEgUgVTOUOkcqbaQky1TYc0juiNokOqu0r5VZ1Y073VHV89JcrxqyarehprJrhm6mv+FH8c346N6dZzD7faAAAAAElFTkSuQmCC") top left no-repeat;
-	background-size: 2.000em 2.000em;
+#ui-totop,
+#ui-totop-hover {
+	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline.svg) top left no-repeat;*/
+	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoCAMAAAAqwkWTAAAAA3NCSVQICAjb4U/gAAAAM1BMVEVybGqVkY/////KyMfc29p7dXO5trXl5OSwrauno6KNiIb39vbCv77T0dGEfn2empnu7e0lZookAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAOpJREFUaIHt19sOgyAQRVGEUUGq7f9/bY3xwlitL2dM05z9ZDRhBUICOscYY4wxxhhjf1YXREJl7yQ/9bjJ8T7c5BhL0ftbJOUYSsn7W6QPx0g6cEykQ8dAOnHg0qkDluK5A5XCNwcoXTgwqblyQFKlhmyXh6xeRwCkFi6t0xO1EVsAJKWzraO4qpwUFkquhFy3SRkAxdJRUCH1AKjOhaOhTeoA0DxanpwdtEgJ4Yxzir2k2h1B4zeRZsA4qj1kFiFChAgRAraet9Z/y8PsZIszSDXfshAXuYue4x3yBTq7GWOMMcYYY+x3egN51wiCSEhYygAAAABJRU5ErkJggg==") top left no-repeat;
+	background-size: 3.0000em 3.0000em;
+	-webkit-transform: translate3d(0,0,0);
 }
 #ui-totop:hover {
-	/* opacity: 0.5 !important; */
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline-hover.svg) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAA3NCSVQICAjb4U/gAAAAe1BMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADf39/Z2dnQ0NDMzMzGxsa+vr66urqvr6+ZmZmLi4uEhIR+fn54eHhtbW1mZmZcXFxWVlZVVVVGRkZEREQuLi4oKCgnJycfHx8REREKCgoICAgGBgYFBQUAAADlMtwdAAAAKXRSTlMAESJmd5mqu8zd7v///////////////////////////////////////6fUiMUAAAAJcEhZcwAAFuoAABbqAeWOQxAAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAABkUlEQVRIid2W0XqCMAyFQWCAFVEQBjhhimN5/ydcw5z2tEUdd9u5U/t/SU7SVMf531p4QRjFcRQG3uKZ864fk6LYdx8BARkK7kLecjzUt1WR50XV9uPHpTcdIuQD5yYTV2XNmb8LJwItuIihTgQoqQcuyerDSHQbYWjTTTAuE/uVSQixemPGzI3rqG0Aq+Z6DK84xhQhBMfRfHOlux1klaaQm6xnianJDg5QeXo6AbORvgUQRC8kPREhw+WoYXzZwUQjNCaRPfUVRBrcGITGNNJopYvy5wyJT6IPZDJ56NZP6XCPxPGVqHxHpld9ln61SKx3RLv1EZhW9Ux2vkJCMCKQqdQJiIgKJL4RZAqiSDUsR+KCAJOrlgEyEj8IM1ZETewwEldErA/WxNTyL7oiN0H5YPIkAiZjK6cQaKU2MHYEB0YfSyuCY2kMvwXRh9+4YiaiXzHzIuuIcZHNdbEty63y0bIuHi2lvbmUnlh9Lzpxd8Hu7Qt2xhqf81jMeZKcGQ+fM+d5dWY84qN++1fhD+sL/OBqxAVwqt4AAAAASUVORK5CYII=") top left no-repeat;
-	background-size: 2.000em 2.000em;
-	-webkit-transform: translate3d(0,0,0);
-}
-.no-svg #ui-totop:hover {
-	/*background: transparent url(../../../cdn/materialdesignicons/0.1/img/arrow-up-circle-outline-hover.png) top left no-repeat;*/
-	background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAA3NCSVQICAjb4U/gAAAAe1BMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADf39/Z2dnQ0NDMzMzGxsa+vr66urqvr6+ZmZmLi4uEhIR+fn54eHhtbW1mZmZcXFxWVlZVVVVGRkZEREQuLi4oKCgnJycfHx8REREKCgoICAgGBgYFBQUAAADlMtwdAAAAKXRSTlMAESJmd5mqu8zd7v///////////////////////////////////////6fUiMUAAAAJcEhZcwAAFuoAABbqAeWOQxAAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAABkUlEQVRIid2W0XqCMAyFQWCAFVEQBjhhimN5/ydcw5z2tEUdd9u5U/t/SU7SVMf531p4QRjFcRQG3uKZ864fk6LYdx8BARkK7kLecjzUt1WR50XV9uPHpTcdIuQD5yYTV2XNmb8LJwItuIihTgQoqQcuyerDSHQbYWjTTTAuE/uVSQixemPGzI3rqG0Aq+Z6DK84xhQhBMfRfHOlux1klaaQm6xnianJDg5QeXo6AbORvgUQRC8kPREhw+WoYXzZwUQjNCaRPfUVRBrcGITGNNJopYvy5wyJT6IPZDJ56NZP6XCPxPGVqHxHpld9ln61SKx3RLv1EZhW9Ux2vkJCMCKQqdQJiIgKJL4RZAqiSDUsR+KCAJOrlgEyEj8IM1ZETewwEldErA/WxNTyL7oiN0H5YPIkAiZjK6cQaKU2MHYEB0YfSyuCY2kMvwXRh9+4YiaiXzHzIuuIcZHNdbEty63y0bIuHi2lvbmUnlh9Lzpxd8Hu7Qt2xhqf81jMeZKcGQ+fM+d5dWY84qN++1fhD+sL/OBqxAVwqt4AAAAASUVORK5CYII=") top left no-repeat;
-	background-size: 2.000em 2.000em;
+	opacity: 0.5 !important;
 }
 /*!
  * custom
@@ -318,8 +299,8 @@ pre.prettyprint {
  */
 #ui-totop {
 	position: fixed;
-	bottom: 0.857em;
-	right: 1.429em;
+	bottom: 0;
+	right: 0;
 }
 /*!
  * max and portrait
