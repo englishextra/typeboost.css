@@ -482,7 +482,7 @@
 .col table+address,
 .col table+p.address,
 .col table+p.blockquote {
-	margin-top: 1.000rem;
+	margin-top: 1.500rem;
 }
 .col blockquote+blockquote,
 .col blockquote+dl,
@@ -904,7 +904,7 @@
 }
 .col pre {
 	color: inherit;
-	background: #D2D7D3;
+	background: #D6D6D6;
 }
 .col pre a:hover,
 .col pre a:active,
@@ -913,7 +913,7 @@
 }
 .col select {
 	background: #FFF;
-	border: 0.063rem solid #59ABE3;
+	border: 0.063rem solid #474747;
 }
 .col input[type^="text"],
 .col input[type^="search"],
@@ -931,7 +931,7 @@
 .col input[type^="datetime-local"],
 .col textarea {
 	background: #FFF;
-	border: 0.063rem solid #59ABE3;
+	border: 0.063rem solid #474747;
 }
 .col button:hover,
 .col input[type="button"]:hover,
@@ -946,16 +946,16 @@
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
 	color: #FFF;
-	background: #6DBFF7;
-	border: 0.063rem solid #6DBFF7;
+	background: #595959;
+	border: 0.063rem solid #595959;
 }
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
 	color: #FFF;
-	background: #59ABE3;
-	border: 0.063rem solid #59ABE3;
+	background: #474747;
+	border: 0.063rem solid #474747;
 }
 .col input[type^="text"]:focus,
 .col input[type^="search"]:focus,
@@ -987,17 +987,17 @@
 .col input[type^="datetime"]:active,
 .col input[type^="datetime-local"]:active,
 .col textarea:active {
-	background: #ECF0F1;
-	border: 0.063rem solid #59ABE3;
+	background: #F2F2F2;
+	border: 0.063rem solid #474747;
 }
 .col select:hover {
-	background: #ECF0F1;
-	border: 0.063rem solid #59ABE3;
+	background: #F2F2F2;
+	border: 0.063rem solid #474747;
 }
 .col select:active,
 .col select:focus {
-	background: #ECF0F1;
-	border: 0.063rem solid #59ABE3;
+	background: #F2F2F2;
+	border: 0.063rem solid #474747;
 }
 .col select:disabled,
 .col input[type^="text"]:disabled,
@@ -1015,15 +1015,15 @@
 .col input[type^="datetime"]:disabled,
 .col input[type^="datetime-local"]:disabled,
 .col textarea:disabled {
-	background: #D2D7D3;
-	border-color: #D2D7D3;
+	background: #D6D6D6;
+	border-color: #D6D6D6;
 }
 .col button:disabled,
 .col input[type="button"]:disabled,
 .col input[type="reset"]:disabled,
 .col input[type="submit"]:disabled {
-	background: #D2D7D3;
-	border-color: #D2D7D3;
+	background: #D6D6D6;
+	border-color: #D6D6D6;
 }
 .col table tr,
 .col table tr:nth-of-type(odd) {
@@ -1049,6 +1049,6 @@
 }
 .col hr,
 .col .hr {
-	background: #ABB7B7;
+	background: #D9D9D9;
 	border: 0;
 }
