@@ -9,5 +9,6 @@
 === 0.1.4 (April 29, 2015)
 
 * Changed font stacks for pre code, and .phonetic.
+* Changed form elements outline and background colors to neutrals
 * Fixed PRE, HR, DETAILS, SMALL.
 * Fixed headings font sizes based on 16px/12pt base font size.
