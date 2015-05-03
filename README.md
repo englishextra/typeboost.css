@@ -29,4 +29,4 @@ margins. Wrap your HTML content with class **.col** and you are done.
 
 © [englishextra.github.com][], 2015
 
-  [englishextra.github.com]: http://englishextra.github.com/
+  [englishextra.github.com]: https://englishextra.github.com/
