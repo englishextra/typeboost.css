@@ -4,6 +4,8 @@
 responsive typography. REMs are used for font sizes, paddings, and
 margins. Wrap your HTML content with class **.col** and you are done.
 
+![](https://github.com/englishextra/typeboost.css/raw/master/img/typeboost.css-logo-1DB5FC-935x230.png)
+
 <https://github.com/englishextra/typeboost.css>
 
 ## Usage
