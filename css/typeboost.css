@@ -113,7 +113,6 @@
 }
 .col a {
 	text-decoration: none;
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
@@ -218,7 +217,6 @@
 }
 .col pre a {
 	text-decoration: none;
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
@@ -274,12 +272,14 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	/* padding: .500rem; */
 	vertical-align: baseline;
 	*vertical-align: middle;
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
+	padding: 0 0.625rem;
+}
+.col select {
+	padding: 0 0 0 0.313rem;
 }
 .col optgroup {
 	margin: 0.188rem;
@@ -318,13 +318,12 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	/* padding: .500rem 1.000rem; */
 	vertical-align: baseline;
 	*vertical-align: middle;
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 	cursor: pointer;
+	padding: 0 0.625rem;
 }
 .col label {
 	display: block;
