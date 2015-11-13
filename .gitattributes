@@ -27,6 +27,7 @@
 *.src text
 *.sublime-project text
 *.sublime-workspace text
+*.svg text
 *.tpl text
 *.txt text
 *.URL text

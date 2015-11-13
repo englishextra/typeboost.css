@@ -1,5 +1,5 @@
 /*!
- * typeboost.css v0.1.4
+ * typeboost.css v0.1.5
  * github.com/englishextra/typeboost.css
  */
 .col div,
@@ -115,6 +115,7 @@
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
 }
 .col h1 a,
 .col h2 a,
@@ -134,27 +135,29 @@
 	margin-right: 0;
 }
 .col h1 {
-	font-size: 3.500rem;
+	font-size: 3.375rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h2 {
-	font-size: 1.625rem;
+	font-size: 1.611rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h3 {
-	font-size: 1.063rem;
+	font-size: 1.210rem;
 	line-height: 1.200;
 	padding: 0;
 }
 .col h4 {
-	text-transform: uppercase;
+	font-size: 1.100rem;
+	line-height: 1.200;
+	font-variant: small-caps;
+	letter-spacing: 0.063rem;
 	padding: 0;
 }
 .col h5 {
-	font-variant: small-caps;
-	letter-spacing: 0.063rem;
+	text-transform: uppercase;
 	padding: 0;
 }
 .col h6,
@@ -162,7 +165,6 @@
 	text-decoration: underline;
 	padding: 0;
 }
-.col h4,
 .col h5,
 .col h6 {
 	font-size: 1.000rem;
@@ -209,7 +211,7 @@
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-	padding: 1.063rem 1.500rem;
+	padding: 1.000rem 1.500rem;
 }
 .col pre code {
 	text-shadow: none;
@@ -218,6 +220,7 @@
 	text-decoration: none;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
 }
 .col table {
 	width: auto;
@@ -231,7 +234,7 @@
 }
 .col table td,
 .col table th {
-	padding: .313rem 1.000rem;
+	padding: 0.313rem 0.625rem;
 	vertical-align: top;
 }
 .col pre,
@@ -271,11 +274,12 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: .500rem;
+	/* padding: .500rem; */
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
 }
 .col optgroup {
 	margin: 0.188rem;
@@ -302,7 +306,7 @@
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col select {
-	height: 2.500rem;
+	height: 2.000rem;
 }
 .col button,
 .col input[type="button"],
@@ -314,11 +318,12 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	padding: .500rem 1.000rem;
+	/* padding: .500rem 1.000rem; */
 	vertical-align: baseline;
 	*vertical-align: middle;
 	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
 	cursor: pointer;
 }
 .col label {
@@ -677,15 +682,6 @@
 .col details+p {
 	margin-bottom: 1.000rem;
 }
-.col .indent {
-	display: inline-block;
-}
-.col .holder {
-	margin: 0 auto;
-}
-.col .holder select {
-	width: 100%;
-}
 .col .textleft {
 	text-align: left;
 }
@@ -788,7 +784,7 @@
 }
 .col pre,
 .col pre code {
-	font-family: "Consolas","Ubuntu Mono","DejaVu Sans Mono",monospace;
+	font-family: "Source Code Pro","Consolas",monospace;
 }
 .col select {
 	font-family: sans-serif;
@@ -822,18 +818,18 @@
 	font-family: inherit;
 }
 .col .phonetic {
-	font-family: "Calibri","Voces","Judson","ConstructiumRegular",sans-serif;
+	font-family: "Source Code Pro","Consolas",monospace;
 }
 /*!
  * colors
  */
 .col a {
-	color: #1F3A93;
+	color: #307CCA;
 }
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #EF4836;
+	color: #EA6743;
 }
 .col h1,
 .col h2,
@@ -904,7 +900,7 @@
 }
 .col pre {
 	color: inherit;
-	background: #D6D6D6;
+	background: #E3E3E3;
 }
 .col pre a:hover,
 .col pre a:active,
@@ -912,8 +908,8 @@
 	color: inherit;
 }
 .col select {
-	background: #FFF;
-	border: 0.063rem solid #474747;
+	background: #FFFFFF;
+	border: 0.063rem solid #C3C3C3;
 }
 .col input[type^="text"],
 .col input[type^="search"],
@@ -930,8 +926,8 @@
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col textarea {
-	background: #FFF;
-	border: 0.063rem solid #474747;
+	background: #FFFFFF;
+	border: 0.063rem solid #C3C3C3;
 }
 .col button:hover,
 .col input[type="button"]:hover,
@@ -945,15 +941,15 @@
 .col input[type="button"]:focus,
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
-	color: #FFF;
-	background: #595959;
-	border: 0.063rem solid #595959;
+	color: #FFFFFF;
+	background: #606060;
+	border: 0.063rem solid #606060;
 }
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
-	color: #FFF;
+	color: #FFFFFF;
 	background: #474747;
 	border: 0.063rem solid #474747;
 }
@@ -988,16 +984,16 @@
 .col input[type^="datetime-local"]:active,
 .col textarea:active {
 	background: #F2F2F2;
-	border: 0.063rem solid #474747;
+	border: 0.063rem solid #C3C3C3;
 }
 .col select:hover {
 	background: #F2F2F2;
-	border: 0.063rem solid #474747;
+	border: 0.063rem solid #C3C3C3;
 }
 .col select:active,
 .col select:focus {
 	background: #F2F2F2;
-	border: 0.063rem solid #474747;
+	border: 0.063rem solid #C3C3C3;
 }
 .col select:disabled,
 .col input[type^="text"]:disabled,
@@ -1025,30 +1021,39 @@
 	background: #D6D6D6;
 	border-color: #D6D6D6;
 }
-.col table tr,
-.col table tr:nth-of-type(odd) {
-	background-color: transparent;
+.col table {
+	border: none;
+	border-top-width: 0.063rem;
+	border-top-style: solid;
+	border-top-color: #C3C3C3;
+	border-right-width: 0.063rem;
+	border-right-style: solid;
+	border-right-color: #C3C3C3;
+	border-left-width: 0.063rem;
+	border-left-style: solid;
+	border-left-color: #C3C3C3;
 }
 .col table th {
+	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
-	border-bottom-color: inherit;
-	background-color: transparent;
+	border-bottom-color: #C3C3C3;
 }
 .col table td {
+	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
-	border-bottom-color: inherit;
+	border-bottom-color: #C3C3C3;
 }
 .col img {
 	background-color: inherit;
 	border: 0;
 }
 .col .highlight {
-	color: #EF4836;
+	color: #EE6944;
 }
 .col hr,
 .col .hr {
-	background: #D9D9D9;
+	background: #C3C3C3;
 	border: 0;
 }
