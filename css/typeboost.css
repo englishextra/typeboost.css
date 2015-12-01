@@ -237,7 +237,7 @@
 }
 .col pre,
 .col pre code {
-	font-size: .938rem;
+	font-size: .875rem;
 	line-height: 1.500;
 }
 .col table th a:hover,
@@ -899,7 +899,7 @@
 }
 .col pre {
 	color: inherit;
-	background: #E3E3E3;
+	background: #F1F1F1;
 }
 .col pre a:hover,
 .col pre a:active,
