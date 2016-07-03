@@ -2,6 +2,8 @@
 
 **Typeboost.css** is a set of CSS rules to ensure readable, scalable and responsive typography. REMs are used for font sizes, paddings, and margins. Wrap your HTML content with class **.col** and you are done.
 
+[![NPM](https://nodei.co/npm/typeboost.css.png?downloads=true)](https://nodei.co/npm/typeboost.css/)
+
 [![Typeboost.css](https://github.com/englishextra/typeboost.css/raw/master/img/typeboost.css-logo-1DB5FC-935x230.png)](https://github.com/englishextra/typeboost.css)
 
 ## npm Install
