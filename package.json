@@ -8,12 +8,23 @@
 	"three-columns-demo.html",
 	"css/typeboost.css",
 	"css/typeboost.min.css"],
-	"homepage": "https://englishextra.github.io/libs/typeboost.css/",
+	"main": "css/typeboost.min.css",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/typeboost.css.git"
 	},
-	"main": "css/typeboost.min.css",
-	"author": "englishextra",
-	"license": "MIT"
+	"email": "englishextra@mail.ru",
+	"url": "https://github.com/englishextra/typeboost.css/issues",
+	"homepage": "https://englishextra.github.io/libs/typeboost.css/",
+	"maintainers": {
+		"name": "Serguei Shimansky",
+		"email": "englishextra@mail.ru",
+		"url": "https://github.com/englishextra"
+	},
+	"author": {
+		"name": "Serguei Shimansky",
+		"email": "englishextra@mail.ru",
+		"url": "https://github.com/englishextra"
+	},
+	"license": "(MIT)"
 }
