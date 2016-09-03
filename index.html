@@ -738,7 +738,7 @@ ol.linenums {
 	a.setAttribute("href", "#");
 	a.setAttribute("title", "\u041d\u0430\u0432\u0435\u0440\u0445");
 	a.setAttribute("id", u);
-	a.setAttribute("onclick", "function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};window.zenscroll?zenscroll.toY(0):scrollTop2(50);return false;");
+	a.setAttribute("onclick", "function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};window.zenscroll?zenscroll.toY(0):scrollTop2(50);return !1;");
 	btn_hover = d.createElement("span");
 	btn_hover.setAttribute("id", v);
 	a.appendChild(btn_hover);
