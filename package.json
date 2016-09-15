@@ -1,11 +1,10 @@
 {
 	"name": "typeboost.css",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "typeboost.css as a node packaged module",
 	"style": "css/typeboost.min.css",
 	"files": ["LICENSE.md",
 	"index.html",
-	"three-columns-demo.html",
 	"css/typeboost.css",
 	"css/typeboost.min.css"],
 	"main": "css/typeboost.min.css",
