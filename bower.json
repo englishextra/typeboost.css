@@ -1,10 +1,9 @@
 {
 	"name": "typeboost.css",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"main": "css/typeboost.min.css",
 	"author": "englishextra",
-	"ignore": ["img",".URL",
-	".md",
+	"ignore": ["img",".md",
 	"update.json",
 	"bower.json",
 	"gruntfile.js",

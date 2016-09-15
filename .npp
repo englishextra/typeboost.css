@@ -1,0 +1,16 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="8">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="483" startPos="310" endPos="357" selMode="0" lang="JSON" encoding="-1" filename="D:\server\sources\typeboost.css\package.json" backupFilePath="" originalFileLastModifTimestamp="1473960594" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="252" startPos="128" endPos="128" selMode="0" lang="JSON" encoding="-1" filename="D:\server\sources\typeboost.css\bower.json" backupFilePath="" originalFileLastModifTimestamp="1473961454" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="287" startPos="85" endPos="85" selMode="0" lang="JSON" encoding="-1" filename="D:\server\sources\typeboost.css\component.json" backupFilePath="" originalFileLastModifTimestamp="1473961648" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="287" startPos="0" endPos="0" selMode="0" lang="JSON" encoding="-1" filename="D:\server\sources\typeboost.css\update.json" backupFilePath="" originalFileLastModifTimestamp="1436522198" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7623" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="D:\server\sources\typeboost.css\index.html" backupFilePath="" originalFileLastModifTimestamp="1472418281" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="392" startPos="18295" endPos="18295" selMode="0" lang="CSS" encoding="-1" filename="D:\server\sources\typeboost.css\css\typeboost.css" backupFilePath="" originalFileLastModifTimestamp="1473960359" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="121779" startPos="16871" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="D:\server\sources\typeboost.css\css\typeboost.min.css" backupFilePath="" originalFileLastModifTimestamp="1473960868" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="77" startPos="0" endPos="0" selMode="0" lang="Batch" encoding="-1" filename="D:\server\sources\typeboost.css\.npm-publish.bat" backupFilePath="" originalFileLastModifTimestamp="1473961342" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="532" startPos="0" endPos="0" selMode="0" lang="Batch" encoding="-1" filename="D:\server\sources\typeboost.css\.bower-register.bat" backupFilePath="" originalFileLastModifTimestamp="1473961838" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
