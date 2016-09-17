@@ -1,7 +1,7 @@
 {
 	"name": "typeboost.css",
 	"version": "0.1.7",
-	"main": "css/typeboost.min.css",
+	"main": "css/typeboost.css",
 	"author": "englishextra",
 	"ignore": ["img",".md",
 	"update.json",
