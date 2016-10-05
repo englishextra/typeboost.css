@@ -53,14 +53,12 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
 a:hover,
 a:active,
 a:focus {
-	outline: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
@@ -89,26 +87,17 @@ u,
 .underline {
 	text-decoration: underline;
 }
-i.fa {
-	font-style: normal;
-}
-table.respond {
-	width: auto;
-}
-ol.linenums {
-	margin: 0 0 0 3.000em !important;
-}
 *,*:after,
 *::before {
 	box-sizing: border-box;
 }
-::selection {
-	color: #FFFFFF;
-	background: #56A9FF;
-}
 ::-moz-selection {
-	color: #FFFFFF;
-	background: #56A9FF;
+	color: rgba(0,0,0,0.5);
+	background: rgba(121,178,238,0.5);
+}
+::selection {
+	color: rgba(0,0,0,0.5);
+	background: rgba(121,178,238,0.5);
 }
 /*!
  * clearfix css-tricks.com/snippets/css/clear-fix/
