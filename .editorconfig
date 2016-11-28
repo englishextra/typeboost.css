@@ -4,9 +4,10 @@
 root = true
 
 # Unix-style newlines with a newline ending every file
-[*.{html,shtml,php,inc,tpl,js,json,css,xml,svg,txt,md}]
+[*.{html,shtml,php,inc,tpl,js,json,css,scss,xml,svg,txt,md}]
 end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
@@ -14,6 +15,10 @@ insert_final_newline = true
 charset = utf-8
 
 # 4 space indentation
-[*.{html,shtml,php,inc,tpl,js,json,css,xml,svg,txt,md}]
+[*.{html,shtml,php,inc,tpl,js,json,css,scss,xml,svg,txt,md}]
 indent_style = tab
 indent_size = 4
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false
