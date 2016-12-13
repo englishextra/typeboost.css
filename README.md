@@ -4,6 +4,10 @@
 
 [![NPM](https://nodei.co/npm/typeboost.css.png?downloads=true)](https://nodei.co/npm/typeboost.css/)
 
+[![npm](https://img.shields.io/npm/v/typeboost.css.svg)](https://github.com/englishextra/typeboost.css)
+[![Bower](https://img.shields.io/bower/v/typeboost.css.svg)](https://github.com/englishextra/typeboost.css)
+[![CDNJS](https://img.shields.io/cdnjs/v/typeboost.css.svg)](https://cdnjs.com/libraries/typeboost.css)
+
 [![Typeboost.css](https://github.com/englishextra/typeboost.css/raw/master/img/typeboost.css-logo-1DB5FC-935x230.png)](https://github.com/englishextra/typeboost.css)
 
 ## npm Install
