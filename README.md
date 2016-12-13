@@ -39,6 +39,4 @@
 
 ## Copyright
 
-© [englishextra.github.com][], 2015-2016
-
-  [englishextra.github.com]: https://englishextra.github.com/
+© [englishextra.github.com](https://englishextra.github.com/), 2015-2017
