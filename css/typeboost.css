@@ -1,5 +1,5 @@
-/*! @import "typeboost-css"; */
-/*!
+/** @import "typeboost-css"; */
+/**
  * typeboost.css v0.1.7
  * github.com/englishextra/typeboost.css
  */
@@ -704,7 +704,7 @@
 	padding: 0;
 	margin: 1.500rem 0;
 }
-/*!
+/**
  * font weights
  */
 .col h1,
@@ -753,7 +753,7 @@
 .col .highlight {
 	font-weight: bolder;
 }
-/*!
+/**
  * font styles
  */
 .col address,
@@ -767,7 +767,7 @@
 .col .italic {
 	font-style: italic;
 }
-/*!
+/**
  * font families
  */
 .col h1 {
@@ -811,7 +811,7 @@
 .col .phonetic {
 	font-family: "Source Code Pro","Consolas",monospace;
 }
-/*!
+/**
  * colors
  */
 .col a {
