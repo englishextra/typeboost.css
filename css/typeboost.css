@@ -692,7 +692,6 @@
 }
 .col .fade {
 	opacity: 1;
-	-webkit-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
 }
 .col .fade:hover {
