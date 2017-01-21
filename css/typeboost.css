@@ -1,4 +1,4 @@
-/* @import "typeboost-css"; */
+/*! @import "typeboost-css"; */
 /**
  * typeboost.css v0.1.7
  * github.com/englishextra/typeboost.css
@@ -89,22 +89,27 @@
 	margin: 0;
 	padding: 0;
 }
+
 .col sub,
 .col sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 }
+
 .col sup {
 	top: -0.5em;
 }
+
 .col sub {
 	bottom: -0.25em;
 }
+
 .col blockquote,
 .col q {
 	quotes: none;
 }
+
 .col blockquote:before,
 .col blockquote:after,
 .col q:before,
@@ -112,11 +117,13 @@
 	content: '';
 	content: none;
 }
+
 .col a {
 	text-decoration: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
+
 .col h1 a,
 .col h2 a,
 .col h3 a,
@@ -125,30 +132,36 @@
 .col h6 a {
 	font-weight: inherit;
 }
+
 .col address,
 .col p.address {
 	font-size: .813rem;
 	line-height: 1.500;
 	margin-right: 0;
 }
+
 .col p.blockquote {
 	margin-right: 0;
 }
+
 .col h1 {
 	font-size: 3.375rem;
 	line-height: 1.200;
 	padding: 0;
 }
+
 .col h2 {
 	font-size: 1.611rem;
 	line-height: 1.200;
 	padding: 0;
 }
+
 .col h3 {
 	font-size: 1.210rem;
 	line-height: 1.200;
 	padding: 0;
 }
+
 .col h4 {
 	font-size: 1.100rem;
 	line-height: 1.200;
@@ -156,20 +169,24 @@
 	letter-spacing: 0.063rem;
 	padding: 0;
 }
+
 .col h5 {
 	text-transform: uppercase;
 	padding: 0;
 }
+
 .col h6,
 .col dl dt {
 	text-decoration: underline;
 	padding: 0;
 }
+
 .col h5,
 .col h6 {
 	font-size: 1.000rem;
 	line-height: 1.200;
 }
+
 .col caption,
 .col label,
 .col p.smaller,
@@ -178,11 +195,13 @@
 	font-size: .875rem;
 	line-height: 1.500;
 }
+
 .col p.larger,
 .col blockquote {
 	font-size: 1.125rem;
 	line-height: 1.500;
 }
+
 .col p,
 .col p.blockquote,
 .col dl dt,
@@ -192,12 +211,15 @@
 	font-size: 1.000rem;
 	line-height: 1.500;
 }
+
 .col ul {
 	list-style: disc outside;
 }
+
 .col ol {
 	list-style: decimal inside;
 }
+
 .col pre {
 	white-space: pre;
 	white-space: pre-wrap;
@@ -211,44 +233,53 @@
 	tab-size: 4;
 	padding: 1.000rem 1.500rem;
 }
+
 .col pre code {
 	text-shadow: none;
 }
+
 .col pre a {
 	text-decoration: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline: none;
 }
+
 .col table {
 	width: auto;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 .col caption,
 .col table th,
 .col table td {
 	text-align: left;
 }
+
 .col table td,
 .col table th {
 	padding: 0.313rem 0.625rem;
 	vertical-align: top;
 }
+
 .col pre,
 .col pre code {
 	font-size: .875rem;
 	line-height: 1.500;
 }
+
 .col table th a:hover,
 .col table th a:active,
 .col table th a:focus {
 	text-decoration: underline;
 }
+
 .col img {
 	border: 0;
 	vertical-align: bottom;
 	padding: 0;
 }
+
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -274,15 +305,19 @@
 	outline: none;
 	padding: 0 0.625rem;
 }
+
 .col select {
 	padding: 0 0 0 0.313rem;
 }
+
 .col optgroup {
 	margin: 0.188rem;
 }
+
 .col input[type="color"] {
 	padding: 0;
 }
+
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
@@ -304,6 +339,7 @@
 .col select {
 	height: 2.000rem;
 }
+
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
@@ -318,21 +354,26 @@
 	cursor: pointer;
 	padding: 0 0.625rem;
 }
+
 .col label {
 	display: block;
 	margin-bottom: .125rem;
 }
+
 .col textarea {
 	width: 95%;
 }
+
 .col ul,
 .col ol,
 .col dl {
 	margin-left: auto;
 }
+
 .col dl dd:before {
 	content: "\2014\00a0";
 }
+
 .col address,
 .col p.address,
 .col p.blockquote,
@@ -340,29 +381,37 @@
 .col blockquote {
 	margin-left: 1.500rem;
 }
+
 .col ol {
 	padding-left: 1.500rem;
 }
+
 .col .indent {
 	text-indent: 1.500rem;
 }
+
 .col ul {
 	padding-left: 2.500rem;
 }
+
 .col td ul {
 	margin-top: 0 !important;
 }
+
 .col td ul li {
 	font-size: inherit !important;
 	line-height: inherit !important;
 }
+
 .col td ol {
 	margin-top: 0 !important;
 }
+
 .col td ol li {
 	font-size: inherit !important;
 	line-height: inherit !important;
 }
+
 .col.textcenter address,
 .col.textcenter p.address,
 .col.textcenter dd,
@@ -371,6 +420,7 @@
 .col.textcenter p.blockquote {
 	margin-left: 0;
 }
+
 .col img,
 .col input,
 .col ol li,
@@ -382,6 +432,7 @@
 .col table td dl {
 	margin: 0;
 }
+
 .col address,
 .col p.address,
 .col p.blockquote,
@@ -405,6 +456,7 @@
 .col details {
 	margin-top: 0;
 }
+
 .col h2+div,
 .col h2+p,
 .col h2+table,
@@ -422,6 +474,7 @@
 .col h6+table {
 	margin-top: .500rem;
 }
+
 .col address:first-child,
 .col div+address,
 .col h1+blockquote,
@@ -481,6 +534,7 @@
 .col table+p.blockquote {
 	margin-top: 1.500rem;
 }
+
 .col blockquote+blockquote,
 .col blockquote+dl,
 .col blockquote+h1,
@@ -626,6 +680,7 @@
 .col figure:first-child {
 	margin-top: 1.500rem;
 }
+
 .col dl dd,
 .col address:first-of-type,
 .col p.address:first-of-type,
@@ -646,6 +701,7 @@
 .col figure:last-child {
 	margin-bottom: 0;
 }
+
 .col address,
 .col blockquote,
 .col dl,
@@ -657,6 +713,7 @@
 .col details {
 	margin-bottom: 1.500rem;
 }
+
 .col blockquote+p,
 .col div+p,
 .col dl+p,
@@ -674,35 +731,44 @@
 .col details+p {
 	margin-bottom: 1.000rem;
 }
+
 .col .textleft {
 	text-align: left;
 }
+
 .col .textright {
 	text-align: right;
 }
+
 .col .textcenter {
 	text-align: center;
 }
+
 .col .larger {
 	font-size: 120%;
 }
+
 .col small,
 .col .smaller {
 	font-size: 80%;
 }
+
 .col .fade {
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
 }
+
 .col .fade:hover {
 	opacity: .5;
 }
+
 .col hr,
 .col .hr {
 	height: 0.063rem;
 	padding: 0;
 	margin: 1.500rem 0;
 }
+
 /**
  * font weights
  */
@@ -739,6 +805,7 @@
 .col label {
 	font-weight: normal;
 }
+
 .col h3,
 .col a,
 .col table th,
@@ -752,6 +819,7 @@
 .col .highlight {
 	font-weight: bolder;
 }
+
 /**
  * font styles
  */
@@ -766,25 +834,30 @@
 .col .italic {
 	font-style: italic;
 }
+
 /**
  * font families
  */
 .col h1 {
 	font-family: serif;
 }
+
 .col pre,
 .col pre code {
 	font-family: "Source Code Pro","Consolas",monospace;
 }
+
 .col select {
 	font-family: sans-serif;
 }
+
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
 	font-family: inherit;
 }
+
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -802,25 +875,30 @@
 .col textarea {
 	font-family: inherit;
 }
+
 .col caption,
 .col table th,
 .col table td {
 	font-family: inherit;
 }
+
 .col .phonetic {
 	font-family: "Source Code Pro","Consolas",monospace;
 }
+
 /**
  * colors
  */
 .col a {
 	color: #307CCA;
 }
+
 .col a:hover,
 .col a:focus,
 .col a:active {
 	color: #EA6743;
 }
+
 .col h1,
 .col h2,
 .col h3,
@@ -888,19 +966,23 @@
 .col select:focus {
 	color: inherit;
 }
+
 .col pre {
 	color: inherit;
 	background: #F1F1F1;
 }
+
 .col pre a:hover,
 .col pre a:active,
 .col pre a:focus {
 	color: inherit;
 }
+
 .col select {
 	background: #FFFFFF;
 	border: 0.063rem solid #C3C3C3;
 }
+
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -919,6 +1001,7 @@
 	background: #FFFFFF;
 	border: 0.063rem solid #C3C3C3;
 }
+
 .col button:hover,
 .col input[type="button"]:hover,
 .col input[type="reset"]:hover,
@@ -935,6 +1018,7 @@
 	background: #606060;
 	border: 0.063rem solid #606060;
 }
+
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
@@ -943,6 +1027,7 @@
 	background: #474747;
 	border: 0.063rem solid #474747;
 }
+
 .col input[type^="text"]:focus,
 .col input[type^="search"]:focus,
 .col input[type^="email"]:focus,
@@ -976,15 +1061,18 @@
 	background: #F2F2F2;
 	border: 0.063rem solid #C3C3C3;
 }
+
 .col select:hover {
 	background: #F2F2F2;
 	border: 0.063rem solid #C3C3C3;
 }
+
 .col select:active,
 .col select:focus {
 	background: #F2F2F2;
 	border: 0.063rem solid #C3C3C3;
 }
+
 .col select:disabled,
 .col input[type^="text"]:disabled,
 .col input[type^="search"]:disabled,
@@ -1004,6 +1092,7 @@
 	background: #D6D6D6;
 	border-color: #D6D6D6;
 }
+
 .col button:disabled,
 .col input[type="button"]:disabled,
 .col input[type="reset"]:disabled,
@@ -1011,6 +1100,7 @@
 	background: #D6D6D6;
 	border-color: #D6D6D6;
 }
+
 .col table {
 	border: none;
 	border-top-width: 0.063rem;
@@ -1023,27 +1113,33 @@
 	border-left-style: solid;
 	border-left-color: #C3C3C3;
 }
+
 .col table th {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
 	border-bottom-color: #C3C3C3;
 }
+
 .col table td {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
 	border-bottom-color: #C3C3C3;
 }
+
 .col img {
 	background-color: inherit;
 	border: 0;
 }
+
 .col hr,
 .col .hr {
 	background: #C3C3C3;
 	border: 0;
 }
+
 .col .highlight {
 	color: #EE6944;
 }
+
