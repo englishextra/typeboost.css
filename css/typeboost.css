@@ -848,7 +848,7 @@
 }
 
 .col select {
-	font-family: sans-serif;
+	font-family: inherit;
 }
 
 .col button,
