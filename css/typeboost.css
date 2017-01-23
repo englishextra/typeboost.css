@@ -1,5 +1,5 @@
 /*! @import "typeboost-css"; */
-/**
+/*!
  * typeboost.css v0.1.7
  * github.com/englishextra/typeboost.css
  */
@@ -120,7 +120,6 @@
 
 .col a {
 	text-decoration: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 }
@@ -241,7 +240,6 @@
 
 .col pre a {
 	text-decoration: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 }
@@ -303,7 +301,6 @@
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 	padding: 0 0.625rem;
@@ -352,7 +349,6 @@
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 	cursor: pointer;
