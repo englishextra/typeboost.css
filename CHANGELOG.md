@@ -1,5 +1,10 @@
 # HEAD
 
+## 0.1.8 (February 4, 2017)
+
+* Merged some rules.
+* Changed some colors.
+
 ## 0.1.3 (April 19, 2015)
 
 * Removed unnecessary rules used for gridpak users.

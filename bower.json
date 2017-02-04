@@ -1,6 +1,6 @@
 {
 	"name": "typeboost.css",
-	"version": "0.1.7",
+	"version": "0.1.8",
 	"main": "css/typeboost.css",
 	"author": "englishextra",
 	"ignore": ["img",".md",
