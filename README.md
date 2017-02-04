@@ -20,22 +20,22 @@
 
 ## Usage
 
-	<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="utf-8" />
-			<title></title>
-			<link rel="stylesheet" href="typeboost.min.css" />
-		</head>
-		<body>
-			<div class="col">
-				<h1>Heading&#160;1</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-				</p>
-			</div>
-		</body>
-	</html>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+            <link rel="stylesheet" href="typeboost.min.css" />
+        </head>
+        <body>
+            <div class="col">
+                <h1>Heading&#160;1</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                </p>
+            </div>
+        </body>
+    </html>
 
 ## Copyright
 
