@@ -394,21 +394,21 @@
 }
 
 .col td ul {
-	margin-top: 0 !important;
+	margin-top: 0/* !important */;
 }
 
 .col td ul li {
-	font-size: inherit !important;
-	line-height: inherit !important;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col td ol {
-	margin-top: 0 !important;
+	margin-top: 0 /* !important */;
 }
 
 .col td ol li {
-	font-size: inherit !important;
-	line-height: inherit !important;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col.textcenter address,
