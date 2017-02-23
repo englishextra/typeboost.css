@@ -1014,8 +1014,8 @@
 .col input[type="reset"]:focus,
 .col input[type="submit"]:focus {
 	color: #FFFFFF;
-	background-color: #737373;
-	border: 0.063rem solid #737373;
+	background-color: #5F5F5F;
+	border: 0.063rem solid #5F5F5F;
 }
 
 .col button,
