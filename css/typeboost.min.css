@@ -893,13 +893,13 @@
  */
 
 .col a {
-	color: #0067BD;
+	color: #007DD1;
 }
 
 .col a:hover,
 .col a:focus,
 .col a:active {
-	color: #0067BD;
+	color: #007DD1;
 }
 
 .col h1,
