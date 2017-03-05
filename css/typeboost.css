@@ -3,6 +3,7 @@
 /*!
  * typeboost.css v0.1.8
  * github.com/englishextra/typeboost.css
+ * set html font to 16px, and body to 1.000rem
  */
 
 .col div,
@@ -138,7 +139,7 @@
 .col address,
 .col p.address {
 	font-size: 0.813rem;
-	line-height: 1.500;
+	line-height: 1.250rem;
 	margin-right: 0;
 }
 
@@ -147,45 +148,43 @@
 }
 
 .col h1 {
-	font-size: 3.375rem;
-	line-height: 1.200;
+	font-size: 3.125rem;
+	line-height: 3.500rem;
 	padding: 0;
 }
 
 .col h2 {
-	font-size: 1.611rem;
-	line-height: 1.200;
+	font-size: 1.625rem;
+	line-height: 2.000rem;
 	padding: 0;
 }
 
 .col h3 {
-	font-size: 1.210rem;
-	line-height: 1.200;
+	font-size: 1.375rem;
+	line-height: 1.500rem;
 	padding: 0;
 }
 
 .col h4 {
-	font-size: 1.125rem;
-	line-height: 1.200;
+	font-size: 1.250rem;
+	line-height: 1.500rem;
 	font-variant: small-caps;
 	letter-spacing: 0.063rem;
 	padding: 0;
 }
 
 .col h5 {
+	font-size: 1.125rem;
+	line-height: 1.250rem;
 	text-transform: uppercase;
 	padding: 0;
 }
 
 .col h6 {
+	font-size: 1.000rem;
+	line-height: 1.250rem;
 	text-decoration: underline;
 	padding: 0;
-}
-
-.col h5,
-.col h6 {
-	font-size: 1.000rem;
-	line-height: 1.200;
 }
 
 .col caption,
@@ -195,14 +194,14 @@
 .col table th,
 .col pre,
 .col pre code {
-	font-size: 0.875rem;
-	line-height: 1.500;
+	font-size: smaller;
+	line-height: inherit;
 }
 
 .col p.larger,
 .col blockquote {
-	font-size: 1.125rem;
-	line-height: 1.500;
+	font-size: larger;
+	line-height: inherit;
 }
 
 .col p,
@@ -212,7 +211,7 @@
 .col ul li,
 .col ol li {
 	font-size: 1.000rem;
-	line-height: 1.500;
+	line-height: 1.500rem;
 }
 
 .col ul {
@@ -295,7 +294,7 @@
 .col select,
 .col textarea {
 	font-size: 0.875rem;
-	line-height: 1.500;
+	line-height: 1.250rem;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -344,7 +343,7 @@
 .col input[type="reset"],
 .col input[type="submit"] {
 	font-size: 0.875rem;
-	line-height: 1.500;
+	line-height: 1.250rem;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
@@ -773,7 +772,6 @@
  * font weights
  */
 
-.col h1,
 .col h2,
 .col h4,
 .col h5,
@@ -807,8 +805,11 @@
 	font-weight: normal;
 }
 
+.col h1 {
+	font-weight: lighter;
+}
+
 .col h3,
-.col a,
 .col table th,
 .col dl dt,
 .col button,
@@ -847,7 +848,7 @@
  */
 
 .col h1 {
-	font-family: serif;
+	font-family: inherit;
 }
 
 .col pre,

@@ -1,29 +1,29 @@
 {
-	"name": "typeboost.css",
-	"version": "0.1.8",
-	"description": "typeboost.css as a node packaged module",
-	"style": "css/typeboost.min.css",
-	"files": ["LICENSE.md",
-	"index.html",
-	"css/typeboost.css",
-	"css/typeboost.min.css"],
-	"main": "css/typeboost.min.css",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/englishextra/typeboost.css.git"
-	},
-	"email": "englishextra@mail.ru",
-	"url": "https://github.com/englishextra/typeboost.css/issues",
-	"homepage": "https://englishextra.github.io/libs/typeboost.css/",
-	"maintainers": {
-		"name": "Serguei Shimansky",
-		"email": "englishextra@mail.ru",
-		"url": "https://github.com/englishextra"
-	},
-	"author": {
-		"name": "Serguei Shimansky",
-		"email": "englishextra@mail.ru",
-		"url": "https://github.com/englishextra"
-	},
-	"license": "(MIT)"
+  "name": "typeboost.css",
+  "version": "0.1.8",
+  "description": "Typeboost.css is a set of CSS rules to ensure readable, scalable and responsive typography. No dependencies. REMs are used for font sizes, paddings, and margins. Wrap your HTML content with class .col and you are done.",
+  "style": "css/typeboost.min.css",
+  "files": ["LICENSE.md",
+  "index.html",
+  "css/typeboost.css",
+  "css/typeboost.min.css"],
+  "main": "css/typeboost.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/englishextra/typeboost.css.git"
+  },
+  "email": "englishextra@mail.ru",
+  "url": "https://github.com/englishextra/typeboost.css/issues",
+  "homepage": "https://englishextra.github.io/libs/typeboost.css/",
+  "maintainers": {
+    "name": "Serguei Shimansky",
+    "email": "englishextra@mail.ru",
+    "url": "https://github.com/englishextra"
+  },
+  "author": {
+    "name": "Serguei Shimansky",
+    "email": "englishextra@mail.ru",
+    "url": "https://github.com/englishextra"
+  },
+  "license": "(MIT)"
 }
