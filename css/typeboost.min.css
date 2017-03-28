@@ -4,7 +4,18 @@
  * typeboost.css v0.1.8
  * github.com/englishextra/typeboost.css
  * set html font to 16px, and body to 1.000rem
+ * line height should be the closest multiple of 4
  */
+
+html {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body {
+	font-size: 1.000rem;
+	line-height: 1.500rem;
+}
 
 .col div,
 .col span,
@@ -117,7 +128,7 @@
 .col blockquote:after,
 .col q:before,
 .col q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -138,7 +149,7 @@
 
 .col address,
 .col p.address {
-	font-size: 0.813rem;
+	font-size: 0.875rem;
 	line-height: 1.250rem;
 	margin-right: 0;
 }
@@ -148,33 +159,31 @@
 }
 
 .col h1 {
-	font-size: 3.125rem;
-	line-height: 3.500rem;
+	font-size: 2.438rem;
+	line-height: 3.000rem;
 	padding: 0;
 }
 
 .col h2 {
-	font-size: 1.625rem;
+	font-size: 1.563rem;
 	line-height: 2.000rem;
 	padding: 0;
 }
 
 .col h3 {
-	font-size: 1.375rem;
+	font-size: 1.250rem;
 	line-height: 1.500rem;
 	padding: 0;
 }
 
 .col h4 {
-	font-size: 1.250rem;
-	line-height: 1.500rem;
-	font-variant: small-caps;
-	letter-spacing: 0.063rem;
+	font-size: 1.000rem;
+	line-height: 1.250rem;
 	padding: 0;
 }
 
 .col h5 {
-	font-size: 1.125rem;
+	font-size: 1.000rem;
 	line-height: 1.250rem;
 	text-transform: uppercase;
 	padding: 0;
@@ -194,14 +203,14 @@
 .col table th,
 .col pre,
 .col pre code {
-	font-size: smaller;
-	line-height: inherit;
+	font-size: 0.875rem;
+	line-height: 1.250rem;
 }
 
 .col p.larger,
 .col blockquote {
-	font-size: larger;
-	line-height: inherit;
+	font-size: 1.125rem;
+	line-height: 1.750rem;
 }
 
 .col p,
@@ -210,8 +219,8 @@
 .col dl dd,
 .col ul li,
 .col ol li {
-	font-size: 1.000rem;
-	line-height: 1.500rem;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 .col ul {
@@ -223,7 +232,8 @@
 }
 
 .col pre {
-	font-size: 0.875rem;
+	font-size: inherit;
+	line-height: inherit;
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: inherit;
@@ -234,7 +244,7 @@
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-	padding: 1.000rem 1.500rem;
+	padding: 1.000rem 1.250rem;
 }
 
 .col pre code {
@@ -261,14 +271,8 @@
 
 .col table td,
 .col table th {
-	padding: 0.313rem 0.625rem;
+	padding: 0.438rem 0.750rem 0.438rem 0.750rem;
 	vertical-align: top;
-}
-
-.col table th a:hover,
-.col table th a:active,
-.col table th a:focus {
-	text-decoration: underline;
 }
 
 .col img {
@@ -300,16 +304,16 @@
 	*vertical-align: middle;
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
-	padding: 0 0.625rem;
+	padding: 0 0.500rem;
 }
 
 .col select {
-	padding: 0 0 0 0.313rem;
+	padding: 0 0 0 0.250rem;
 }
 
 .col optgroup {
-	margin: 0.188rem;
-	padding-left: 0.188rem;
+	margin: 0.250rem;
+	padding-left: 0.250rem;
 }
 
 .col input[type="color"] {
@@ -335,7 +339,7 @@
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col select {
-	height: 2.000rem;
+	height: 2.250rem;
 }
 
 .col button,
@@ -350,12 +354,12 @@
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 	cursor: pointer;
-	padding: 0 0.625rem;
+	padding: 0 0.500rem;
 }
 
 .col label {
 	display: block;
-	margin-bottom: 0.125rem;
+	margin-bottom: 0.250rem;
 }
 
 .col textarea {
@@ -393,7 +397,7 @@
 }
 
 .col td ul {
-	margin-top: 0/* !important */;
+	margin-top: 0 /* !important */;
 }
 
 .col td ul li {
@@ -455,211 +459,211 @@
 	margin-top: 0;
 }
 
-.col h2+div,
-.col h2+p,
-.col h2+table,
-.col h3+div,
-.col h3+p,
-.col h3+table,
-.col h4+div,
-.col h4+p,
-.col h4+table,
-.col h5+div,
-.col h5+p,
-.col h5+table,
-.col h6+div,
-.col h6+p,
-.col h6+table {
+.col h2 + div,
+.col h2 + p,
+.col h2 + table,
+.col h3 + div,
+.col h3 + p,
+.col h3 + table,
+.col h4 + div,
+.col h4 + p,
+.col h4 + table,
+.col h5 + div,
+.col h5 + p,
+.col h5 + table,
+.col h6 + div,
+.col h6 + p,
+.col h6 + table {
 	margin-top: 0.500rem;
 }
 
 .col address:first-child,
-.col div+address,
-.col h1+blockquote,
-.col h1+div,
-.col h1+hr,
-.col h1+div.hr,
-.col h1+dl,
-.col h1+ol,
-.col h1+p,
-.col h1+pre,
-.col h1+table,
-.col h1+ul,
-.col h1+details,
-.col h2+blockquote,
-.col h2+dl,
-.col h2+h3,
-.col h2+ol,
-.col h2+pre,
-.col h2+ul,
-.col h2+details,
-.col h3+blockquote,
-.col h3+dl,
-.col h3+h4,
-.col h3+ol,
-.col h3+pre,
-.col h3+ul,
-.col h3+details,
-.col h4+blockquote,
-.col h4+dl,
-.col h4+h3,
-.col h4+h5,
-.col h4+ol,
-.col h4+pre,
-.col h4+ul,
-.col h4+details,
-.col h5+blockquote,
-.col h5+dl,
-.col h5+h6,
-.col h5+h2,
-.col h5+ol,
-.col h5+pre,
-.col h5+ul,
-.col h5+details,
-.col h6+blockquote,
-.col h6+dl,
-.col h6+ol,
-.col h6+pre,
-.col h6+ul,
-.col h6+details,
-.col p+address,
-.col p+p,
+.col div + address,
+.col h1 + blockquote,
+.col h1 + div,
+.col h1 + hr,
+.col h1 + div.hr,
+.col h1 + dl,
+.col h1 + ol,
+.col h1 + p,
+.col h1 + pre,
+.col h1 + table,
+.col h1 + ul,
+.col h1 + details,
+.col h2 + blockquote,
+.col h2 + dl,
+.col h2 + h3,
+.col h2 + ol,
+.col h2 + pre,
+.col h2 + ul,
+.col h2 + details,
+.col h3 + blockquote,
+.col h3 + dl,
+.col h3 + h4,
+.col h3 + ol,
+.col h3 + pre,
+.col h3 + ul,
+.col h3 + details,
+.col h4 + blockquote,
+.col h4 + dl,
+.col h4 + h3,
+.col h4 + h5,
+.col h4 + ol,
+.col h4 + pre,
+.col h4 + ul,
+.col h4 + details,
+.col h5 + blockquote,
+.col h5 + dl,
+.col h5 + h6,
+.col h5 + h2,
+.col h5 + ol,
+.col h5 + pre,
+.col h5 + ul,
+.col h5 + details,
+.col h6 + blockquote,
+.col h6 + dl,
+.col h6 + ol,
+.col h6 + pre,
+.col h6 + ul,
+.col h6 + details,
+.col p + address,
+.col p + p,
 .col p.address,
 .col p.blockquote,
-.col pre+address,
-.col table+address,
-.col table+p.address,
-.col table+p.blockquote {
+.col pre + address,
+.col table + address,
+.col table + p.address,
+.col table + p.blockquote {
 	margin-top: 1.500rem;
 }
 
-.col blockquote+blockquote,
-.col blockquote+dl,
-.col blockquote+h1,
-.col blockquote+h2,
-.col blockquote+h3,
-.col blockquote+h4,
-.col blockquote+h5,
-.col blockquote+h6,
-.col blockquote+ol,
-.col blockquote+p,
-.col blockquote+pre,
-.col blockquote+table,
-.col blockquote+ul,
-.col blockquote+details,
-.col div+blockquote,
-.col div+dl,
-.col div+h1,
-.col div+h2,
-.col div+h3,
-.col div+h4,
-.col div+h5,
-.col div+h6,
-.col div+ol,
-.col div+p,
-.col div+pre,
-.col div+table,
-.col div+ul,
-.col div+details,
-.col dl+blockquote,
-.col dl+dl,
-.col dl+h1,
-.col dl+h2,
-.col dl+h3,
-.col dl+h4,
-.col dl+h5,
-.col dl+h6,
-.col dl+ol,
-.col dl+p,
-.col dl+pre,
-.col dl+table,
-.col dl+ul,
-.col dl+details,
-.col ol+blockquote,
-.col ol+dl,
-.col ol+h1,
-.col ol+h2,
-.col ol+h3,
-.col ol+h4,
-.col ol+h5,
-.col ol+h6,
-.col ol+ol,
-.col ol+p,
-.col ol+pre,
-.col ol+table,
-.col ol+ul,
-.col ol+details,
-.col p+blockquote,
-.col p+dl,
-.col p+figcaption,
-.col p+figure,
-.col p+h1,
-.col p+h2,
-.col p+h3,
-.col p+h4,
-.col p+h5,
-.col p+h6,
-.col p+ol,
-.col p+pre,
-.col p+table,
-.col p+ul,
-.col p+details,
-.col pre+blockquote,
-.col pre+dl,
-.col pre+h1,
-.col pre+h2,
-.col pre+h3,
-.col pre+h4,
-.col pre+h5,
-.col pre+h6,
-.col pre+ol,
-.col pre+p,
-.col pre+pre,
-.col pre+table,
-.col pre+ul,
-.col pre+details,
-.col table+blockquote,
-.col table+dl,
-.col table+h1,
-.col table+h2,
-.col table+h3,
-.col table+h4,
-.col table+h5,
-.col table+h6,
-.col table+ol,
-.col table+p,
-.col table+pre,
-.col table+table,
-.col table+ul,
-.col table+details,
-.col ul+blockquote,
-.col ul+dl,
-.col ul+h1,
-.col ul+h2,
-.col ul+h3,
-.col ul+h4,
-.col ul+h5,
-.col ul+h6,
-.col ul+ol,
-.col ul+p,
-.col ul+pre,
-.col ul+table,
-.col ul+ul,
-.col ul+details,
-.col details+blockquote,
-.col details+dl,
-.col details+h1,
-.col details+h2,
-.col details+h3,
-.col details+h4,
-.col details+h5,
-.col details+h6,
-.col details+ol,
-.col details+p,
-.col details+pre,
-.col details+table,
-.col details+ul,
-.col details+details,
+.col blockquote + blockquote,
+.col blockquote + dl,
+.col blockquote + h1,
+.col blockquote + h2,
+.col blockquote + h3,
+.col blockquote + h4,
+.col blockquote + h5,
+.col blockquote + h6,
+.col blockquote + ol,
+.col blockquote + p,
+.col blockquote + pre,
+.col blockquote + table,
+.col blockquote + ul,
+.col blockquote + details,
+.col div + blockquote,
+.col div + dl,
+.col div + h1,
+.col div + h2,
+.col div + h3,
+.col div + h4,
+.col div + h5,
+.col div + h6,
+.col div + ol,
+.col div + p,
+.col div + pre,
+.col div + table,
+.col div + ul,
+.col div + details,
+.col dl + blockquote,
+.col dl + dl,
+.col dl + h1,
+.col dl + h2,
+.col dl + h3,
+.col dl + h4,
+.col dl + h5,
+.col dl + h6,
+.col dl + ol,
+.col dl + p,
+.col dl + pre,
+.col dl + table,
+.col dl + ul,
+.col dl + details,
+.col ol + blockquote,
+.col ol + dl,
+.col ol + h1,
+.col ol + h2,
+.col ol + h3,
+.col ol + h4,
+.col ol + h5,
+.col ol + h6,
+.col ol + ol,
+.col ol + p,
+.col ol + pre,
+.col ol + table,
+.col ol + ul,
+.col ol + details,
+.col p + blockquote,
+.col p + dl,
+.col p + figcaption,
+.col p + figure,
+.col p + h1,
+.col p + h2,
+.col p + h3,
+.col p + h4,
+.col p + h5,
+.col p + h6,
+.col p + ol,
+.col p + pre,
+.col p + table,
+.col p + ul,
+.col p + details,
+.col pre + blockquote,
+.col pre + dl,
+.col pre + h1,
+.col pre + h2,
+.col pre + h3,
+.col pre + h4,
+.col pre + h5,
+.col pre + h6,
+.col pre + ol,
+.col pre + p,
+.col pre + pre,
+.col pre + table,
+.col pre + ul,
+.col pre + details,
+.col table + blockquote,
+.col table + dl,
+.col table + h1,
+.col table + h2,
+.col table + h3,
+.col table + h4,
+.col table + h5,
+.col table + h6,
+.col table + ol,
+.col table + p,
+.col table + pre,
+.col table + table,
+.col table + ul,
+.col table + details,
+.col ul + blockquote,
+.col ul + dl,
+.col ul + h1,
+.col ul + h2,
+.col ul + h3,
+.col ul + h4,
+.col ul + h5,
+.col ul + h6,
+.col ul + ol,
+.col ul + p,
+.col ul + pre,
+.col ul + table,
+.col ul + ul,
+.col ul + details,
+.col details + blockquote,
+.col details + dl,
+.col details + h1,
+.col details + h2,
+.col details + h3,
+.col details + h4,
+.col details + h5,
+.col details + h6,
+.col details + ol,
+.col details + p,
+.col details + pre,
+.col details + table,
+.col details + ul,
+.col details + details,
 .col h1:first-child,
 .col h2:first-child,
 .col h3:first-child,
@@ -712,21 +716,21 @@
 	margin-bottom: 1.500rem;
 }
 
-.col blockquote+p,
-.col div+p,
-.col dl+p,
-.col h1+p,
-.col h2+p,
-.col h3+p,
-.col h4+p,
-.col h5+p,
-.col h6+p,
-.col ol+p,
-.col p+p,
-.col pre+p,
-.col table+p,
-.col ul+p,
-.col details+p {
+.col blockquote + p,
+.col div + p,
+.col dl + p,
+.col h1 + p,
+.col h2 + p,
+.col h3 + p,
+.col h4 + p,
+.col h5 + p,
+.col h6 + p,
+.col ol + p,
+.col p + p,
+.col pre + p,
+.col table + p,
+.col ul + p,
+.col details + p {
 	margin-bottom: 1.000rem;
 }
 
@@ -743,29 +747,19 @@
 }
 
 .col .larger {
-	font-size: 120%;
+	font-size: larger;
 }
 
 .col small,
 .col .smaller {
-	font-size: 80%;
-}
-
-.col .fade {
-	opacity: 1;
-	-webkit-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
-}
-
-.col .fade:hover {
-	opacity: .5;
+	font-size: smaller;
 }
 
 .col hr,
 .col .hr {
 	height: 0.063rem;
 	padding: 0;
-	margin: 1.500rem 0;
+	margin: 1.500rem 0 1.438rem 0;
 }
 
 /**
@@ -806,10 +800,10 @@
 }
 
 .col h1 {
-	font-weight: lighter;
+	font-weight: normal;
 }
 
-.col h3,
+.col h4,
 .col table th,
 .col dl dt,
 .col button,
@@ -847,13 +841,17 @@
  * font families
  */
 
-.col h1 {
-	font-family: inherit;
+.col body {
+	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue", "Roboto", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif;
 }
+
+/* .col h1 {
+	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue-Light", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif-light, sans-serif;
+} */
 
 .col pre,
 .col pre code {
-	font-family: "Source Code Pro","Consolas",monospace;
+	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 .col select {
@@ -886,7 +884,7 @@
 }
 
 .col .phonetic {
-	font-family: "Source Code Pro","Consolas",monospace;
+	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 /**
@@ -897,8 +895,8 @@
 	color: #007DD1;
 }
 
-.col a:hover,
 .col a:focus,
+.col a:hover,
 .col a:active {
 	color: #007DD1;
 }
@@ -920,7 +918,6 @@
 .col caption,
 .col table td,
 .col table th a,
-.col select,
 .col input[type^="text"],
 .col input[type^="search"],
 .col input[type^="email"],
@@ -936,6 +933,7 @@
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col textarea,
+.col select,
 .col input[type^="text"]:focus,
 .col input[type^="search"]:focus,
 .col input[type^="email"]:focus,
@@ -951,6 +949,7 @@
 .col input[type^="datetime"]:focus,
 .col input[type^="datetime-local"]:focus,
 .col textarea:focus,
+.col select:focus,
 .col input[type^="text"]:active,
 .col input[type^="search"]:active,
 .col input[type^="email"]:active,
@@ -966,8 +965,7 @@
 .col input[type^="datetime"]:active,
 .col input[type^="datetime-local"]:active,
 .col textarea:active,
-.col select:active,
-.col select:focus {
+.col select:active {
 	color: inherit;
 }
 
@@ -976,9 +974,9 @@
 	background-color: #EDEDED;
 }
 
+.col pre a:focus,
 .col pre a:hover,
-.col pre a:active,
-.col pre a:focus {
+.col pre a:active {
 	color: inherit;
 }
 
@@ -1002,6 +1000,10 @@
 	border: 0.063rem solid #C3C3C3;
 }
 
+.col button:focus,
+.col input[type="button"]:focus,
+.col input[type="reset"]:focus,
+.col input[type="submit"]:focus,
 .col button:hover,
 .col input[type="button"]:hover,
 .col input[type="reset"]:hover,
@@ -1009,11 +1011,7 @@
 .col button:active,
 .col input[type="button"]:active,
 .col input[type="reset"]:active,
-.col input[type="submit"]:active,
-.col button:focus,
-.col input[type="button"]:focus,
-.col input[type="reset"]:focus,
-.col input[type="submit"]:focus {
+.col input[type="submit"]:active {
 	color: #FFFFFF;
 	background-color: #5F5F5F;
 	border: 0.063rem solid #5F5F5F;
@@ -1028,8 +1026,8 @@
 	border: 0.063rem solid #4B4B4B;
 }
 
-.col select:hover,
 .col select:focus,
+.col select:hover,
 .col input[type^="text"]:focus,
 .col input[type^="search"]:focus,
 .col input[type^="email"]:focus,

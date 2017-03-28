@@ -2,15 +2,30 @@
   "name": "typeboost.css",
   "version": "0.1.8",
   "description": "Typeboost.css is a set of CSS rules to ensure readable, scalable and responsive typography. No dependencies. REMs are used for font sizes, paddings, and margins. Wrap your HTML content with class .col and you are done.",
+  "keywords": ["typeboost.css",
+  "typeface",
+  "font",
+  "css",
+  "grid",
+  "typography"],
   "style": "css/typeboost.min.css",
   "files": ["LICENSE.md",
   "index.html",
   "css/typeboost.css",
   "css/typeboost.min.css"],
   "main": "css/typeboost.min.css",
+  "filename": "css/typeboost.min.css",
   "repository": {
     "type": "git",
     "url": "git://github.com/englishextra/typeboost.css.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/englishextra/typeboost.css.git",
+    "fileMap": [{
+      "basePath": "",
+      "files": ["css/typeboost*"]
+    }]
   },
   "email": "englishextra@mail.ru",
   "url": "https://github.com/englishextra/typeboost.css/issues",
@@ -21,7 +36,7 @@
     "url": "https://github.com/englishextra"
   },
   "author": {
-    "name": "Serguei Shimansky",
+    "name": "englishextra",
     "email": "englishextra@mail.ru",
     "url": "https://github.com/englishextra"
   },
