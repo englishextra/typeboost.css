@@ -892,13 +892,13 @@ body {
  */
 
 .col a {
-	color: #007DD1;
+	color: #3585D8;
 }
 
 .col a:focus,
 .col a:hover,
 .col a:active {
-	color: #007DD1;
+	color: #3585D8;
 }
 
 .col h1,
@@ -971,7 +971,7 @@ body {
 
 .col pre {
 	color: inherit;
-	background-color: #EDEDED;
+	background-color: #F3F3F3;
 }
 
 .col pre a:focus,
@@ -1022,8 +1022,8 @@ body {
 .col input[type="reset"],
 .col input[type="submit"] {
 	color: #FFFFFF;
-	background-color: #4B4B4B;
-	border: 0.063rem solid #4B4B4B;
+	background-color: #373737;
+	border: 0.063rem solid #373737;
 }
 
 .col select:focus,
@@ -1130,6 +1130,6 @@ body {
 }
 
 .col .highlight {
-	color: #DA3216;
+	color: #D93D3D;
 }
 
