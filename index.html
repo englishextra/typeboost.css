@@ -11,10 +11,12 @@
 		<link rel="stylesheet" href="./css/typeboost.css" />
 		<style>
 /*! @import "github-fork-ribbon"; */
+
 /*!
  * "Fork me on GitHub" CSS ribbon v0.2.0 | MIT License
  * @see {@link https://github.com/simonwhitaker/github-fork-ribbon-css}
  */
+
 .github-fork-ribbon {
 	width: 12.1em;
 	height: 12.1em;
@@ -28,10 +30,13 @@
 	text-decoration: none;
 	text-indent: -999999px;
 }
+
 .github-fork-ribbon.fixed {
 	position: fixed;
 }
-.github-fork-ribbon:before, .github-fork-ribbon:after {
+
+.github-fork-ribbon:before,
+.github-fork-ribbon:after {
 	/* The right and left classes determine the side we attach our banner to */
 	position: absolute;
 	display: block;
@@ -48,6 +53,7 @@
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
 .github-fork-ribbon:before {
 	content: "";
 	/* Add a bit of padding to give some substance outside the "stitching" */
@@ -67,6 +73,7 @@
 	box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
 	pointer-events: auto;
 }
+
 .github-fork-ribbon:after {
 	/* Set the text from the title attribute */
 	/* @see {@link https://github.com/simonwhitaker/github-fork-ribbon-css} */
@@ -88,44 +95,67 @@
 	border-color: #fff;
 	border-color: rgba(255, 255, 255, 0.7);
 }
-.github-fork-ribbon.left-top, .github-fork-ribbon.left-bottom {
+
+.github-fork-ribbon.left-top,
+.github-fork-ribbon.left-bottom {
 	right: auto;
 	left: 0;
 }
-.github-fork-ribbon.left-bottom, .github-fork-ribbon.right-bottom {
+
+.github-fork-ribbon.left-bottom,
+.github-fork-ribbon.right-bottom {
 	top: auto;
 	bottom: 0;
 }
-.github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after {
+
+.github-fork-ribbon.left-top:before,
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.left-bottom:after {
 	right: auto;
 	left: -3.23em;
 }
-.github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.left-bottom:after,
+.github-fork-ribbon.right-bottom:before,
+.github-fork-ribbon.right-bottom:after {
 	top: auto;
 	bottom: 3.23em;
 }
-.github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+
+.github-fork-ribbon.left-top:before,
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.right-bottom:before,
+.github-fork-ribbon.right-bottom:after {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
+
 /*! @import "prettyprint.fixed"; */
+
 /*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+
 .prettyprint {
 	background: #fff;
-	font-family: Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;
-	border: 0 /* !important */;
+	font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
+	border: 0/* !important */
+	;
 }
+
 .pln {
 	color: #333;
 }
+
 ol.linenums {
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #ccc;
 }
+
 li.L0,
 li.L1,
 li.L2,
@@ -140,6 +170,7 @@ li.L9 {
 	background-color: #fff;
 	list-style-type: decimal;
 }
+
 @media screen {
 	.str {
 		color: #183691;
@@ -184,19 +215,23 @@ li.L9 {
 		color: #900;
 	}
 }
+
 /**
  * custom fixes for github-v2.min.css
  * a google-code-prettify theme for englishextra.github.io based on
  * source: jmblog.github.io/color-themes-for-google-code-prettify/themes/github-v2.min.css
  */
+
 /**
  * custom fixes for github-v2.min.css
  */
+
 pre.prettyprint,
 code.prettyprint {
 	background-color: #F3F3F3;
 	border-radius: 0;
 }
+
 pre.prettyprint {
 	width: 100%;
 	white-space: pre-wrap;
@@ -207,26 +242,32 @@ pre.prettyprint {
 	padding: 1.000em;
 	margin: 1.000em auto;
 }
+
 pre.prettyprinted {
 	box-shadow: none;
 	border: 0;
 }
+
 .prettyprint ol.linenums {
 	list-style: decimal outside;
 	color: #C9C9C9;
 	border-left: 1px solid #C9C9C9;
 	padding: 0;
-	margin: 0 0 0 2.375rem /* !important */;
+	margin: 0 0 0 2.375rem/* !important */
+	;
 }
+
 ol.linenums li {
 	line-height: 1.500;
 	background-color: inherit;
 	padding-left: 0.750rem;
 }
+
 /**
  * added media print
  * source: github.com/google/code-prettify/blob/master/src/prettify.css
  */
+
 @media print {
 	pre.prettyprinted,
 	pre.prettyprint,
@@ -280,10 +321,13 @@ ol.linenums li {
 		color: #060;
 	}
 }
+
 /*! @import "ui-totop"; */
+
 /**
  * github.com/sksmatt/UItoTop-jQuery-Plugin/
  */
+
 #ui-totop {
 	width: 33.000pt;
 	height: 33.000pt;
@@ -304,6 +348,7 @@ ol.linenums li {
 	outline: none;
 	z-index: 999;
 }
+
 #ui-totop-hover {
 	display: block;
 	float: left;
@@ -317,17 +362,22 @@ ol.linenums li {
 	background-position: 6.750pt 6.750pt;
 	background-repeat: no-repeat;
 }
+
 #ui-totop:hover {
 	background-color: rgba(220, 220, 220, 0.5);
 }
+
 /*! @import "typeboost-css-demo-main"; */
+
 /**
  * main
  */
+
 html,
 body {
 	height: 100%;
 }
+
 html {
 	font-size: 100%;
 	line-height: 1.500;
@@ -337,6 +387,7 @@ html {
 	 */
 	background-color: transparent;
 }
+
 body {
 	font-family: "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", "Segoe UI", "Segoe WP", sans-serif;
 	font-weight: 400;
@@ -359,13 +410,16 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 /**
  * englishextra specific rules
  */
+
 a {
 	color: inherit;
 	text-decoration: none;
 }
+
 a:focus,
 a:active,
 button:focus,
@@ -375,87 +429,112 @@ select:active {
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 }
+
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 	vertical-align: bottom;
 }
+
 p:first-child {
 	margin-top: 0;
 }
+
 p:last-child {
 	margin-bottom: 0;
 }
+
 b,
 strong,
 .bolder {
 	font-weight: bold;
 }
+
 i,
 em,
 .italic {
 	font-style: italic;
 }
+
 u,
 .underline {
 	text-decoration: underline;
 }
+
 *,
 *:after,
 *::before {
 	box-sizing: border-box;
 }
+
 ::-moz-selection {
 	color: rgba(255, 255, 255, 0.9);
 	background-color: rgba(58, 150, 221, 0.9);
 }
+
 ::selection {
 	color: rgba(255, 255, 255, 0.9);
 	background-color: rgba(58, 150, 221, 0.9);
 }
+
 /**
  * clearfix css-tricks.com/snippets/css/clear-fix/
  */
+
 .cf:after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
 /**
  * fit width
  */
+
 .fit-width {
 	min-width: 100%;
 }
+
 /**
  * fit half width
  */
+
 .fit-half-width {
 	min-width: 50%;
 }
+
 /**
  * hide and show on mobile
  */
+
 .show-inline-on-mobile,
 .show-block-on-mobile {
-	display: none /* !important */;
+	display: none/* !important */
+	;
 }
-@media handheld, only screen and (max-width: 800px) {
+
+@media handheld,
+only screen and (max-width: 800px) {
 	.hide-on-mobile {
-		display: none /* !important */;
+		display: none/* !important */
+		;
 		width: 0;
 		height: 0;
 	}
 	.show-inline-on-mobile {
-		display: inline /* !important */;
+		display: inline/* !important */
+		;
 	}
 	.show-block-on-mobile {
-		display: block /* !important */;
+		display: block/* !important */
+		;
 	}
 }
+
 /**
  * other
  */
+
 .page {
 	width: 100%;
 	/**
@@ -469,6 +548,7 @@ u,
 	left: 0;
 	background-color: #F0F0F0;
 }
+
 .container {
 	width: 100%;
 	height: 100%;
@@ -479,15 +559,18 @@ u,
 	padding: 0;
 	margin: 0 auto;
 }
+
 .content-wrapper {
 	padding: 0 16px 24px 16px;
 	margin: 0 auto;
 }
+
 .container .content-wrapper,
 .app-content .content-wrapper {
 	width: 100%;
 	height: 100%;
 }
+
 /**
  * fixes to typeboost.css
  * modularscale.com
@@ -520,37 +603,45 @@ u,
  * ms(-5) / 0.667em
  * ms(-6) / 0.621em
  */
+
 .col a {
 	font-weight: inherit;
 	color: #007DD1;
 }
+
 .col a:hover,
 .col a:focus,
 .col a:active {
 	color: #007DD1;
 }
+
 .col a:visited {
 	color: #878787;
 }
+
 .col h1 {
 	font-family: "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", "Segoe UI Light", "Segoe WP Light", sans-serif;
 	font-weight: 300;
 	line-height: 1.200;
 	color: inherit;
-	margin-top: 0 /* !important */;
+	margin-top: 0/* !important */
+	;
 	margin-bottom: 0.500rem;
 }
+
 .col dl dt a {
 	color: inherit;
 	border-bottom-color: inherit;
 	border-bottom-style: solid;
 	border-bottom-width: 0.063rem;
 }
+
 .col dl dt a:hover,
 .col dl dt a:focus,
 .col dl dt a:active {
 	color: inherit;
 }
+
 .col img,
 .col svg,
 .col canvas,
@@ -558,22 +649,27 @@ u,
 .col textarea {
 	width: 100%;
 }
+
 .col img.inline {
 	width: auto;
 }
+
 .col img,
 .col svg,
 .col canvas {
 	height: auto;
 }
+
 .col video,
 .col svg {
 	display: block;
 	padding: 0;
 }
+
 .col canvas {
 	vertical-align: bottom;
 }
+
 .col .video-wrapper {
 	float: none;
 	clear: both;
@@ -582,6 +678,7 @@ u,
 	padding-bottom: 56.25%;
 	height: 0;
 }
+
 .col .video-wrapper iframe {
 	position: absolute;
 	top: 0;
@@ -589,19 +686,24 @@ u,
 	width: 100%;
 	height: 100%;
 }
+
 .col .soundcloud-wrapper iframe {
 	width: 100%;
 	height: 166px;
 }
-.col .holder-contents-select + canvas {
+
+.col .holder-contents-select+canvas {
 	margin-top: 1.500rem;
 }
-.col h2 + div form p:first-child {
+
+.col h2+div form p:first-child {
 	margin-top: 0;
 }
+
 .col table.respond {
 	width: auto;
 }
+
 .col table {
 	border: none;
 	border-top-width: 0.063rem;
@@ -614,21 +716,25 @@ u,
 	border-left-style: solid;
 	border-left-color: #C3C3C3;
 }
+
 .col table th {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
 	border-bottom-color: #C3C3C3;
 }
+
 .col table td {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
 	border-bottom-color: #C3C3C3;
 }
+
 .col table td.with-img-only {
 	padding: 0.500rem;
 }
+
 @media screen and (max-width: 640px) {
 	.col table.respond {
 		border: none;
@@ -663,32 +769,40 @@ u,
 		padding-right: 0.625rem;
 	}
 }
+
 .col hr,
 .col .hr {
 	height: 0.063rem;
 	background-color: #C3C3C3;
 }
+
 .col pre,
 .col pre code {
 	font-family: "Source Code Pro", "Consolas", monospace;
 }
+
 /**
  * logo
  */
+
 .logo {
 	width: 100%;
 }
+
 .logo svg {
 	display: block;
 	width: 100%;
 	height: auto;
 }
+
 /**
  * media queries
  */
+
 /**
  * max and portrait
  */
+
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
 	html {
 		font-size: 120%;
@@ -697,6 +811,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 800px) and (orientation: portrait) {
 	html {
 		font-size: 130%;
@@ -705,6 +820,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 768px) and (orientation: portrait) {
 	html {
 		font-size: 130%;
@@ -713,6 +829,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 640px) and (orientation: portrait) {
 	html {
 		font-size: 130%;
@@ -721,6 +838,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 	html {
 		font-size: 120%;
@@ -729,6 +847,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 540px) and (orientation: portrait) {
 	html {
 		font-size: 120%;
@@ -741,6 +860,7 @@ u,
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 480px) and (orientation: portrait) {
 	html {
 		font-size: 110%;
@@ -753,6 +873,7 @@ u,
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 400px) and (orientation: portrait) {
 	html {
 		font-size: 110%;
@@ -765,6 +886,7 @@ u,
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 360px) and (orientation: portrait) {
 	html {
 		font-size: 100%;
@@ -783,6 +905,7 @@ u,
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 240px) and (orientation: portrait) {
 	html {
 		font-size: 90%;
@@ -801,9 +924,11 @@ u,
 		width: 100%;
 	}
 }
+
 /**
  * max and landscape
  */
+
 @media only screen and (max-width: 1920px) and (orientation: landscape) {
 	html {
 		font-size: 100%;
@@ -812,6 +937,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
 	html {
 		font-size: 100%;
@@ -820,6 +946,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
 	html {
 		font-size: 100%;
@@ -828,6 +955,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 1130px) and (orientation: landscape) {
 	html {
 		font-size: 120%;
@@ -836,6 +964,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
 	html {
 		font-size: 120%;
@@ -844,6 +973,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 980px) and (orientation: landscape) {
 	html {
 		font-size: 120%;
@@ -852,6 +982,7 @@ u,
 		max-width: 39.000rem;
 	}
 }
+
 @media only screen and (max-width: 802px) and (orientation: landscape) {
 	html {
 		font-size: 130%;
@@ -860,6 +991,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 691px) and (orientation: landscape) {
 	html {
 		font-size: 130%;
@@ -868,6 +1000,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 640px) and (orientation: landscape) {
 	html {
 		font-size: 130%;
@@ -876,6 +1009,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 600px) and (orientation: landscape) {
 	html {
 		font-size: 120%;
@@ -884,6 +1018,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 540px) and (orientation: landscape) {
 	html {
 		font-size: 120%;
@@ -892,6 +1027,7 @@ u,
 		max-width: 100%;
 	}
 }
+
 @media only screen and (max-width: 480px) and (orientation: landscape) {
 	html {
 		font-size: 110%;
@@ -904,6 +1040,7 @@ u,
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 320px) and (orientation: landscape) {
 	html {
 		font-size: 100%;
@@ -922,8 +1059,8 @@ u,
 		width: 100%;
 	}
 }
-@media only screen and (min-width: 801px) and (max-width: 920px) {
-}
+
+@media only screen and (min-width: 801px) and (max-width: 920px) {}
 		</style>
 	</head>
 	<body>
