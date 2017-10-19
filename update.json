@@ -1,10 +1,10 @@
 {
-  "packageManager": "github",
-  "name": "typeboost.css",
-  "repo": "englishextra/typeboost.css",
-  "files": {
-    "basePath": "css/",
-    "include": ["typeboost.min.css"],
-    "exclude": []
-  }
+	"packageManager": "github",
+	"name": "typeboost.css",
+	"repo": "englishextra/typeboost.css",
+	"files": {
+		"basePath": "css/",
+		"include": ["typeboost.min.css"],
+		"exclude": []
+	}
 }

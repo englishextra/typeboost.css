@@ -1,12 +1,12 @@
 {
-  "name": "typeboost.css",
-  "version": "0.1.8",
-  "main": "css/typeboost.css",
-  "author": "englishextra",
-  "ignore": ["img",".md",
-  "update.json",
-  "bower.json",
-  "gruntfile.js",
-  "component.json",
-  "package.json"]
+	"name": "typeboost.css",
+	"version": "0.1.8",
+	"main": "css/typeboost.css",
+	"author": "englishextra",
+	"ignore": ["img",".md",
+	"update.json",
+	"bower.json",
+	"gruntfile.js",
+	"component.json",
+	"package.json"]
 }
