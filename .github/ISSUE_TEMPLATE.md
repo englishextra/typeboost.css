@@ -3,6 +3,7 @@
 Tag your issue accordingly:
 
 * is it a bug/feature/question or do you need help?
+
 * if it's a bug, is it a browser bug?
 
 Thanks for helping out!
@@ -12,7 +13,9 @@ Please remove any unused content (including these instructions) before submittin
 ### Checklist
 
 * [ ] My **browser** is:
+
 * [ ] I'm using version [x.x.x]
+
 * [ ] I am sure this issue is **not a duplicate**?
 
 ### Description
