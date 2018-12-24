@@ -4,14 +4,15 @@
  * set html font to 16px, and body to 1.000rem
  * line height should be the closest multiple of 4
  */
+
 html {
 	font-size: 16px;
 	line-height: 24px;
 }
 
 body {
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 1.000rem;
+	line-height: 1.500rem;
 }
 
 .col div,
@@ -147,7 +148,7 @@ body {
 .col address,
 .col p.address {
 	font-size: 0.875rem;
-	line-height: 1.25rem;
+	line-height: 1.250rem;
 	margin-right: 0;
 }
 
@@ -157,38 +158,38 @@ body {
 
 .col h1 {
 	font-size: 2.438rem;
-	line-height: 3rem;
+	line-height: 3.000rem;
 	padding: 0;
 }
 
 .col h2 {
 	font-size: 1.563rem;
-	line-height: 2rem;
+	line-height: 2.000rem;
 	padding: 0;
 }
 
 .col h3 {
-	font-size: 1.25rem;
-	line-height: 1.5rem;
+	font-size: 1.250rem;
+	line-height: 1.500rem;
 	padding: 0;
 }
 
 .col h4 {
-	font-size: 1rem;
-	line-height: 1.25rem;
+	font-size: 1.000rem;
+	line-height: 1.250rem;
 	padding: 0;
 }
 
 .col h5 {
-	font-size: 1rem;
-	line-height: 1.25rem;
+	font-size: 1.000rem;
+	line-height: 1.250rem;
 	text-transform: uppercase;
 	padding: 0;
 }
 
 .col h6 {
-	font-size: 1rem;
-	line-height: 1.25rem;
+	font-size: 1.000rem;
+	line-height: 1.250rem;
 	text-decoration: underline;
 	padding: 0;
 }
@@ -201,13 +202,13 @@ body {
 .col pre,
 .col pre code {
 	font-size: 0.875rem;
-	line-height: 1.25rem;
+	line-height: 1.250rem;
 }
 
 .col p.larger,
 .col blockquote {
 	font-size: 1.125rem;
-	line-height: 1.75rem;
+	line-height: 1.750rem;
 }
 
 .col p,
@@ -237,12 +238,9 @@ body {
 	overflow: -moz-scrollbars-horizontal;
 	overflow-x: auto;
 	border: 0;
-	-webkit-box-shadow: none;
 	box-shadow: none;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
 	tab-size: 4;
-	padding: 1rem 1.25rem;
+	padding: 1.000rem 1.250rem;
 }
 
 .col pre code {
@@ -269,7 +267,7 @@ body {
 
 .col table td,
 .col table th {
-	padding: 0.438rem 0.75rem 0.438rem 0.75rem;
+	padding: 0.438rem 0.750rem 0.438rem 0.750rem;
 	vertical-align: top;
 }
 
@@ -296,23 +294,22 @@ body {
 .col select,
 .col textarea {
 	font-size: 0.875rem;
-	line-height: 1.25rem;
-	-webkit-box-sizing: border-box;
+	line-height: 1.250rem;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
-	padding: 0 0.5rem;
+	padding: 0 0.500rem;
 }
 
 .col select {
-	padding: 0 0 0 0.25rem;
+	padding: 0 0 0 0.250rem;
 }
 
 .col optgroup {
-	margin: 0.25rem;
-	padding-left: 0.25rem;
+	margin: 0.250rem;
+	padding-left: 0.250rem;
 }
 
 .col input[type="color"] {
@@ -338,7 +335,7 @@ body {
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col select {
-	height: 2.25rem;
+	height: 2.250rem;
 }
 
 .col button,
@@ -346,20 +343,19 @@ body {
 .col input[type="reset"],
 .col input[type="submit"] {
 	font-size: 0.875rem;
-	line-height: 1.25rem;
-	-webkit-box-sizing: border-box;
+	line-height: 1.250rem;
 	box-sizing: border-box;
 	vertical-align: baseline;
 	*vertical-align: middle;
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 	cursor: pointer;
-	padding: 0 0.5rem;
+	padding: 0 0.500rem;
 }
 
 .col label {
 	display: block;
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.250rem;
 }
 
 .col textarea {
@@ -381,37 +377,37 @@ body {
 .col p.blockquote,
 .col dl dd,
 .col blockquote {
-	margin-left: 1.5rem;
+	margin-left: 1.500rem;
 }
 
 .col ol {
-	padding-left: 1.5rem;
+	padding-left: 1.500rem;
 }
 
 .col .indent {
-	text-indent: 1.5rem;
+	text-indent: 1.500rem;
 }
 
 .col ul {
-	padding-left: 2.5rem;
+	padding-left: 2.500rem;
 }
 
 .col td ul {
-	margin-top: 0;
+	margin-top: 0 /* !important */;
 }
 
 .col td ul li {
-	font-size: inherit;
-	line-height: inherit;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col td ol {
-	margin-top: 0;
+	margin-top: 0 /* !important */;
 }
 
 .col td ol li {
-	font-size: inherit;
-	line-height: inherit;
+	font-size: inherit /* !important */;
+	line-height: inherit /* !important */;
 }
 
 .col.textcenter address,
@@ -474,7 +470,7 @@ body {
 .col h6 + div,
 .col h6 + p,
 .col h6 + table {
-	margin-top: 0.5rem;
+	margin-top: 0.500rem;
 }
 
 .col address:first-child,
@@ -534,7 +530,7 @@ body {
 .col table + address,
 .col table + p.address,
 .col table + p.blockquote {
-	margin-top: 1.5rem;
+	margin-top: 1.500rem;
 }
 
 .col blockquote + blockquote,
@@ -680,7 +676,7 @@ body {
 .col table:first-child,
 .col figcaption:first-child,
 .col figure:first-child {
-	margin-top: 1.5rem;
+	margin-top: 1.500rem;
 }
 
 .col dl dd,
@@ -713,7 +709,7 @@ body {
 .col pre,
 .col ul,
 .col details {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.500rem;
 }
 
 .col blockquote + p,
@@ -731,7 +727,7 @@ body {
 .col table + p,
 .col ul + p,
 .col details + p {
-	margin-bottom: 1rem;
+	margin-bottom: 1.000rem;
 }
 
 .col .textleft {
@@ -759,12 +755,13 @@ body {
 .col .hr {
 	height: 0.063rem;
 	padding: 0;
-	margin: 1.5rem 0 1.438rem 0;
+	margin: 1.500rem 0 1.438rem 0;
 }
 
 /**
  * font weights
  */
+
 .col h2,
 .col h4,
 .col h5,
@@ -819,6 +816,7 @@ body {
 /**
  * font styles
  */
+
 .col address,
 .col p.address,
 .col p.blockquote,
@@ -838,18 +836,18 @@ body {
 /**
  * font families
  */
+
 .col body {
-	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue", "Roboto",
-		"Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif;
+	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue", "Roboto", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif;
 }
 
 /* .col h1 {
 	font-family: "Segoe UI", "Segoe WP", "HelveticaNeue-Light", "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", sans-serif-light, sans-serif;
 } */
+
 .col pre,
 .col pre code {
-	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata",
-		"Source Code Pro", monospace;
+	font-family: "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 .col select {
@@ -882,21 +880,21 @@ body {
 }
 
 .col .phonetic {
-	font-family: "Roboto Mono", "Consolas", "Monaco", "Droid Sans Mono",
-		"Inconsolata", "Source Code Pro", monospace;
+	font-family: "Roboto Mono", "Consolas", "Monaco", "Droid Sans Mono", "Inconsolata", "Source Code Pro", monospace;
 }
 
 /**
  * colors
  */
+
 .col a {
-	color: #3585d8;
+	color: #3585D8;
 }
 
 .col a:focus,
 .col a:hover,
 .col a:active {
-	color: #3585d8;
+	color: #3585D8;
 }
 
 .col h1,
@@ -969,7 +967,7 @@ body {
 
 .col pre {
 	color: inherit;
-	background-color: #f3f3f3;
+	background-color: #F3F3F3;
 }
 
 .col pre a:focus,
@@ -994,8 +992,8 @@ body {
 .col input[type^="datetime"],
 .col input[type^="datetime-local"],
 .col textarea {
-	background-color: #ffffff;
-	border: 0.063rem solid #c3c3c3;
+	background-color: #FFFFFF;
+	border: 0.063rem solid #C3C3C3;
 }
 
 .col button:focus,
@@ -1010,16 +1008,16 @@ body {
 .col input[type="button"]:active,
 .col input[type="reset"]:active,
 .col input[type="submit"]:active {
-	color: #ffffff;
-	background-color: #5f5f5f;
-	border: 0.063rem solid #5f5f5f;
+	color: #FFFFFF;
+	background-color: #5F5F5F;
+	border: 0.063rem solid #5F5F5F;
 }
 
 .col button,
 .col input[type="button"],
 .col input[type="reset"],
 .col input[type="submit"] {
-	color: #ffffff;
+	color: #FFFFFF;
 	background-color: #373737;
 	border: 0.063rem solid #373737;
 }
@@ -1057,8 +1055,8 @@ body {
 .col input[type^="datetime"]:active,
 .col input[type^="datetime-local"]:active,
 .col textarea:active {
-	background-color: #f3f3f3;
-	border: 0.063rem solid #c3c3c3;
+	background-color: #F3F3F3;
+	border: 0.063rem solid #C3C3C3;
 }
 
 .col select:disabled,
@@ -1077,43 +1075,43 @@ body {
 .col input[type^="datetime"]:disabled,
 .col input[type^="datetime-local"]:disabled,
 .col textarea:disabled {
-	background-color: #d5d5d5;
-	border-color: #d5d5d5;
+	background-color: #D5D5D5;
+	border-color: #D5D5D5;
 }
 
 .col button:disabled,
 .col input[type="button"]:disabled,
 .col input[type="reset"]:disabled,
 .col input[type="submit"]:disabled {
-	background-color: #d5d5d5;
-	border-color: #d5d5d5;
+	background-color: #D5D5D5;
+	border-color: #D5D5D5;
 }
 
 .col table {
 	border: none;
 	border-top-width: 0.063rem;
 	border-top-style: solid;
-	border-top-color: #c3c3c3;
+	border-top-color: #C3C3C3;
 	border-right-width: 0.063rem;
 	border-right-style: solid;
-	border-right-color: #c3c3c3;
+	border-right-color: #C3C3C3;
 	border-left-width: 0.063rem;
 	border-left-style: solid;
-	border-left-color: #c3c3c3;
+	border-left-color: #C3C3C3;
 }
 
 .col table th {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
-	border-bottom-color: #c3c3c3;
+	border-bottom-color: #C3C3C3;
 }
 
 .col table td {
 	border: none;
 	border-bottom-width: 0.063rem;
 	border-bottom-style: solid;
-	border-bottom-color: #c3c3c3;
+	border-bottom-color: #C3C3C3;
 }
 
 .col img {
@@ -1123,10 +1121,10 @@ body {
 
 .col hr,
 .col .hr {
-	background-color: #c3c3c3;
+	background-color: #C3C3C3;
 	border: 0;
 }
 
 .col .highlight {
-	color: #d93d3d;
+	color: #D93D3D;
 }
