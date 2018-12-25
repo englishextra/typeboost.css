@@ -185,7 +185,7 @@ var options = {
 	},
 };
 
-gulp.task("compile-css", function () {
+gulp.task("compile-libbundle-css", function () {
 	return gulp.src(options.libbundle.scss)
 	.pipe(plumber())
 	.pipe(sourcemaps.init())
@@ -224,7 +224,7 @@ gulp.task("browser-sync", gulp.series(gulp.parallel(
 
 		gulp.watch("./*.html").on("change", reload);
 		gulp.watch("./css/*.css").on("change", reload);
-		gulp.watch("./scss/*.scss", gulp.parallel("compile-css")).on("change", reload);
+		gulp.watch("./scss/*.scss", gulp.parallel("compile-libbundle-css")).on("change", reload);
 	}));
 
 gulp.task("default", gulp.task("browser-sync"));
