@@ -36,16 +36,16 @@
 		"gulp-autoprefixer": "^6.0.0",
 		"gulp-clean-css": "^4.0.0",
 		"gulp-cli": "^2.0.1",
-		"gulp-csslint": "^1.0.1",
 		"gulp-plumber": "^1.2.1",
 		"gulp-prettier": "^2.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
+		"gulp-sass-lint": "^1.4.0",
 		"gulp-sourcemaps": "^2.6.4",
 		"gulp-strip-debug": "^3.0.0"
 	},
 	"scripts": {
-		"test": "gulp lint-css"
+		"test": "gulp lint-libbundle-css"
 	},
 	"email": "englishextra@mail.ru",
 	"url": "https://github.com/englishextra/typeboost.css/issues",
