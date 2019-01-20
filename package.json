@@ -15,6 +15,8 @@
 	"css/typeboost.min.css"],
 	"main": "css/typeboost.min.css",
 	"filename": "css/typeboost.min.css",
+	"main_file": "index.js",
+	"electronVersion": "4.0.0",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/typeboost.css.git"
@@ -28,7 +30,7 @@
 		}]
 	},
 	"dependencies": {
-		"npm": "^6.5.0"
+		"npm": "^6.6.0"
 	},
 	"devDependencies": {
 		"browser-sync": "^2.26.3",
@@ -48,8 +50,7 @@
 		"test": "gulp lint-libbundle-css"
 	},
 	"email": "englishextra@mail.ru",
-	"url": "https://github.com/englishextra/typeboost.css/issues",
-	"homepage": "https://englishextra.github.io/libs/typeboost.css/",
+	"url": "https://github.com/englishextra/qrjs/issues",
 	"maintainers": {
 		"name": "Serguei Shimansky",
 		"email": "englishextra@mail.ru",
