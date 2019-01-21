@@ -15,8 +15,10 @@
 	"css/typeboost.min.css"],
 	"main": "css/typeboost.min.css",
 	"filename": "css/typeboost.min.css",
-	"main_file": "index.js",
-	"electronVersion": "4.0.0",
+	"main": "main.js",
+	"window": {
+		"icon": "favicon-32x32.png"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/englishextra/typeboost.css.git"
