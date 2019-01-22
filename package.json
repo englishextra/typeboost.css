@@ -8,13 +8,6 @@
 	"css",
 	"grid",
 	"typography"],
-	"style": "css/typeboost.min.css",
-	"files": ["LICENSE.md",
-	"index.html",
-	"css/typeboost.css",
-	"css/typeboost.min.css"],
-	"main": "css/typeboost.min.css",
-	"filename": "css/typeboost.min.css",
 	"main": "main.js",
 	"window": {
 		"icon": "favicon-32x32.png"
@@ -23,6 +16,11 @@
 		"type": "git",
 		"url": "git://github.com/englishextra/typeboost.css.git"
 	},
+	"files": ["LICENSE.md",
+	"index.html",
+	"css/typeboost.css",
+	"css/typeboost.min.css"],
+	"filename": "css/typeboost.min.css",
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/typeboost.css.git",
