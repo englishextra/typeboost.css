@@ -195,14 +195,14 @@ gulp.task("compile-libbundle-css", function () {
 	.pipe(autoprefixer(autoprefixerOptions))
 	.pipe(prettier(prettierOptions))
 	/* .pipe(beautify(beautifyOptions)) */
-	.pipe(plumber.stop())
 	.pipe(gulp.dest(options.libbundle.css))
 	.pipe(rename(function (path) {
 			path.basename += ".min";
 		}))
 	.pipe(minifyCss(cleanCssOptions))
 	.pipe(sourcemaps.write("."))
-	.pipe(gulp.dest(options.libbundle.css));
+	.pipe(gulp.dest(options.libbundle.css))
+	.pipe(plumber.stop());
 });
 
 gulp.task("lint-libbundle-css", function () {
