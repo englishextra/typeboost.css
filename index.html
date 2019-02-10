@@ -322,13 +322,13 @@ ol.linenums li {
 	}
 }
 
-/*! @import "ui-totop"; */
+/*! @import "btn-totop"; */
 
 /**
  * github.com/sksmatt/UItoTop-jQuery-Plugin/
  */
 
-#ui-totop {
+#btn-totop {
 	width: 33.000pt;
 	height: 33.000pt;
 	position: fixed;
@@ -349,7 +349,7 @@ ol.linenums li {
 	z-index: 999;
 }
 
-#ui-totop-hover {
+#btn-totop-hover {
 	display: block;
 	float: left;
 	width: 33.000pt;
@@ -363,7 +363,7 @@ ol.linenums li {
 	background-repeat: no-repeat;
 }
 
-#ui-totop:hover {
+#btn-totop:hover {
 	background-color: rgba(220, 220, 220, 0.5);
 }
 
@@ -1342,7 +1342,7 @@ var zenscroll=(function(){"use strict";if(typeof window==="undefined"||!("docume
 	})
 })(window, document, document.getElementById("chapters-select") || "");
 /*!
- * init ui-totop
+ * init btn-totop
  */
 (function (w, d, b, u, v) {
 	var a = d.createElement("a");
@@ -1364,7 +1364,7 @@ var zenscroll=(function(){"use strict";if(typeof window==="undefined"||!("docume
 		btn && (o > h ? (btn.style.visibility = "visible", btn.style.opacity = 1) : (btn.style.visibility = "hidden", btn.style.opacity = 0));
 	};
 }
-	(window, document, document.getElementsByTagName("body")[0] || document.documentElement, "ui-totop", "ui-totop-hover"));
+	(window, document, document.getElementsByTagName("body")[0] || document.documentElement, "btn-totop", "btn-totop-hover"));
 /*!
  * show page, finish ToProgress
  */
