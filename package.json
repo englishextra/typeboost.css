@@ -38,10 +38,10 @@
 		]
 	},
 	"dependencies": {
-		"npm": "^6.9.0"
+		"npm": "^6.10.1"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.26.3",
+		"browser-sync": "^2.26.7",
 		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "^6.0.0",
 		"gulp-clean-css": "^4.0.0",
@@ -58,7 +58,7 @@
 		"test": "gulp lint-libbundle-css"
 	},
 	"email": "englishextra@mail.ru",
-	"url": "https://github.com/englishextra/qrjs/issues",
+	"url": "https://github.com/englishextra/typeboost.css/issues",
 	"maintainers": {
 		"name": "Serguei Shimansky",
 		"email": "englishextra@mail.ru",
