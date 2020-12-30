@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<!-- 1. use /tools/modularscale/index.html?15&px&1.25,1.125&web&text for font size and line height
+2. lazyload images
+3. remove font face, display block, opacity 1, visibility visible in critical inline css
+4. set font display swap in font face in css -->
+<html class="no-js" lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <meta http-equiv="x-ua-compatible" content="ie=edge" /> -->
+		<!-- https://content-security-policy.com/ --><meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; connect-src 'self' 'unsafe-inline' https:; frame-src 'self' https:; media-src 'self' https:; img-src 'self' 'unsafe-inline' https: data:" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Typeboost.css Demo Page</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,700,700italic%7CSource+Code+Pro:400,700&amp;subset=latin,cyrillic,latin-ext" />
+		<link rel="stylesheet" href="./cdn/normalize/5.0.0/css/normalize.min.css" />
+		<link rel="stylesheet" href="./css/typeboost.css" />
+		<style>
+		/*! @import "github-fork-ribbon"; */
+		/*!
+		* "Fork me on GitHub" CSS ribbon v0.2.0 | MIT License
+		* @see {@link https://github.com/simonwhitaker/github-fork-ribbon-css}
+		*/
+.github-fork-ribbon {
+	width: 12.1em;
+	height: 12.1em;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	pointer-events: none;
+	font-size: 13px;
+	text-decoration: none;
+	text-indent: -999999px;
+}
+.github-fork-ribbon.fixed {
+	position: fixed;
+}
+.github-fork-ribbon:before,
+.github-fork-ribbon:after {
+	/* The right and left classes determine the side we attach our banner to */
+	position: absolute;
+	display: block;
+	width: 15.38em;
+	height: 1.54em;
+	top: 3.23em;
+	right: -3.23em;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.github-fork-ribbon:before {
+	content: "";
+	/* Add a bit of padding to give some substance outside the "stitching" */
+	padding: .38em 0;
+	/* Set the base colour */
+	background-color: #a00;
+	/* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	/* Add a drop shadow */
+	-webkit-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+	pointer-events: auto;
+}
+.github-fork-ribbon:after {
+	/* Set the text from the title attribute */
+	/* @see {@link https://github.com/simonwhitaker/github-fork-ribbon-css} */
+	content: attr(data-ribbon);
+	/* Set the text properties */
+	color: #fff;
+	font: 700 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.54em;
+	text-decoration: none;
+	text-shadow: 0 -.08em rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-indent: 0;
+	/* Set the layout properties */
+	padding: .15em 0;
+	margin: .15em 0;
+	/* Add "stitching" effect */
+	border-width: .08em 0;
+	border-style: dotted;
+	border-color: #fff;
+	border-color: rgba(255, 255, 255, 0.7);
+}
+.github-fork-ribbon.left-top,
+.github-fork-ribbon.left-bottom {
+	right: auto;
+	left: 0;
+}
+.github-fork-ribbon.left-bottom,
+.github-fork-ribbon.right-bottom {
+	top: auto;
+	bottom: 0;
+}
+.github-fork-ribbon.left-top:before,
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.left-bottom:after {
+	right: auto;
+	left: -3.23em;
+}
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.left-bottom:after,
+.github-fork-ribbon.right-bottom:before,
+.github-fork-ribbon.right-bottom:after {
+	top: auto;
+	bottom: 3.23em;
+}
+.github-fork-ribbon.left-top:before,
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.right-bottom:before,
+.github-fork-ribbon.right-bottom:after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+		/*! @import "prettyprint.fixed"; */
+		/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
+	background: #fff;
+	font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
+	border: 0/* !important */
+	;
+}
+.pln {
+	color: #333;
+}
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #ccc;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+	padding-left: 1em;
+	background-color: #fff;
+	list-style-type: decimal;
+}
+@media screen {
+	.str {
+		color: #183691;
+	}
+	.kwd {
+		color: #a71d5d;
+	}
+	.com {
+		color: #969896;
+	}
+	.typ {
+		color: #0086b3;
+	}
+	.lit {
+		color: #0086b3;
+	}
+	.pun {
+		color: #333;
+	}
+	.opn {
+		color: #333;
+	}
+	.clo {
+		color: #333;
+	}
+	.tag {
+		color: navy;
+	}
+	.atn {
+		color: #795da3;
+	}
+	.atv {
+		color: #183691;
+	}
+	.dec {
+		color: #333;
+	}
+	.var {
+		color: teal;
+	}
+	.fun {
+		color: #900;
+	}
+}
+		/**
+		* custom fixes for github-v2.min.css
+		* a google-code-prettify theme for englishextra.github.io based on
+		* source: jmblog.github.io/color-themes-for-google-code-prettify/themes/github-v2.min.css
+		*/
+		/**
+		* custom fixes for github-v2.min.css
+		*/
+pre.prettyprint,
+code.prettyprint {
+	background-color: #F3F3F3;
+	border-radius: 0;
+}
+pre.prettyprint {
+	width: 100%;
+	white-space: pre-wrap;
+	background-color: #F3F3F3;
+	border: 0 solid transparent;
+	overflow-x: scroll;
+	overflow-y: auto;
+	padding: 1.000em;
+	margin: 1.000em auto;
+}
+pre.prettyprinted {
+	box-shadow: none;
+	border: 0;
+}
+.prettyprint ol.linenums {
+	list-style: decimal outside;
+	color: #C9C9C9;
+	border-left: 1px solid #C9C9C9;
+	padding: 0;
+	margin: 0 0 0 2.375rem/* !important */
+	;
+}
+ol.linenums li {
+	line-height: 1.500;
+	background-color: inherit;
+	padding-left: 0.750rem;
+}
+		/**
+		* added media print
+		* source: github.com/google/code-prettify/blob/master/src/prettify.css
+		*/
+@media print {
+	pre.prettyprinted,
+	pre.prettyprint,
+	code.prettyprint {
+		background-color: #FFFFFF;
+		color: #000000;
+		border-radius: 0;
+	}
+	pre .str,
+	code .str {
+		color: #060;
+	}
+	pre .kwd,
+	code .kwd {
+		color: #006;
+		font-weight: bold;
+	}
+	pre .com,
+	code .com {
+		color: #600;
+		font-style: italic;
+	}
+	pre .typ,
+	code .typ {
+		color: #404;
+		font-weight: bold;
+	}
+	pre .lit,
+	code .lit {
+		color: #044;
+	}
+	pre .pun,
+	code .pun {
+		color: #440;
+	}
+	pre .pln,
+	code .pln {
+		color: #000000;
+	}
+	pre .tag,
+	code .tag {
+		color: #006;
+		font-weight: bold;
+	}
+	pre .atn,
+	code .atn {
+		color: #404;
+	}
+	pre .atv,
+	code .atv {
+		color: #060;
+	}
+}
+		/*! @import "btn-totop"; */
+		/**
+		* github.com/sksmatt/UItoTop-jQuery-Plugin/
+		*/
+#btn-totop {
+	width: 33.000pt;
+	height: 33.000pt;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 1.000em;
+	text-indent: 100%;
+	text-decoration: none;
+	border: none;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+	z-index: 999;
+}
+#btn-totop-hover {
+	display: block;
+	float: left;
+	width: 33.000pt;
+	height: 33.000pt;
+	overflow: hidden;
+	background-color: rgba(220, 220, 220, 0.5);
+	/* file size: 0.6ko | optimized file size: 0.5ko | base64 size: 0.7ko .project-pages-ui-icons-up-arrow-000000-24x24 */
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iMjAuMjc1LDEwLjUyOSAxMi40OTksMi43NTEgMTEuNzkyLDMuNDU4IDExLjgwMSwzLjQ2NyA0LjcyNSwxMC41NDIgNS40MzIsMTEuMjQ5IDEyLDQuNjggMTIsMjEuNSAxMywyMS41IDEzLDQuNjY4IDE5LjU2OCwxMS4yMzYgIi8+PC9zdmc+);
+	background-size: 18.000pt 18.000pt;
+	background-position: 6.750pt 6.750pt;
+	background-repeat: no-repeat;
+}
+#btn-totop:hover {
+	background-color: rgba(220, 220, 220, 0.5);
+}
+		/*! @import "typeboost-css-demo-main"; */
+		/**
+		* main
+		*/
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 100%;
+	line-height: 1.500;
+	/**
+		* set the parent to background transparent
+		* and position relative to parent, absolute for child
+		*/
+	background-color: transparent;
+}
+body {
+	font-family: "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", "Segoe UI", "Segoe WP", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.500;
+	width: 100%;
+	color: #373737;
+	background-color: #F0F0F0;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga", "kern";
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+		/**
+		* englishextra specific rules
+		*/
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:focus,
+a:active,
+button:focus,
+button:active,
+select:focus,
+select:active {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: bottom;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+b,
+strong,
+.bolder {
+	font-weight: bold;
+}
+i,
+em,
+.italic {
+	font-style: italic;
+}
+u,
+.underline {
+	text-decoration: underline;
+}
+*,
+*:after,
+*::before {
+	box-sizing: border-box;
+}
+::-moz-selection {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(58, 150, 221, 0.9);
+}
+::selection {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(58, 150, 221, 0.9);
+}
+		/**
+		* clearfix css-tricks.com/snippets/css/clear-fix/
+		*/
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+		/**
+		* fit width
+		*/
+.fit-width {
+	min-width: 100%;
+}
+		/**
+		* fit half width
+		*/
+.fit-half-width {
+	min-width: 50%;
+}
+		/**
+		* hide and show on mobile
+		*/
+.show-inline-on-mobile,
+.show-block-on-mobile {
+	display: none/* !important */
+	;
+}
+@media handheld,
+only screen and (max-width: 800px) {
+	.hide-on-mobile {
+		display: none/* !important */
+		;
+		width: 0;
+		height: 0;
+	}
+	.show-inline-on-mobile {
+		display: inline/* !important */
+		;
+	}
+	.show-block-on-mobile {
+		display: block/* !important */
+		;
+	}
+}
+		/**
+		* other
+		*/
+.page {
+	width: 100%;
+	/**
+		* set the parent to min height 100%, not just height
+		* and position relative to parent, absolute for child
+		*/
+	min-height: 100%;
+	position: relative;
+	top: 0;
+	/* left: 280px; */
+	left: 0;
+	background-color: #F0F0F0;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0 auto;
+}
+.content-wrapper {
+	padding: 0 16px 24px 16px;
+	margin: 0 auto;
+}
+.container .content-wrapper,
+.app-content .content-wrapper {
+	width: 100%;
+	height: 100%;
+}
+		/**
+		* fixes to typeboost.css
+		* modularscale.com
+		* github.com/modularscale/modularscale-sass
+		* ----------------
+		* $ms-base: 1em;
+		* $ms-ratio: 1.5,1.1;
+		* ----------------
+		* ms(16) / 3.452em
+		* ms(15) / 3.375em
+		* ms(14) / 3.138em
+		* ms(13) / 2.853em
+		* ms(12) / 2.594em
+		* ms(11) / 2.358em
+		* ms(10) / 2.25em
+		* ms(9) / 2.144em
+		* ms(8) / 1.949em
+		* ms(7) / 1.772em
+		* ms(6) / 1.611em
+		* ms(5) / 1.5em
+		* ms(4) / 1.464em
+		* ms(3) / 1.331em
+		* ms(2) / 1.21em
+		* ms(1) / 1.1em
+		* ms(0) / 1em
+		* ms(-1) / 0.909em
+		* ms(-2) / 0.826em
+		* ms(-3) / 0.751em
+		* ms(-4) / 0.683em
+		* ms(-5) / 0.667em
+		* ms(-6) / 0.621em
+		*/
+.col a {
+	font-weight: inherit;
+	color: #007DD1;
+}
+.col a:hover,
+.col a:focus,
+.col a:active {
+	color: #007DD1;
+}
+.col a:visited {
+	color: #878787;
+}
+.col h1 {
+	font-family: "Source Sans Pro", "Open Sans", "Exo2", "Fira Sans", "Segoe UI Light", "Segoe WP Light", sans-serif;
+	font-weight: 300;
+	line-height: 1.200;
+	color: inherit;
+	margin-top: 0/* !important */
+	;
+	margin-bottom: 0.500rem;
+}
+.col dl dt a {
+	color: inherit;
+	border-bottom-color: inherit;
+	border-bottom-style: solid;
+	border-bottom-width: 0.063rem;
+}
+.col dl dt a:hover,
+.col dl dt a:focus,
+.col dl dt a:active {
+	color: inherit;
+}
+.col img,
+.col svg,
+.col canvas,
+.col video,
+.col textarea {
+	width: 100%;
+}
+.col img.inline {
+	width: auto;
+}
+.col img,
+.col svg,
+.col canvas {
+	height: auto;
+}
+.col video,
+.col svg {
+	display: block;
+	padding: 0;
+}
+.col canvas {
+	vertical-align: bottom;
+}
+.col .video-wrapper {
+	float: none;
+	clear: both;
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.col .video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.col .soundcloud-wrapper iframe {
+	width: 100%;
+	height: 166px;
+}
+.col .holder-contents-select+canvas {
+	margin-top: 1.500rem;
+}
+.col h2+div form p:first-child {
+	margin-top: 0;
+}
+.col table.respond {
+	width: auto;
+}
+.col table {
+	border: none;
+	border-top-width: 0.063rem;
+	border-top-style: solid;
+	border-top-color: #C3C3C3;
+	border-right-width: 0.063rem;
+	border-right-style: solid;
+	border-right-color: #C3C3C3;
+	border-left-width: 0.063rem;
+	border-left-style: solid;
+	border-left-color: #C3C3C3;
+}
+.col table th {
+	border: none;
+	border-bottom-width: 0.063rem;
+	border-bottom-style: solid;
+	border-bottom-color: #C3C3C3;
+}
+.col table td {
+	border: none;
+	border-bottom-width: 0.063rem;
+	border-bottom-style: solid;
+	border-bottom-color: #C3C3C3;
+}
+.col table td.with-img-only {
+	padding: 0.500rem;
+}
+@media screen and (max-width: 640px) {
+	.col table.respond {
+		border: none;
+	}
+	.col table.respond,
+	.col table.respond tr,
+	.col table.respond td {
+		display: block;
+		box-sizing: border-box;
+	}
+	.col table.respond tr {
+		width: 100%;
+		float: left;
+		position: relative;
+		border: 0.063rem solid #C3C3C3;
+		border-bottom: none;
+		margin-bottom: 1.500rem;
+	}
+	.col table.respond tr:last-child {
+		margin-bottom: 0;
+	}
+	.col table.respond thead,
+	.col table.respond tfoot {
+		display: none;
+	}
+	.col table.respond td::before {
+		display: block;
+		float: left;
+		content: attr(data-label);
+		font-weight: bold;
+		text-align: right;
+		padding-right: 0.625rem;
+	}
+}
+.col hr,
+.col .hr {
+	height: 0.063rem;
+	background-color: #C3C3C3;
+}
+.col pre,
+.col pre code {
+	font-family: "Source Code Pro", "Consolas", monospace;
+}
+		/**
+		* logo
+		*/
+.logo {
+	width: 100%;
+}
+.logo svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+		/**
+		* media queries
+		*/
+		/**
+		* max and portrait
+		*/
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) and (orientation: portrait) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 540px) and (orientation: portrait) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col h1 {
+		font-size: 1.625rem;
+	}
+	.col h2 {
+		font-size: 1.375rem;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 240px) and (orientation: portrait) {
+	html {
+		font-size: 90%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col h1 {
+		font-size: 1.625rem;
+	}
+	.col h2 {
+		font-size: 1.375rem;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+		/**
+		* max and landscape
+		*/
+@media only screen and (max-width: 1920px) and (orientation: landscape) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 1130px) and (orientation: landscape) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 980px) and (orientation: landscape) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 39.000rem;
+	}
+}
+@media only screen and (max-width: 802px) and (orientation: landscape) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 691px) and (orientation: landscape) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+	html {
+		font-size: 130%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 540px) and (orientation: landscape) {
+	html {
+		font-size: 120%;
+	}
+	.container {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+	html {
+		font-size: 110%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 320px) and (orientation: landscape) {
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col h1 {
+		font-size: 1.625rem;
+	}
+	.col h2 {
+		font-size: 1.375rem;
+	}
+	.col img,
+	.col select {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 801px) and (max-width: 920px) {}
+		</style>
+	</head>
+	<body>
+		<!-- https://haltersweb.github.io/Accessibility/svg.html --><svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" focusable="false">
+			<defs>
+				<symbol id="ui-icon-ChevronDownSmall" viewBox="0 0 32 32">
+					<path d="M28.191 6.107l3.809 3.791-16 15.995-16-15.995 3.809-3.791 12.191 12.189 12.191-12.189z"></path>
+				</symbol>
+			</defs>
+		</svg>
+		<div class="page" id="page" role="document">
+			<div class="container" id="container" role="main">
+				<div class="logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		viewBox="12.5 165 935 230" enable-background="new 12.5 165 935 230" xml:space="preserve">
+	<rect x="12.5" y="165" fill="#19B5FE" width="935" height="230"/>
+	<rect x="12.5" y="165" fill="#363636" width="345" height="230"/>
+	<g>
+		<path fill="#FFFFFF" d="M84.618,311.615c-3.012,1.685-6.94,2.526-11.79,2.526c-13.678,0-20.515-7.706-20.515-23.119v-46.391H38.84
+				V233.99h13.474v-19.138l12.554-4.058v23.196h19.751v10.642H64.867v44.251c0,5.256,0.894,8.993,2.681,11.214
+				c1.785,2.22,4.77,3.329,8.955,3.329c3.113,0,5.82-0.84,8.115-2.527V311.615L84.618,311.615z"/>
+		<path fill="#FFFFFF" d="M163.776,233.99l-36.057,90.946c-6.429,16.179-15.464,24.267-27.1,24.267c-3.267,0-5.998-0.305-8.191-0.916
+				v-11.255c2.654,0.918,5.104,1.379,7.349,1.379c6.379,0,11.151-3.753,14.315-11.253l6.278-14.93L89.748,233.99h14.01l21.129,60.325
+				l1.608,5.973h0.459c0.202-1.123,0.713-3.034,1.531-5.743l22.276-60.555H163.776L163.776,233.99z"/>
+		<path fill="#FFFFFF" d="M249.363,270.814c0,13.271-3.243,23.835-9.724,31.693c-6.481,7.859-15.158,11.788-26.027,11.788
+				c-10.31,0-18.143-4.389-23.502-13.169h-0.306v47.312H177.25V233.99h12.556v13.78h0.305c6.176-10.462,15.208-15.695,27.1-15.695
+				c9.8,0,17.608,3.473,23.424,10.411C246.454,249.43,249.363,258.87,249.363,270.814z M236.503,270.66
+				c0-8.471-1.99-15.235-5.972-20.287c-3.98-5.053-9.468-7.58-16.459-7.58c-7.196,0-13.041,2.502-17.531,7.503
+				c-4.492,5.002-6.737,11.381-6.737,19.138v10.946c0,6.586,2.154,12.098,6.469,16.538c4.313,4.438,9.632,6.657,15.962,6.657
+				c7.552,0,13.484-2.906,17.799-8.726C234.345,289.033,236.503,280.971,236.503,270.66z"/>
+		<path fill="#FFFFFF" d="M331.199,276.326H275.85c0.204,8.831,2.539,15.578,7.005,20.248c4.464,4.669,10.652,7.003,18.563,7.003
+				c8.881,0,16.97-2.857,24.269-8.573v11.714c-6.84,5.051-15.923,7.578-27.254,7.578c-11.176,0-19.903-3.607-26.181-10.831
+				s-9.417-17.214-9.417-29.974c0-7.757,1.569-14.836,4.708-21.242c3.139-6.405,7.465-11.369,12.977-14.891
+				c5.512-3.522,11.636-5.283,18.372-5.283c10.156,0,18.08,3.306,23.77,9.915c5.689,6.609,8.535,15.859,8.535,27.752v6.584H331.199z
+				M318.339,265.684c-0.104-7.245-1.85-12.873-5.244-16.88c-3.395-4.005-8.18-6.01-14.355-6.01c-5.818,0-10.793,2.095-14.927,6.278
+				c-4.135,4.186-6.737,9.721-7.81,16.611L318.339,265.684L318.339,265.684z"/>
+	</g>
+	<g>
+		<path fill="#E24A03" d="M389.362,224.968c0-5.069-0.038-8.945-0.103-11.625c-0.074-2.675-0.285-4.999-0.639-6.973
+				c-0.349-1.971-0.913-3.521-1.686-4.649c-0.779-1.126-1.816-2.042-3.121-2.746c-1.3-0.703-3.433-1.376-6.387-2.007v-6.974
+				l29.465-1.481h12.992v60.546l0.108,0.105c4.227-3.875,7.922-6.866,11.092-8.981c3.167-2.117,6.546-3.786,10.139-5.019
+				c3.594-1.232,7.428-1.849,11.51-1.849c12.537,0,21.935,4.419,28.202,13.26c6.271,8.84,9.407,22.068,9.407,39.675
+				c0,12.185-1.852,22.382-5.549,30.587c-3.701,8.212-9.206,14.368-16.533,18.497c-7.32,4.119-16.333,6.179-27.039,6.179
+				c-11.129,0-21.302-2.01-30.522-6.024l-7.821,6.024l-13.519-1.902V224.967L389.362,224.968L389.362,224.968z M419.885,305.164
+				c0,8.668,1.499,15.058,4.491,19.18c2.992,4.119,7.621,6.186,13.89,6.186c6.477,0,11.423-3.402,14.84-10.199
+				c3.416-6.799,5.123-16.502,5.123-29.109c0-13.879-1.514-24.234-4.538-31.066c-3.029-6.833-7.75-10.248-14.157-10.248
+				c-3.1,0-6.161,0.807-9.186,2.427c-3.027,1.624-5.531,3.927-7.502,6.92c-1.97,2.994-2.96,6.289-2.96,9.881V305.164L419.885,305.164z
+				"/>
+		<path fill="#E24A03" d="M560.797,341.513c-10.357,0-19.281-1.811-26.776-5.442c-7.504-3.627-13.361-9.44-17.589-17.432
+				c-4.227-7.992-6.338-18.16-6.338-30.481c0-9.442,1.305-17.608,3.91-24.518c2.599-6.902,6.229-12.608,10.875-17.118
+				c4.649-4.507,10.195-7.835,16.637-9.985c6.444-2.149,13.432-3.222,20.975-3.222c17.034,0,29.882,4.489,38.549,13.47
+				c8.664,8.982,12.989,22.138,12.989,39.467c0,12.257-2.147,22.524-6.437,30.799c-4.3,8.279-10.427,14.424-18.38,18.438
+				C581.249,339.505,571.779,341.513,560.797,341.513z M542.208,285.828c0,14.936,1.669,26.117,5.011,33.55
+				c3.349,7.43,8.4,11.149,15.163,11.149c3.729,0,6.847-0.955,9.344-2.855c2.498-1.902,4.506-4.651,6.022-8.24
+				c1.516-3.594,2.589-7.911,3.223-12.944c0.634-5.031,0.95-10.691,0.95-16.965c0-15.139-1.676-26.466-5.014-33.964
+				c-3.351-7.503-8.294-11.254-14.842-11.254c-4.791,0-8.627,1.516-11.516,4.542c-2.891,3.03-5.002,7.573-6.339,13.632
+				C542.873,268.537,542.208,276.322,542.208,285.828z"/>
+		<path fill="#E24A03" d="M683.953,341.513c-10.348,0-19.273-1.811-26.777-5.442c-7.497-3.627-13.357-9.44-17.587-17.432
+				c-4.223-7.992-6.329-18.16-6.329-30.481c0-9.442,1.298-17.608,3.901-24.518c2.607-6.902,6.229-12.608,10.878-17.118
+				c4.651-4.507,10.197-7.835,16.641-9.985c6.439-2.149,13.43-3.222,20.968-3.222c17.041,0,29.891,4.489,38.554,13.47
+				c8.661,8.982,12.996,22.138,12.996,39.467c0,12.257-2.149,22.524-6.446,30.799c-4.297,8.279-10.42,14.424-18.382,18.438
+				C704.408,339.505,694.937,341.513,683.953,341.513z M665.365,285.828c0,14.936,1.671,26.117,5.018,33.55
+				c3.347,7.43,8.396,11.149,15.154,11.149c3.735,0,6.851-0.955,9.348-2.855c2.503-1.902,4.509-4.651,6.022-8.24
+				c1.516-3.594,2.59-7.911,3.223-12.944c0.636-5.031,0.95-10.691,0.95-16.965c0-15.139-1.666-26.466-5.016-33.964
+				c-3.347-7.503-8.292-11.254-14.84-11.254c-4.791,0-8.625,1.516-11.518,4.542c-2.889,3.03-4.995,7.573-6.334,13.632
+				C666.039,268.538,665.365,276.322,665.365,285.828z"/>
+		<path fill="#E24A03" d="M769.512,311.289c1.691,6.417,4.366,11.222,8.029,14.427c3.659,3.21,8.558,4.813,14.681,4.813
+				c5.285,0,9.278-1.201,11.987-3.598c2.711-2.391,4.065-5.876,4.065-10.461c0-2.886-0.611-5.35-1.849-7.394
+				c-1.229-2.049-3.271-4.003-6.121-5.869c-2.859-1.862-7.729-4.313-14.633-7.341c-3.87-1.688-7.518-3.558-10.93-5.599
+				c-3.414-2.044-6.39-4.349-8.928-6.923c-2.531-2.567-4.544-5.441-6.02-8.611c-1.48-3.169-2.217-6.688-2.217-10.566
+				c0-6.342,1.828-11.833,5.494-16.482c3.658-4.65,8.888-8.207,15.682-10.671c6.797-2.465,14.563-3.699,23.29-3.699
+				c5.139,0,10.179,0.212,15.109,0.632c4.928,0.424,11.3,1.341,19.116,2.749v24.617h-13.941c-1.622-4.505-3.4-7.993-5.337-10.457
+				c-1.938-2.466-4.063-4.174-6.39-5.127c-2.33-0.952-5.108-1.425-8.343-1.425c-4.649,0-8.346,1.056-11.091,3.168
+				c-2.751,2.115-4.121,5.072-4.121,8.878c0,2.676,0.489,4.962,1.479,6.865c0.986,1.903,2.749,3.754,5.276,5.547
+				c2.536,1.8,7.437,4.211,14.688,7.242c6.619,2.744,12.003,5.615,16.16,8.609c4.16,2.999,7.322,6.446,9.508,10.354
+				c2.183,3.91,3.279,8.473,3.279,13.684c0,5.707-1.061,10.624-3.172,14.738c-2.115,4.122-5.071,7.522-8.874,10.197
+				c-3.801,2.68-8.362,4.67-13.686,5.969c-5.312,1.307-11.177,1.958-17.582,1.958c-11.621,0-24.545-1.653-38.768-4.966v-25.26h14.157
+				v0.002H769.512z"/>
+		<path fill="#E24A03" d="M927.429,327.145c-6.199,5.283-11.832,8.996-16.904,11.147c-5.069,2.149-10.417,3.223-16.055,3.223
+				c-10.493,0-18.323-2.841-23.501-8.506c-5.175-5.667-7.762-14.249-7.762-25.731v-59.065h-13.203v-7.288
+				c4.293-0.707,7.459-1.763,9.506-3.174c2.044-1.407,3.627-3.289,4.755-5.652c1.123-2.36,2.019-5.442,2.69-9.244
+				c0.665-3.805,1.175-8.56,1.527-14.265h25.244v26.417h30.108v13.206h-30.108v47.655c0,7.961,0.375,13.843,1.116,17.644
+				c0.734,3.81,1.985,6.608,3.751,8.402c1.752,1.793,3.938,2.693,6.545,2.693c1.972,0,3.733-0.175,5.285-0.525
+				c1.545-0.351,3.185-0.986,4.903-1.902c1.729-0.914,3.546-2.22,5.446-3.908L927.429,327.145z"/>
+	</g>
+		</svg></div>
+				<div class="content-wrapper">
+					<div class="col">
+						<h1 id="h1">Heading&#160;1</h1>
+						<div class="hr"></div>
+						<p><span class="larger"><strong>Typeboost.css</strong> is a set of CSS rules to&#160;ensure readable, scalable and responsive typography. REMs are used for font sizes, paddings, and margins. Can be used as typography normalizer. No dependencies. Wrap your HTML content with class <strong>.col</strong> and you are done. You will also like <a href="https://englishextra.github.io/libs/16pixels/">16pixels</a></span></p>
+						<div class="hr"></div>
+						<h2>Contents</h2>
+						<div>
+							<form method="get" action="javascript:void(0);">
+								<p>
+									<select class="chapters-select" id="chapters-select" aria-label="Select / Выбрать">
+										<option value="#h1">Choose something&#8230;</option>
+										<option value="#h1">Heading&#160;1</option>
+										<option value="#h2">Heading&#160;2</option>
+										<option value="#h3">Heading&#160;3</option>
+										<option value="#h4">Heading&#160;4</option>
+										<option value="#h5">Heading&#160;5</option>
+										<option value="#h6">Heading&#160;6</option>
+									</select>
+								</p>
+							</form>
+						</div>
+						<h2 id="h2">Heading&#160;2</h2>
+						<p><a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+						</blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<table class="respond fit-width">
+							<caption>
+								Table Caption
+							</caption>
+							<thead>
+								<tr>
+									<th>Table Header</th>
+									<th>Table Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+								<tr>
+									<td>Table Cell Text</td>
+									<td>Table Cell Text</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Table Footer</th>
+									<th>Table Footer</th>
+								</tr>
+							</tfoot>
+						</table>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+						</blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<h3 id="h3">Heading&#160;3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<dl>
+							<dt>Definition List Title</dt>
+							<dd>Definition List Text</dd>
+							<dt>Definition List Title</dt>
+							<dd>Definition List Text</dd>
+							<dt>Definition List Title</dt>
+							<dd>Definition List Text</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<h4 id="h4">Heading&#160;4</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<ul>
+							<li>Unordered List Text</li>
+							<li>Unordered List Text</li>
+							<li>Unordered List Text</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<h5 id="h5">Heading&#160;5</h5>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<ol>
+							<li>Ordered List Text</li>
+							<li>Ordered List Text</li>
+							<li>Ordered List Text</li>
+						</ol>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<h6 id="h6">Heading&#160;6</h6>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<p><img src="./img/640x360.png" alt="" /></p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<div>
+							<form action="#" method="post">
+								<input type="hidden" name="id" value="" />
+								<fieldset>
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName" name="firstName" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="lastName">Last Name</label>
+									<input type="text" id="lastName" name="lastName" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="email">Email Address</label>
+									<input type="text" id="email" name="email" value=""/>
+								</fieldset>
+								<fieldset>
+									<label for="field-1">What&#x27;s on your mind?</label>
+									<textarea id="field-1" name="field-1" rows="5" cols="50"></textarea>
+								</fieldset>
+								<fieldset>
+									<input type="submit" onclick="return false;" value="Submit"/>
+								</fieldset>
+							</form>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+						<h2>npm Install</h2>
+						<pre class="prettyprint linenums line-numbers"><code class="language-plain">npm install typeboost.css</code></pre>
+						<h2>Setup</h2>
+						<pre class="prettyprint lang-html linenums line-numbers"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;typeboost.min.css&quot; /&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div class=&quot;col&quot;&gt;
+			&lt;h1&gt;Heading&amp;#160;1&lt;/h1&gt;
+			&lt;p&gt;
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	<h2>GitHub</h2>
+	<p><a href="https://github.com/englishextra/typeboost.css" />englishextra/typeboost.css</a></p>
+	<h2>License</h2>
+	<p>Available under <a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="github-fork-ribbon" href="https://github.com/englishextra/typeboost.css" title="Fork me on GitHub" data-ribbon="Fork me on GitHub">Fork me on GitHub</a>
+		<script>
+		/*!
+		* load JS async
+		* modified order of arguments, removed CommonJS stuff
+		* github.com/filamentgroup/loadJS
+		* gist.github.com/englishextra/397e62184fde65d7755744fdb7a01829
+		* @param {String} _src path string
+		* @param {Object} callback callback function
+		* loadJS(_src,callback)
+		*/
+(function(root){var loadJS=function(_src,callback){"use strict";var ref=document.getElementsByTagName("script")[0];var script=document.createElement("script");script.src=_src;script.async=true;ref.parentNode.insertBefore(script,ref);if(callback&&"function"===typeof callback){script.onload=callback;}return script;};root.loadJS=loadJS;}("undefined" !== typeof window ? window : this));
+		/*!
+		* modified for babel Zenscroll - v3.2.2
+		* github.com/zengabor/zenscroll
+		* Copyright 2015-2016 Gabor Lenard
+		* removed AMD, CommonJS support
+		* fixed IIFE enforcing
+		* added brackets in if / for
+		* source: github.com/zengabor/zenscroll/blob/dist/zenscroll.js
+		* passes jshint
+		*/
+var zenscroll=(function(){"use strict";if(typeof window==="undefined"||!("document"in window)){return{};}var createScroller=function(scrollContainer,defaultDuration,edgeOffset){defaultDuration=defaultDuration||999;if(!edgeOffset&&edgeOffset!==0){edgeOffset=9;}var scrollTimeoutId;var setScrollTimeoutId=function(newValue){scrollTimeoutId=newValue;};var docElem=document.documentElement;var nativeSmoothScrollEnabled=function(){return("getComputedStyle"in window)&&window.getComputedStyle(scrollContainer?scrollContainer:document.body)["scroll-behavior"]==="smooth";};var getScrollTop=function(){if(scrollContainer){return scrollContainer.scrollTop;}else{return window.scrollY||docElem.scrollTop;}};var getViewHeight=function(){if(scrollContainer){return Math.min(scrollContainer.offsetHeight,window.innerHeight);}else{return window.innerHeight||docElem.clientHeight;}};var getRelativeTopOf=function(elem){if(scrollContainer){return elem.offsetTop;}else{return elem.getBoundingClientRect().top+getScrollTop()-docElem.offsetTop;}};var stopScroll=function(){clearTimeout(scrollTimeoutId);setScrollTimeoutId(0);};var scrollToY=function(endY,duration,onDone){stopScroll();if(nativeSmoothScrollEnabled()){(scrollContainer||window).scrollTo(0,endY);if(onDone){onDone();}}else{var startY=getScrollTop();var distance=Math.max(endY,0)-startY;duration=duration||Math.min(Math.abs(distance),defaultDuration);var startTime=new Date().getTime();(function loopScroll(){setScrollTimeoutId(setTimeout(function(){var p=Math.min((new Date().getTime()-startTime)/duration,1);var y=Math.max(Math.floor(startY+distance*(p<0.5?2*p*p:p*(4-p*2)-1)),0);if(scrollContainer){scrollContainer.scrollTop=y;}else{window.scrollTo(0,y);}if(p<1&&(getViewHeight()+y)<(scrollContainer||docElem).scrollHeight){loopScroll();}else{setTimeout(stopScroll,99);if(onDone){onDone();}}},9));})();}};var scrollToElem=function(elem,duration,onDone){scrollToY(getRelativeTopOf(elem)-edgeOffset,duration,onDone);};var scrollIntoView=function(elem,duration,onDone){var elemHeight=elem.getBoundingClientRect().height;var elemTop=getRelativeTopOf(elem);var elemBottom=elemTop+elemHeight;var containerHeight=getViewHeight();var containerTop=getScrollTop();var containerBottom=containerTop+containerHeight;if((elemTop-edgeOffset)<containerTop||(elemHeight+edgeOffset)>containerHeight){scrollToElem(elem,duration,onDone);}else if((elemBottom+edgeOffset)>containerBottom){scrollToY(elemBottom-containerHeight+edgeOffset,duration,onDone);}else if(onDone){onDone();}};var scrollToCenterOf=function(elem,duration,offset,onDone){scrollToY(Math.max(getRelativeTopOf(elem)-getViewHeight()/2+(offset||elem.getBoundingClientRect().height/2),0),duration,onDone);};var setup=function(newDefaultDuration,newEdgeOffset){if(newDefaultDuration){defaultDuration=newDefaultDuration;}if(newEdgeOffset===0||newEdgeOffset){edgeOffset=newEdgeOffset;}};return{setup:setup,to:scrollToElem,toY:scrollToY,intoView:scrollIntoView,center:scrollToCenterOf,stop:stopScroll,moving:function(){return!!scrollTimeoutId;}};};var defaultScroller=createScroller();if("addEventListener"in window&&document.body.style.scrollBehavior!=="smooth"&&!window.noZensmooth){var replaceUrl=function(hash){try{history.replaceState({},"",window.location.href.split("#")[0]+hash);}catch(e){}};window.addEventListener("click",function(event){var anchor=event.target;while(anchor&&anchor.tagName!=="A"){anchor=anchor.parentNode;}if(!anchor||event.which!==1||event.shiftKey||event.metaKey||event.ctrlKey||event.altKey){return;}var href=anchor.getAttribute("href")||"";if(href.indexOf("#")===0){if(href==="#"){event.preventDefault();defaultScroller.toY(0);replaceUrl("");}else{var targetId=anchor.hash.substring(1);var targetElem=document.getElementById(targetId);if(targetElem){event.preventDefault();defaultScroller.to(targetElem);replaceUrl("#"+targetId);}}}},false);}return{createScroller:createScroller,setup:defaultScroller.setup,to:defaultScroller.to,toY:defaultScroller.toY,intoView:defaultScroller.intoView,center:defaultScroller.stop,moving:defaultScroller.moving};}());
+		</script>
+		<script>
+				loadJS("https://cdn.jsdelivr.net/prettify/0.1/prettify.js",function(){"undefined"!==typeof window.prettyPrint&&prettyPrint();});
+				loadJS("https://buttons.github.io/buttons.js",function(){});
+		/*!
+		* init select
+		*/
+(function (w, d, a) {
+	a && (a.onchange = function () {
+		var h = this.value || "",
+		zh = h ? d.getElementById(h.replace(/^#/, "")) : "",
+		l = function (h) {
+			h && (d.location.href = h);
+		};
+		if (h) {
+			w.zenscroll ? (zh ? zenscroll.to(zh) : l(h)) : l(h);
+		}
+	})
+})(window, document, document.getElementById("chapters-select") || "");
+		/*!
+		* init btn-totop
+		*/
+(function (w, d, b, u, v) {
+	var a = d.createElement("a");
+	a.setAttribute("style", "opacity:0;");
+	a.setAttribute("href", "#");
+	a.setAttribute("title", "\u041d\u0430\u0432\u0435\u0440\u0445");
+	a.setAttribute("id", u);
+	a.setAttribute("onclick", "function scrollTop2(c){var b=window.pageYOffset,d=0,e=setInterval(function(b,a){return function(){a-=b*c;window.scrollTo(0,a);d++;(150<d||0>a)&&clearInterval(e)}}(c,b--),50)};window.zenscroll?zenscroll.toY(0):scrollTop2(50);return !1;");
+	btn_hover = d.createElement("span");
+	btn_hover.setAttribute("id", v);
+	a.appendChild(btn_hover);
+	t = d.createTextNode("\u041d\u0430\u0432\u0435\u0440\u0445");
+	a.appendChild(t);
+	b.appendChild(a);
+	w.onscroll = function () {
+		var o = w.pageYOffset || d.documentElement.scrollTop || d.body.scrollTop,
+		h = w.innerHeight || d.documentElement.clientHeight || d.body.clientHeight,
+		btn = d.getElementById(u) || "";
+		btn && (o > h ? (btn.style.visibility = "visible", btn.style.opacity = 1) : (btn.style.visibility = "hidden", btn.style.opacity = 0));
+	};
+}
+	(window, document, document.getElementsByTagName("body")[0] || document.documentElement, "btn-totop", "btn-totop-hover"));
+		/*!
+		* show page, finish ToProgress
+		*/
+var showPageFinishProgress = function () {
+	"use strict";
+	var d = document,
+	c = d.querySelector("#container") || "",
+	g = function (a) {
+		a.style.opacity = 1;
+	};
+	if (c) {
+		g(c);
+	}
+};
+window.addEventListener("load", showPageFinishProgress);
+		</script>
+	</body>
+</html>

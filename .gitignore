@@ -1,0 +1,6 @@
+*.bat
+*.sh
+*.zip
+.*.md
+koala-config.json
+node_modules/
