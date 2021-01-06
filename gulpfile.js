@@ -30,13 +30,9 @@ var browserSync = require("browser-sync").create();
 var reload = browserSync.reload;
 
 /*!
- * @see {@link https://github.com/postcss/autoprefixer#options}
+ * @see {@link https://github.com/browserslist/browserslist/issues/386#issuecomment-567709502}
  */
 var autoprefixer = require("gulp-autoprefixer");
-var autoprefixerOptions;
-autoprefixerOptions = {
-	browsers: ["last 2 versions"]
-};
 
 /*!
  * @see {@link https://github.com/beautify-web/js-beautify}
@@ -194,7 +190,7 @@ gulp.task("compile-libbundle-css", function () {
 	.pipe(sass({
 			errLogToConsole: true
 		}))
-	.pipe(autoprefixer(autoprefixerOptions))
+	.pipe(autoprefixer())
 	.pipe(prettier(prettierOptions))
 /* .pipe(beautify(beautifyOptions)) */
 	.pipe(gulp.dest(options.libbundle.css))
