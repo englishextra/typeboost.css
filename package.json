@@ -22,12 +22,9 @@
 		"url": "git://github.com/englishextra/typeboost.css.git"
 	},
 	"files": [
-		"LICENSE.md",
-		"index.html",
-		"css/typeboost.css.css",
-		"css/typeboost.css.min.css"
+		"css/typeboost.css.css"
 	],
-	"filename": "css/typeboost.css.min.css",
+	"filename": "css/typeboost.css.css",
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/typeboost.css.git",
