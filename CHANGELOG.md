@@ -1,6 +1,6 @@
 # HEAD
 
-## 0.1.8 (February 4, 2017)
+## 0.1.9 (February 4, 2017)
 
 * Merged some rules.
 
