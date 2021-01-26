@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/typeboost.css.svg)](https://www.npmjs.com/package/typeboost.css)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/87e126f1473345bca23d3fa108408142)](https://www.codacy.com/manual/englishextra/typeboost-css/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=englishextra/typeboost.css&amp;utm_campaign=Badge_Grade)
 [![CDNJS](https://img.shields.io/cdnjs/v/typeboost.css.svg)](https://cdnjs.com/libraries/typeboost.css)
-[![](https://data.jsdelivr.com/v1/package/npm/typeboost.css/badge)](https://www.jsdelivr.com/package/npm/typeboost.css)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/typeboost.css/badge)](https://www.jsdelivr.com/package/npm/typeboost.css)
 
 ![typeboost.css](https://github.com/englishextra/typeboost.css/raw/master/img/typeboost.css-logo-1DB5FC-935x230.png)
 
