@@ -10,14 +10,8 @@
 		"grid",
 		"typography"
 	],
-	"main": "main.js",
-	"window": {
-		"icon": "favicon-32x32.png"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/englishextra/typeboost.css.git"
-	},
+	"main": "css/typeboost.css.css",
+	"style": "css/typeboost.css.css",
 	"files": [
 		"index.html",
 		"css/typeboost.css.css"
@@ -26,14 +20,16 @@
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/typeboost.css.git",
-		"fileMap": [
-			{
-				"basePath": "",
-				"files": [
-					"css/typeboost.css*"
-				]
-			}
-		]
+		"fileMap": [{
+			"basePath": "",
+			"files": [
+				"css/typeboost.css*"
+			]
+		}]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/englishextra/typeboost.css.git"
 	},
 	"dependencies": {
 		"npm": "^7.3.0"
