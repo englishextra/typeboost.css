@@ -1,6 +1,6 @@
 {
 	"name": "typeboost.css",
-	"version": "0.1.10",
+	"version": "0.1.11",
 	"description": "Typeboost.css is a set of CSS rules to ensure readable, scalable and responsive typography. REMs are used for font sizes, paddings, and margins. It's like typography normalizer. No dependencies. Wrap your HTML content with class .col and you are done.",
 	"keywords": [
 		"typeboost.css",
@@ -10,13 +10,13 @@
 		"grid",
 		"typography"
 	],
-	"main": "css/typeboost.css.css",
-	"style": "css/typeboost.css.css",
+	"main": "css/typeboost.css",
+	"style": "css/typeboost.css",
 	"files": [
 		"index.html",
-		"css/typeboost.css.css"
+		"css/typeboost.css"
 	],
-	"filename": "css/typeboost.css.css",
+	"filename": "css/typeboost.css",
 	"autoupdate": {
 		"source": "git",
 		"target": "git://github.com/englishextra/typeboost.css.git",
