@@ -1,6 +1,6 @@
 {
 	"name": "typeboost.css",
-	"version": "0.1.12",
+	"version": "0.1.13",
 	"description": "Typeboost.css is a set of CSS rules to ensure readable, scalable and responsive typography. REMs are used for font sizes, paddings, and margins. It's like typography normalizer. No dependencies. Wrap your HTML content with class .col and you are done.",
 	"keywords": [
 		"typeboost.css",
@@ -47,7 +47,7 @@
 		"gulp-strip-debug": "^3.0.0"
 	},
 	"engines": {
-		"npm": "7.x"
+		"npm": ">=7.x"
 	},
 	"scripts": {
 		"test": "gulp lint-libbundle-css"
